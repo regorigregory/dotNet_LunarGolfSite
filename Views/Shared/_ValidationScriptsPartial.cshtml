@@ -1,0 +1,17 @@
+﻿<environment names="Development">
+    <script src="~/assets/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <link rel="stylesheet" href="~/assets/bootstrap-datepicker/css/bootstrap-datepicker.css" />
+
+</environment>
+<environment names="Staging,Production">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"
+            asp-fallback-src="~/lib/jquery-validation/dist/jquery.validate.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.validator"
+            crossorigin="anonymous"
+            integrity="sha384-rZfj/ogBloos6wzLGpPkkOr/gpkBNLZ6b6yLy4o+ok+t/SAKlL5mvXLr0OXNi1Hp">
+    </script>
+
+   
+</environment>
