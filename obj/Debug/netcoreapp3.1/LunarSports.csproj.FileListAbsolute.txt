@@ -159,6 +159,8 @@ C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Vi
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Details.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Edit.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Index.cshtml.g.cs
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\RegisterUser\Index.cshtml.g.cs
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\RegisterUser\Register.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs

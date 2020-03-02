@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers",
+    "\\Controllers\\Administration",
+    "\\DBCTX",
+    "\\Models",
+    "\\ViewModels",
+    "\\Views",
+    "\\Views\\Pages",
+    "\\Views\\RegisterUser"
   ],
-  "SelectedNode": "\\bin",
+  "SelectedNode": "\\LunarSports.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace LunarSports.Models
 {
-    public class User : IdentityUser
+    public class User
     {
         public int UserID { get; set; }
         public string UserName { get; set; }

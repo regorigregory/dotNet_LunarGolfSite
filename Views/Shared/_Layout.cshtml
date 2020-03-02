@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Events Site</title>
-    <link rel="stylesheet" href="~/assets/twitter-bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -41,8 +41,11 @@
             &copy; 2020 - Lunar Sports Events App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/assets/jquery/jquery.js"></script>
-    <script src="~/assets/twitter-bootstrap/js/bootstrap.js"></script>
+    <!-- <snippet_Scripts> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- </snippet_Scripts> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
     <!--<script src="~/js/site.js" asp-append-version="true"></script>-->
     @RenderSection("Scripts", required: false)
 </body>
