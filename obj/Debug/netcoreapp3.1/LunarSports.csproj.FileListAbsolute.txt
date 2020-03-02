@@ -159,8 +159,6 @@ C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Vi
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Details.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Edit.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Index.cshtml.g.cs
-C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\RegisterUser\Index.cshtml.g.cs
-C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\RegisterUser\Register.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -171,3 +169,7 @@ C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSpo
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csproj.CopyComplete
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.dll
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.pdb
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csprojAssemblyReference.cache
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

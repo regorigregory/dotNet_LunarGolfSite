@@ -45,8 +45,8 @@ namespace LunarSports
                 connStr
                 ));
             // Built in role and user to be inherited, also, the database is specified.
-            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
-          
+             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
+
 
         }
 
@@ -62,7 +62,7 @@ namespace LunarSports
             //Initalize the user authentacion.
             app.UseAuthentication();
             app.UseStatusCodePages();
-            app.UseMvc(routes => routes.MapRoute("default", "{controller=RegisterUser}/{action=Register}/{id?}"));
+            app.UseMvc(routes => routes.MapRoute("default", "{controller=Account}/{action=Register}/{id?}"));
 
 
         }
