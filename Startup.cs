@@ -11,6 +11,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace LunarSports
 {
@@ -31,7 +33,12 @@ namespace LunarSports
             services.AddRazorPages()
                .AddMvcOptions(options =>
                {
-                   options.MaxModelValidationErrors = 50;
+                  // var policy = new AuthorizationPolicyBuilder()
+                  // .RequireAuthenticatedUser().Build();
+                   
+                  // options.Filters.Add(new AuthorizeFilter(policy));
+
+                   options.MaxModelValidationErrors = 10;
                    options.EnableEndpointRouting = false;
                    options.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(
                        _ => "The field is required.");

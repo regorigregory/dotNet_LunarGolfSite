@@ -46,6 +46,5 @@ namespace LunarSports.ViewModels
 
         public DateTime DOB { get; set; }
 
- 
     }
 }

@@ -10,28 +10,33 @@ using Microsoft.EntityFrameworkCore;
 using LunarSports.Models;
 using LunarSports.ViewModels;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LunarSports.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
-        public UserManager<IdentityUser> UserManager { get; }
-        public SignInManager<IdentityUser> SignInManager { get; }
+        public UserManager<IdentityUser> userManager { get; }
+        public SignInManager<IdentityUser> signInManager { get; }
 
         public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager) {
-            UserManager = userManager;
-            SignInManager = signInManager;
+            this.userManager = userManager;
+            this.signInManager = signInManager;
         }
         public IActionResult Index()
         {
             return View();
         }
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult Register()
         {
             return View();
 
         }
+        
+        [AllowAnonymous]
 
         [HttpPost]
         public async Task<IActionResult> Register(RegisterUserModel formInput)
@@ -43,17 +48,17 @@ namespace LunarSports.Controllers
                 return View(formInput); 
             }
             var user = new IdentityUser { UserName = formInput.UserName, Email = formInput.Email };
-            var result = await UserManager.CreateAsync(user, formInput.Password);
+            var result = await userManager.CreateAsync(user, formInput.Password);
 
             if (result.Succeeded)
             {
-                await SignInManager.SignInAsync(user, isPersistent: false);
-                return RedirectToAction("index", "default");
+                await signInManager.SignInAsync(user, isPersistent: false);
+                return RedirectToAction("Index", "Default");
             }
 
             foreach(var error in result.Errors)
             {
-                ModelState.AddModelError("", error.Description);
+                ModelState.AddModelError(string.Empty, error.Description);
             }
             return View();
 
@@ -67,17 +72,35 @@ namespace LunarSports.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(LoginUserModel formInput)
+        public async Task<IActionResult> Login(LoginUserModel formInput)
         {
             Boolean isValid = ModelState.IsValid;
-            ViewData["test"] = isValid.ToString();
+
             if (!isValid)
             {
-                Console.Write("The provided model is not valid");
+                return View(formInput);
             }
-            Console.Write("The provided model is valid");
 
-            return View();
+            var result = await signInManager.PasswordSignInAsync(formInput.UserName, formInput.Password, formInput.RememberMe, true);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "Default");
+
+            }
+
+            ModelState.AddModelError(string.Empty, "Invalid login attempt");
+            return View(formInput);
+
+        }
+
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Default");
 
         }
 
