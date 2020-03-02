@@ -9,20 +9,29 @@ namespace LunarSports.ViewModels
     public class RegisterUserModel
     {   
         [Required]
+        [Display(Name = "First name")]
+
         public string FirstName { get; set; }
         [Required]
+        [Display(Name = "Last name")]
+
         public string LastName { get; set; }
 
         [Required]
+        [Display(Name = "User name")]
 
         public string UserName { get; set; }
 
         [Required]
         [EmailAddress]
+        [Display(Name = "Email")]
+
         public string Email { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+
         public string Password { get; set; }
 
         [Required]
@@ -33,6 +42,8 @@ namespace LunarSports.ViewModels
        
         [Required]
         [DataType(DataType.Date)]
+        [Display(Name = "Birth date")]
+
         public DateTime DOB { get; set; }
 
  

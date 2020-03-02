@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
 
 namespace LunarSports
 {
@@ -27,13 +28,25 @@ namespace LunarSports
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddRazorPages()
+               .AddMvcOptions(options =>
+               {
+                   options.MaxModelValidationErrors = 50;
+                   options.EnableEndpointRouting = false;
+                   options.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(
+                       _ => "The field is required.");
+               });
+            services.AddControllersWithViews();
+
             var connStr = Configuration.GetConnectionString("DevelopmentConnection");
+            services.AddSingleton<IValidationAttributeAdapterProvider,
+           ValidationAttributeAdapterProvider>();
             services.AddDbContext<LunarSportsDBContext>(options => options.UseSqlServer(
                 connStr
                 ));
             // Built in role and user to be inherited, also, the database is specified.
-            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
+             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
+
 
         }
 
@@ -44,11 +57,12 @@ namespace LunarSports
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseStaticFiles();
             //Initalize the user authentacion.
             app.UseAuthentication();
             app.UseStatusCodePages();
-            app.UseMvc(routes => routes.MapRoute("default", "{controller=Ranks}/{action=Index}/{id?}"));
+            app.UseMvc(routes => routes.MapRoute("default", "{controller=Account}/{action=Register}/{id?}"));
 
 
         }

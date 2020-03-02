@@ -169,3 +169,7 @@ C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSpo
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csproj.CopyComplete
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.dll
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.pdb
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csprojAssemblyReference.cache
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
