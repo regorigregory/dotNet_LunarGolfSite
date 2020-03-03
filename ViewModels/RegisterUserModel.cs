@@ -45,6 +45,8 @@ namespace LunarSports.ViewModels
         [Display(Name = "Birth date")]
 
         public DateTime DOB { get; set; }
+        [Required]
+        public string SpecRole { get; set; }
 
     }
 }

@@ -48,8 +48,8 @@ namespace LunarSports.Controllers
             var user = new ApplicationUser { UserName = formInput.UserName, Email = formInput.Email, DOB = formInput.DOB };
 
             var result = await userManager.CreateAsync(user, formInput.Password);
-
-            if (result.Succeeded)
+            var result2 = await userManager.AddToRoleAsync(user, formInput.SpecRole);
+            if (result.Succeeded && result2.Succeeded)
             {
                 await signInManager.SignInAsync(user, isPersistent: false);
                 return RedirectToAction("Index", "Default");

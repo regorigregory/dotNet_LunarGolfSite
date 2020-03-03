@@ -23,7 +23,7 @@ namespace LunarSports.ViewModels
                 this.BIO = au.BIO;
                 this.ProfilePictureURL = au.ProfilePictureURL;
                 this.Gender = au.Gender;
-                this.DOB = au.DOB.ToString();
+                this.DOB = au.DOB;
                 this.ProfilePictureURL = au.ProfilePictureURL;
             }
         }
