@@ -69,7 +69,7 @@ namespace LunarSports
             //Initalize the user authentacion.
             app.UseAuthentication();
             app.UseStatusCodePages();
-            app.UseMvc(routes => routes.MapRoute("default", "{controller=Administration}/{action=CreateRole}/{id?}"));
+            app.UseMvc(routes => routes.MapRoute("default", "{controller=Account}/{action=EditUSerDetails}/{id?}"));
 
 
         }

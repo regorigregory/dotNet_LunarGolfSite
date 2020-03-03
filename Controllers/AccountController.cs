@@ -19,7 +19,8 @@ namespace LunarSports.Controllers
         public UserManager<ApplicationUser> userManager { get; }
         public SignInManager<ApplicationUser> signInManager { get; }
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager) {
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        {
             this.userManager = userManager;
             this.signInManager = signInManager;
         }
@@ -33,7 +34,7 @@ namespace LunarSports.Controllers
             return View();
 
         }
-        
+
 
         [HttpPost]
         public async Task<IActionResult> Register(RegisterUserModel formInput)
@@ -42,7 +43,7 @@ namespace LunarSports.Controllers
             ViewData["test"] = isValid.ToString();
             if (!isValid)
             {
-                return View(formInput); 
+                return View(formInput);
             }
             var user = new ApplicationUser { UserName = formInput.UserName, Email = formInput.Email, DOB = formInput.DOB };
 
@@ -54,7 +55,7 @@ namespace LunarSports.Controllers
                 return RedirectToAction("Index", "Default");
             }
 
-            foreach(var error in result.Errors)
+            foreach (var error in result.Errors)
             {
                 ModelState.AddModelError(string.Empty, error.Description);
             }
@@ -100,8 +101,10 @@ namespace LunarSports.Controllers
             return RedirectToAction("Index", "Default");
 
         }
-        [Authorize]
-        [HttpPost]
+
+
+        //[Authorize]
+        //[HttpPost]
         public async Task<IActionResult> EditUserDetails()
         {
             if (User != null)
@@ -110,16 +113,18 @@ namespace LunarSports.Controllers
                 EditUserModel em = new EditUserModel(ux);
                 return View(em);
             }
-            return RedirectToAction("Index", "Home");
+            string successURL = string.Format("/Default/Feedback?message={0}", "You have to log in in order to edit your user details.");
+
+            return Redirect(successURL);
 
         }
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         public async Task<IActionResult> UpdateUserDetails(EditUserModel formInput)
         {
             if (ModelState.IsValid)
             {
-                
+
                 ApplicationUser ux = await userManager.GetUserAsync(User);
                 bool result = await userManager.CheckPasswordAsync(ux, formInput.OldPassword);
 
@@ -131,28 +136,38 @@ namespace LunarSports.Controllers
                     ux.BIO = formInput.BIO;
                     ux.ProfilePictureURL = formInput.ProfilePictureURL;
                     ux.Gender = formInput.Gender;
-                    ux.DOB = formInput.DOB;
+                    ux.DOB =formInput.DOB;
                     ux.ProfilePictureURL = formInput.ProfilePictureURL;
-                    await userManager.UpdateAsync(ux);
 
-                    if (formInput.Password != null)
+                    string successURL = string.Format("/Default/Feedback?message={0}", "The account details have been updated successfully.");
+
+                    IdentityResult tempResult = await userManager.UpdateAsync(ux);
+
+                    if ((formInput.Password == null & tempResult.Succeeded))
                     {
-                        await userManager.ChangePasswordAsync(ux, formInput.OldPassword, formInput.Password);
+                        return Redirect(successURL);
+
+                    }
+                    else if (formInput.Password != null & tempResult.Succeeded)
+                    {
+                        IdentityResult tempResult2 = await userManager.ChangePasswordAsync(ux, formInput.OldPassword, formInput.Password);
+                        if (tempResult2.Succeeded)
+                        {
+                            return Redirect(successURL);
+                        }
+                        else
+                        {
+                            ModelState.AddModelError("", "The provided current password is invalid.");
+                        }
 
                     }
 
-                } else
-                {
-                    ModelState.AddModelError("", "The provided current password is invalid.");
-                }
 
+                }
 
             }
             return View(User);
 
         }
-
-
-
     }
 }

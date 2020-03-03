@@ -9,29 +9,30 @@ namespace LunarSports.ViewModels
 {
     public class EditUserModel
     {
-
+        public EditUserModel(){
+            }
         public EditUserModel(ApplicationUser au)
         {
-            this.FirstName = au.FirstName;
-            this.LastName = au.LastName;
-            this.Email = au.Email;
-            this.UserName = au.UserName;
+            if (au != null)
+            {
+                this.FirstName = au.FirstName;
+                this.LastName = au.LastName;
+                this.Email = au.Email;
 
 
-            this.BIO = au.BIO;
-            this.ProfilePictureURL = au.ProfilePictureURL;
-            this.Gender = au.Gender;
-            this.DOB = au.DOB;
-            this.ProfilePictureURL = au.ProfilePictureURL;
+                this.BIO = au.BIO;
+                this.ProfilePictureURL = au.ProfilePictureURL;
+                this.Gender = au.Gender;
+                this.DOB = au.DOB.ToString();
+                this.ProfilePictureURL = au.ProfilePictureURL;
+            }
         }
 
         // public Rank UserRank { get; set; }
-        [Required]
         [Display(Name = "First name")]
 
         public string FirstName { get; set; }
 
-        [Required]
         [Display(Name = "Last name")]
 
         public string LastName { get; set; }
@@ -63,12 +64,11 @@ namespace LunarSports.ViewModels
         public bool Active { get; set; }
 
 
-        [Display(Name = "User name")]
-        public string UserName { get; set; }
 
         [Display(Name = "Gender")]
 
         public string Gender { get; set; }
+
         [Display(Name = "Short introduction")]
 
         public string BIO { get; set; }
