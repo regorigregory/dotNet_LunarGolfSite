@@ -1,4 +1,5 @@
 ﻿using LunarSports.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace LunarSports.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class AdministrationController : Controller
     {
         public RoleManager<IdentityRole> RoleManager { get; }
@@ -17,6 +19,10 @@ namespace LunarSports.Controllers
             RoleManager = roleManager;
         }
         [HttpGet]
+        public IActionResult Index()
+        {
+            return View();
+        }
         public IActionResult CreateRole()
         {
             return View();
@@ -40,6 +46,39 @@ namespace LunarSports.Controllers
             }
             //view gets rerendered with Validation error.
             return View(formInput);
+        }
+        public IActionResult CreatePage()
+        {
+            throw new NotImplementedException();
+        }
+        public IActionResult EditPage()
+        {
+            throw new NotImplementedException();
+        }
+        public IActionResult DeletePage()
+        {
+            throw new NotImplementedException();
+        }
+        public IActionResult ListPages()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IActionResult CreateEvent()
+        {
+            throw new NotImplementedException();
+        }
+        public IActionResult EditEvent()
+        {
+            throw new NotImplementedException();
+        }
+        public IActionResult DeleteEvent()
+        {
+            throw new NotImplementedException();
+        }
+        public IActionResult ListEvents()
+        {
+            throw new NotImplementedException();
         }
     }
 }

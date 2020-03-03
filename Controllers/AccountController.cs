@@ -40,7 +40,16 @@ namespace LunarSports.Controllers
         public async Task<IActionResult> Register(RegisterUserModel formInput)
         {
             Boolean isValid = ModelState.IsValid;
-            ViewData["test"] = isValid.ToString();
+
+             if (User == null)
+            {
+                string successURL = string.Format("/Default/Feedback?message={0}", "You have to log in in order to edit your user details.");
+
+                return Redirect(successURL);
+            }
+  
+
+
             if (!isValid)
             {
                 return View(formInput);
