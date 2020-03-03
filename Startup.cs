@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.DataAnnotations;
+using LunarSports.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 
@@ -52,8 +53,7 @@ namespace LunarSports
                 connStr
                 ));
             // Built in role and user to be inherited, also, the database is specified.
-             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
-
+             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
 
         }
 
@@ -69,7 +69,7 @@ namespace LunarSports
             //Initalize the user authentacion.
             app.UseAuthentication();
             app.UseStatusCodePages();
-            app.UseMvc(routes => routes.MapRoute("default", "{controller=Account}/{action=Register}/{id?}"));
+            app.UseMvc(routes => routes.MapRoute("default", "{controller=Administration}/{action=CreateRole}/{id?}"));
 
 
         }

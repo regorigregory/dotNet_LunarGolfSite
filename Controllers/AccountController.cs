@@ -14,13 +14,12 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace LunarSports.Controllers
 {
-    [Authorize]
     public class AccountController : Controller
     {
-        public UserManager<IdentityUser> userManager { get; }
-        public SignInManager<IdentityUser> signInManager { get; }
+        public UserManager<ApplicationUser> userManager { get; }
+        public SignInManager<ApplicationUser> signInManager { get; }
 
-        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager) {
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager) {
             this.userManager = userManager;
             this.signInManager = signInManager;
         }
@@ -28,7 +27,6 @@ namespace LunarSports.Controllers
         {
             return View();
         }
-        [AllowAnonymous]
         [HttpGet]
         public IActionResult Register()
         {
@@ -36,7 +34,6 @@ namespace LunarSports.Controllers
 
         }
         
-        [AllowAnonymous]
 
         [HttpPost]
         public async Task<IActionResult> Register(RegisterUserModel formInput)
@@ -47,7 +44,8 @@ namespace LunarSports.Controllers
             {
                 return View(formInput); 
             }
-            var user = new IdentityUser { UserName = formInput.UserName, Email = formInput.Email };
+            var user = new ApplicationUser { UserName = formInput.UserName, Email = formInput.Email, DOB = formInput.DOB };
+
             var result = await userManager.CreateAsync(user, formInput.Password);
 
             if (result.Succeeded)
@@ -63,7 +61,6 @@ namespace LunarSports.Controllers
             return View();
 
         }
-
         [HttpGet]
         public IActionResult Login()
         {
@@ -72,6 +69,7 @@ namespace LunarSports.Controllers
         }
 
         [HttpPost]
+
         public async Task<IActionResult> Login(LoginUserModel formInput)
         {
             Boolean isValid = ModelState.IsValid;
@@ -80,7 +78,6 @@ namespace LunarSports.Controllers
             {
                 return View(formInput);
             }
-
             var result = await signInManager.PasswordSignInAsync(formInput.UserName, formInput.Password, formInput.RememberMe, true);
             if (result.Succeeded)
             {
@@ -95,12 +92,63 @@ namespace LunarSports.Controllers
 
 
 
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Default");
+
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> EditUserDetails()
+        {
+            if (User != null)
+            {
+                ApplicationUser ux = await userManager.GetUserAsync(User);
+                EditUserModel em = new EditUserModel(ux);
+                return View(em);
+            }
+            return RedirectToAction("Index", "Home");
+
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> UpdateUserDetails(EditUserModel formInput)
+        {
+            if (ModelState.IsValid)
+            {
+                
+                ApplicationUser ux = await userManager.GetUserAsync(User);
+                bool result = await userManager.CheckPasswordAsync(ux, formInput.OldPassword);
+
+                if (result)
+                {
+                    ux.FirstName = formInput.FirstName;
+                    ux.LastName = formInput.LastName;
+                    ux.Email = formInput.Email;
+                    ux.BIO = formInput.BIO;
+                    ux.ProfilePictureURL = formInput.ProfilePictureURL;
+                    ux.Gender = formInput.Gender;
+                    ux.DOB = formInput.DOB;
+                    ux.ProfilePictureURL = formInput.ProfilePictureURL;
+                    await userManager.UpdateAsync(ux);
+
+                    if (formInput.Password != null)
+                    {
+                        await userManager.ChangePasswordAsync(ux, formInput.OldPassword, formInput.Password);
+
+                    }
+
+                } else
+                {
+                    ModelState.AddModelError("", "The provided current password is invalid.");
+                }
+
+
+            }
+            return View(User);
 
         }
 

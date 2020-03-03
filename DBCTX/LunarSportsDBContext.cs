@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 
-    public class LunarSportsDBContext : IdentityDbContext
+    public class LunarSportsDBContext : IdentityDbContext<ApplicationUser>
     {
 
         public LunarSportsDBContext(DbContextOptions<LunarSportsDBContext> opts) : base(opts)
@@ -19,7 +19,7 @@ using Microsoft.EntityFrameworkCore;
         base.OnModelCreating(builder);
        
     }
-    public DbSet<Rank> Rank { get; set; }
+
    
     }
 

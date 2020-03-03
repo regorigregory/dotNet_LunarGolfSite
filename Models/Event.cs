@@ -30,7 +30,7 @@ namespace LunarSports.Models
         public List<EventScheduleEntry> EventSchedule { get; set; }
         public int EventUserMaxCapacity { get; set; }
 
-        public List<User> UsersSignedUp { get; set; }
+        public List<ApplicationUser> UsersSignedUp { get; set; }
 
 
 

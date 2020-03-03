@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Administration\" />
     <Folder Include="Content\" />
     <Folder Include="Views\Pages\Administration\" />
     <Folder Include="Views\Public\" />

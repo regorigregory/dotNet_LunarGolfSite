@@ -13,7 +13,7 @@ namespace LunarSports.Models
         public string Mobile { get; set; }
         public string Landline { get; set; }
         public string Email { get; set; }
-        public User User { get; set; }
+        public ApplicationUser User { get; set; }
 
 
 
