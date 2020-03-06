@@ -2,7 +2,9 @@
 
 @{
     ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 
 <h1>Edit</h1>
 
@@ -47,3 +49,8 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script type="javascript">
+    CKEDITOR.replace( 'editor1' );
+
+</script>

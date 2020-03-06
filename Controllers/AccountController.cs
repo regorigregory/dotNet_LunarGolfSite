@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace LunarSports.Controllers
 {
+   // [Area("Public")]
     public class AccountController : Controller
     {
         public UserManager<ApplicationUser> userManager { get; }

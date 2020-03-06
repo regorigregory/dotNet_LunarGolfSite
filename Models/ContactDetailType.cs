@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace LunarSports.Models
 {
-    public enum ContactDetailType
+    public class ContactDetailType
     {
-        Home = 0,
-        Business = 1,
-        DeliveryAddress = 2,
-        NextOfKin = 3,
-        LaunchSite = 4,
-        EventScheduleEntry = 5
+       // Home = 0,
+       // Business = 1,
+       // DeliveryAddress = 2,
+       // NextOfKin = 3,
+       // LaunchSite = 4,
+       // EventScheduleEntry = 5
     }
 }

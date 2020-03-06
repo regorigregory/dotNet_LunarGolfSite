@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 namespace LunarSports.Controllers
 {
+ //   [Area("Public")]
     public class DefaultController : Controller
     {
         public IActionResult Index()

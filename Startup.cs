@@ -34,7 +34,7 @@ namespace LunarSports
             services.AddRazorPages()
                .AddMvcOptions(options =>
                {
-                  // var policy = new AuthorizationPolicyBuilder()
+                  //var policy = new AuthorizationPolicyBuilder()
                   // .RequireAuthenticatedUser().Build();
                    
                   // options.Filters.Add(new AuthorizeFilter(policy));
@@ -69,7 +69,7 @@ namespace LunarSports
             //Initalize the user authentacion.
             app.UseAuthentication();
             app.UseStatusCodePages();
-            app.UseMvc(routes => routes.MapRoute("default", "{controller=Account}/{action=EditUSerDetails}/{id?}"));
+            app.UseMvc(routes => routes.MapRoute("default", "{area=}/{controller=Pages}/{action=Create}/{id?}"));
 
 
         }

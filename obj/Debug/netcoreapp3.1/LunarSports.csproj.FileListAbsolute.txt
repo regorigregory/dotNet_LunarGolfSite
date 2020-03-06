@@ -149,11 +149,11 @@ C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSpo
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.TagHelpers.input.cache
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.TagHelpers.output.cache
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.RazorCoreGenerate.cache
+C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Administration\CreateRole.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\EditUserDetails.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
-C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Administration\CreateRole.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Default\Feedback.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Default\Index.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Default\NotAuthorized.cshtml.g.cs
@@ -162,11 +162,6 @@ C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Vi
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Details.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Edit.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Index.cshtml.g.cs
-C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Create.cshtml.g.cs
-C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Delete.cshtml.g.cs
-C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Details.cshtml.g.cs
-C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Edit.cshtml.g.cs
-C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Ranks\Index.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Madero Padero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs

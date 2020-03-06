@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace LunarSports.Controllers
 {
+    [Area("Admin")]
     [Authorize(Roles = "Administrator")]
     public class AdministrationController : Controller
     {
