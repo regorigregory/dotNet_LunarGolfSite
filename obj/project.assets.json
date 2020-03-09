@@ -8726,19 +8726,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Madero Padero\\.nuget\\packages\\": {}
+    "C:\\Users\\Madero\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Madero Padero\\source\\repos\\LunarSports\\LunarSports.csproj",
+      "projectUniqueName": "C:\\Users\\Madero\\source\\repos\\LunarSports\\LunarSports.csproj",
       "projectName": "LunarSports",
-      "projectPath": "C:\\Users\\Madero Padero\\source\\repos\\LunarSports\\LunarSports.csproj",
-      "packagesPath": "C:\\Users\\Madero Padero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Madero Padero\\source\\repos\\LunarSports\\obj\\",
+      "projectPath": "C:\\Users\\Madero\\source\\repos\\LunarSports\\LunarSports.csproj",
+      "packagesPath": "C:\\Users\\Madero\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Madero\\source\\repos\\LunarSports\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Madero Padero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Madero\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

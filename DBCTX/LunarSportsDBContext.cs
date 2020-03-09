@@ -19,22 +19,28 @@ using Microsoft.EntityFrameworkCore;
         base.OnModelCreating(builder);
        
     }
+
+   
+
+    //User tables...
+    public  DbSet<UserContactDetail> UserContactDetails { get; set; }
+    public DbSet<UserAddress> UserAddresseses { get; set; }
+    public DbSet<NextOfKin> NextOfKins { get; set; }
+
+    //Events, pages...etc.
     public DbSet<Page> Pages { get; set; }
+
     public DbSet<Event> Events { get; set; }
 
-   public  DbSet<ContactDetail> ContactDetails { get; set; }
-    //public virtual DbSet<ContactDetailType> ContactDetailType { get; set; }
+    public DbSet<EventLocation> EventLocations { get; set; }
+    public DbSet<EventScheduleEntry> EventScheduleEntries { get; set; }
+    public DbSet<LaunchSite> LaunchSites { get; set; }
+    public DbSet<EventLocationContactDetail> EventLocationContactDetails { get; set; }
 
 
-    // public virtual DbSet<EventType> EventTypes { get; set; }
-    // public virtual DbSet<EventResult> EventResults { get; set; }
-    public  DbSet<EventScheduleEntry> EventScheduleEntries { get; set; }
 
 
-     public DbSet<LaunchSite> LaunchSites { get; set; }
 
-    public DbSet<Location> Locations { get; set; }
-     public  DbSet<NextOfKin> NextOfKins { get; set; }
 
 
 

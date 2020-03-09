@@ -9,7 +9,7 @@ namespace LunarSports.Models
 {
     public class Page
     {
-        public int PageID { get; set; }
+        public int ID { get; set; }
         [DataType(DataType.Text)]
         public string Title { get; set; }
         [DataType(DataType.Text)]

@@ -8,7 +8,7 @@ namespace LunarSports.Models
 {
     public class Event
     {
-        public int EventID { get; set; }
+        public int ID { get; set; }
         public int LaunchSiteID { get; set; }
 
         [Display(Name = "Type of the event")]

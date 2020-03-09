@@ -33,7 +33,7 @@ namespace LunarSports.Controllers
             }
 
             var @event = await _context.Events
-                .FirstOrDefaultAsync(m => m.EventID == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (@event == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace LunarSports.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EventID,LaunchSiteID,Title,IsVisible,StartDateTime,EndDateTime,Description,EventUserMaxCapacity")] Event @event)
+        public async Task<IActionResult> Create([Bind("ID,LaunchSiteID,Title,IsVisible,StartDateTime,EndDateTime,Description,EventUserMaxCapacity")] Event @event)
         {
             if (ModelState.IsValid)
             {
@@ -85,9 +85,9 @@ namespace LunarSports.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EventID,LaunchSiteID,Title,IsVisible,StartDateTime,EndDateTime,Description,EventUserMaxCapacity")] Event @event)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,LaunchSiteID,Title,IsVisible,StartDateTime,EndDateTime,Description,EventUserMaxCapacity")] Event @event)
         {
-            if (id != @event.EventID)
+            if (id != @event.ID)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace LunarSports.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EventExists(@event.EventID))
+                    if (!EventExists(@event.ID))
                     {
                         return NotFound();
                     }
@@ -124,7 +124,7 @@ namespace LunarSports.Controllers
             }
 
             var @event = await _context.Events
-                .FirstOrDefaultAsync(m => m.EventID == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (@event == null)
             {
                 return NotFound();
@@ -146,7 +146,7 @@ namespace LunarSports.Controllers
 
         private bool EventExists(int id)
         {
-            return _context.Events.Any(e => e.EventID == id);
+            return _context.Events.Any(e => e.ID == id);
         }
     }
 }

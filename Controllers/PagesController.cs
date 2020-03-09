@@ -39,7 +39,7 @@ namespace LunarSports.Controllers
             }
 
             var page = await _context.Pages
-                .FirstOrDefaultAsync(m => m.PageID == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (page == null)
             {
                 return NotFound();
@@ -99,9 +99,9 @@ namespace LunarSports.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         //[ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PageID,Title,Description,DatePublished,DateModified")] Page page)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Title,Description,DatePublished,DateModified")] Page page)
         {
-            if (id != page.PageID)
+            if (id != page.ID)
             {
                 return NotFound();
             }
@@ -115,7 +115,7 @@ namespace LunarSports.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PageExists(page.PageID))
+                    if (!PageExists(page.ID))
                     {
                         return NotFound();
                     }
@@ -138,7 +138,7 @@ namespace LunarSports.Controllers
             }
 
             var page = await _context.Pages
-                .FirstOrDefaultAsync(m => m.PageID == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (page == null)
             {
                 return NotFound();
@@ -160,7 +160,7 @@ namespace LunarSports.Controllers
 
         private bool PageExists(int id)
         {
-            return _context.Pages.Any(e => e.PageID == id);
+            return _context.Pages.Any(e => e.ID == id);
         }
     }
 }

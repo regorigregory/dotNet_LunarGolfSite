@@ -1,34 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace LunarSports.Models
 {
-    public class Location
+    public abstract class Location
     {
 
         //https://schema.org/PostalAddress
         //https://design-system.service.gov.uk/patterns/addresses/
 
-        public int LocationID { get; set; }
+        public int ID { get; set; }
+
+        [Display(Name = "Home, work...etc.")]
+
         public string LocationName { get; set; }
 
+        [Display(Name = "Building/flat number")]
 
         public string BuildingNO { get; set; }
+
+        [Display(Name = "Street address")]
+
         public string StreetAddress { get; set; }
+
+        [Display(Name = "Town/city")]
         public string Locality { get; set; }
+
+        [Display(Name = "County")]
+
         public string Region { get; set; }
 
+        [DataType(DataType.PostalCode)]
+        [Display(Name = "Postcode")]
+
         public string PostCode { get; set; }
+
+        [Display(Name = "Country")]
         public string CountryCode { get; set; }
 
-        public double Lat { get; set; }
-        public double Long { get; set; }
-
-        public bool IsLunarLocation { get; set; }
-
-        public int ContactDetail { get; set; }
+       
 
 
 

@@ -1,23 +1,10 @@
-﻿@using System.Text.RegularExpressions
-
-@functions{
-    String stripTagsAndShorten(String p)
-    {
-        p = Regex.Replace(p, "<[^>]*(>|$)", String.Empty);
-        var limit = (p.Length > 20) ? 20 : p.Length;
-        p = p.Substring(0, limit);
-        p = p + "...";
-        return p;
-    }
-}
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Events Site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script>
 
 
 </head>
