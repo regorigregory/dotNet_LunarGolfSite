@@ -404,3 +404,13 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Adm
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ApplicationRoles\Details.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ApplicationRoles\Edit.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ApplicationRoles\Index.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Addresses\Create.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Addresses\Delete.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Addresses\Details.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Addresses\Edit.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Addresses\Index.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Create.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Delete.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Details.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Edit.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Index.cshtml.g.cs
