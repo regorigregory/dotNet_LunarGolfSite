@@ -53,7 +53,7 @@ namespace LunarSports
                 connStr
                 ));
             // Built in role and user to be inherited, also, the database is specified.
-             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
+             services.AddIdentity<ApplicationUser, ApplicationRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
 
         }
 

@@ -36,6 +36,7 @@ using Microsoft.EntityFrameworkCore;
     public DbSet<EventScheduleEntry> EventScheduleEntries { get; set; }
     public DbSet<LaunchSite> LaunchSites { get; set; }
     public DbSet<EventLocationContactDetail> EventLocationContactDetails { get; set; }
+    public DbSet<LunarSports.Models.ApplicationRole> ApplicationRole { get; set; }
 
 
 
