@@ -12,8 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Views\Home\" />
-    <Folder Include="Areas\Public\Views\" />
     <Folder Include="Content\" />
   </ItemGroup>
 

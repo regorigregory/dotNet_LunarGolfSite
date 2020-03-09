@@ -40,7 +40,7 @@ namespace LunarSports
                   // options.Filters.Add(new AuthorizeFilter(policy));
 
                    options.MaxModelValidationErrors = 10;
-                   options.EnableEndpointRouting = false;
+                   //options.EnableEndpointRouting = false;
                    options.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(
                        _ => "The field is required.");
                });
@@ -53,7 +53,7 @@ namespace LunarSports
                 connStr
                 ));
             // Built in role and user to be inherited, also, the database is specified.
-             services.AddIdentity<ApplicationUser, ApplicationRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
+             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<LunarSportsDBContext>();
 
         }
 
@@ -69,16 +69,17 @@ namespace LunarSports
             //Initalize the user authentacion.
             app.UseAuthentication();
             app.UseStatusCodePages();
+            app.UseRouting();
+            app.UseAuthorization();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "Admin",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
-            app.UseMvc(routes => { 
-
-
-            routes.MapRoute("default", "{controller=Events}/{action=Index}/{id?}");
-                routes.MapRoute("AdminArea", "{area=Admin}/{controller=AdministrationController}/{action=Index}/{id?}");
-
-
-
-
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Default}/{action=Index}/{id?}");
             });
 
 

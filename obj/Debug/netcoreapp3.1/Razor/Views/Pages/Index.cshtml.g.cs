@@ -41,6 +41,7 @@ using System.Text.RegularExpressions;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8ce37dd2e2df993507ab728d1927e6e3ac628a5b", @"/Views/Pages/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9c11e871220730c15051a83fcf7c04d017db1389", @"/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9c11e871220730c15051a83fcf7c04d017db1389", @"/Views/_ViewImports.cshtml")]
     public class Views_Pages_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<LunarSports.Models.Page>>
     {
@@ -85,7 +86,7 @@ using System.Text.RegularExpressions;
 #nullable disable
             WriteLiteral("\r\n");
             WriteLiteral("\r\n<h1>Index</h1>\r\n\r\n<p>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce37dd2e2df993507ab728d1927e6e3ac628a5b5541", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce37dd2e2df993507ab728d1927e6e3ac628a5b5699", async() => {
                 WriteLiteral("Create New");
             }
             );
@@ -177,7 +178,7 @@ using System.Text.RegularExpressions;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce37dd2e2df993507ab728d1927e6e3ac628a5b9869", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce37dd2e2df993507ab728d1927e6e3ac628a5b10027", async() => {
                 WriteLiteral("Edit");
             }
             );
@@ -212,7 +213,7 @@ using System.Text.RegularExpressions;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce37dd2e2df993507ab728d1927e6e3ac628a5b12469", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce37dd2e2df993507ab728d1927e6e3ac628a5b12628", async() => {
                 WriteLiteral("Details");
             }
             );
@@ -247,7 +248,7 @@ using System.Text.RegularExpressions;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce37dd2e2df993507ab728d1927e6e3ac628a5b15076", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ce37dd2e2df993507ab728d1927e6e3ac628a5b15235", async() => {
                 WriteLiteral("Delete");
             }
             );
