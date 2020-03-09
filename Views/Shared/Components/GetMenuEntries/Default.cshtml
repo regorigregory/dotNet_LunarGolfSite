@@ -1,0 +1,58 @@
+﻿@model IEnumerable<LunarSports.Models.Page>
+@inject SignInManager<ApplicationUser> signInManager
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+        <a class="navbar-brand" asp-controller="Default" asp-action="Home">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ">
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Default" asp-action="Events">Events feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Default" asp-action="About">About</a>
+                </li>
+
+
+                @foreach (Page p in Model)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Pages" asp-action="Details" asp-route-id="@p.PageID">@p.Title</a>
+                    </li>
+                }
+
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+
+                @if (signInManager.IsSignedIn(User))
+                {
+                    <li class="nav-item">
+                        <form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
+                            <div class="form-group">
+
+                                <button class="nav-link text-dark">Logout @User.Identity.Name</button>
+                            </div>
+                        </form>
+                    </li>
+
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                    </li>
+
+                }
+            </ul>
+        </div>
+    </div>
+</nav>

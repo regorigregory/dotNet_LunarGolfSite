@@ -1,8 +1,21 @@
 ﻿@model IEnumerable<LunarSports.Models.Page>
-
+@using System.Text.RegularExpressions
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@functions {
+    Page  stripTagsAndShorten(Page p)
+    {
+            p.Description = Regex.Replace(p.Description, "<[^>]*(>|$)", String.Empty);
+                            var limit = (p.Description.Length > 20) ? 20 : p.Description.Length;
+                            p.Description = p.Description.Substring(0, limit);
+                            p.Description = p.Description + "...";
+        return p;
+    }
+
+
 }
 
 <h1>Index</h1>
@@ -29,26 +42,30 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DatePublished)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateModified)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PageID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PageID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PageID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (Page item in Model)
+        {
+          
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+
+                    @Html.Raw(stripTagsAndShorten(item).Description )
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DatePublished)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateModified)
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Pages" asp-action="Edit" asp-route-id="@item.PageID">Edit</a> |
+                    <a asp-area="" asp-controller="Pages" asp-action="Details" asp-route-id="@item.PageID">Details</a> |
+                    <a asp-area="" asp-controller="Pages" asp-action="Delete" asp-route-id="@item.PageID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

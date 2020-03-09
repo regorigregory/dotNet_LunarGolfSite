@@ -8,7 +8,7 @@ namespace LunarSports.Models
     public class NextOfKin
     {
 
-        public int NOKID { get; set; }
+        public int NextOfKinID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string RelationShip { get; set; }

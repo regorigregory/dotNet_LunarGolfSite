@@ -48,38 +48,6 @@ namespace LunarSports.Controllers
             //view gets rerendered with Validation error.
             return View(formInput);
         }
-        public IActionResult CreatePage()
-        {
-            throw new NotImplementedException();
-        }
-        public IActionResult EditPage()
-        {
-            throw new NotImplementedException();
-        }
-        public IActionResult DeletePage()
-        {
-            throw new NotImplementedException();
-        }
-        public IActionResult ListPages()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IActionResult CreateEvent()
-        {
-            throw new NotImplementedException();
-        }
-        public IActionResult EditEvent()
-        {
-            throw new NotImplementedException();
-        }
-        public IActionResult DeleteEvent()
-        {
-            throw new NotImplementedException();
-        }
-        public IActionResult ListEvents()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

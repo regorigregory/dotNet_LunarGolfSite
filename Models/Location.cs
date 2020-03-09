@@ -28,7 +28,7 @@ namespace LunarSports.Models
 
         public bool IsLunarLocation { get; set; }
 
-        public ContactDetail ContactDetail { get; set; }
+        public int ContactDetail { get; set; }
 
 
 

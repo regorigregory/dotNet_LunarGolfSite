@@ -10,7 +10,7 @@ namespace LunarSports.Models
         public int LaunchSiteID { get; set; }
         public int ContactDetailID { get; set; }
 
-        public Location Location { get; set; }
+        public int Location { get; set; }
 
 
         public string Name { get; set; }

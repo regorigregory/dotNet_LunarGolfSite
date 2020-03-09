@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LunarSports.Models;
 using LunarSports.ViewModels;
-
+using System.Web;
 namespace LunarSports.Controllers
 {
     public class PagesController : Controller
@@ -22,12 +22,14 @@ namespace LunarSports.Controllers
         // GET: Pages
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Pages.ToListAsync());
+            var loadedPages = await _context.Pages.ToListAsync();
+           
+            return View(loadedPages);
         }
-        public IActionResult Create()
-        {
-            return View();
-        }
+
+  
+
+
         // GET: Pages/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -47,7 +49,11 @@ namespace LunarSports.Controllers
         }
 
         // GET: Pages/Create
-    
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
 
         // POST: Pages/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
@@ -64,9 +70,9 @@ namespace LunarSports.Controllers
                 newPage.IsVisible = page.IsVisible;
                 newPage.DatePublished = DateTime.Now;
                 newPage.DateModified = DateTime.Now;
-                _context.Add(page);
+                _context.Add(newPage);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Pages");
             }
             return View(page);
         }
@@ -84,6 +90,7 @@ namespace LunarSports.Controllers
             {
                 return NotFound();
             }
+
             return View(page);
         }
 

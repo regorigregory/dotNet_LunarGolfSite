@@ -9,11 +9,11 @@ namespace LunarSports.Models
     {
 
         public int ContactDetailID { get; set; }
-        public ContactDetailType ContactDetailType { get; set; }
+        public int ContactDetailType { get; set; }
         public string Mobile { get; set; }
         public string Landline { get; set; }
         public string Email { get; set; }
-        public ApplicationUser User { get; set; }
+        public int User { get; set; }
 
 
 

@@ -42,12 +42,6 @@ namespace LunarSports.Controllers
         {
             Boolean isValid = ModelState.IsValid;
 
-             if (User == null)
-            {
-                string successURL = string.Format("/Default/Feedback?message={0}", "You have to log in in order to edit your user details.");
-
-                return Redirect(successURL);
-            }
   
 
 
@@ -123,6 +117,7 @@ namespace LunarSports.Controllers
                 EditUserModel em = new EditUserModel(ux);
                 return View(em);
             }
+
             string successURL = string.Format("/Default/Feedback?message={0}", "You have to log in in order to edit your user details.");
 
             return Redirect(successURL);
@@ -132,6 +127,14 @@ namespace LunarSports.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateUserDetails(EditUserModel formInput)
         {
+
+            if (User == null)
+            {
+                string successURL = string.Format("/Default/Feedback?message={0}", "You have to log in in order to edit your user details.");
+
+                return Redirect(successURL);
+            }
+
             if (ModelState.IsValid)
             {
 
