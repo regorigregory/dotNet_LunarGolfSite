@@ -1,0 +1,16 @@
+﻿<script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script>
+
+<script>
+    var editorInstance = ClassicEditor
+        .create(document.querySelector('#Description'))
+        .catch(error => {
+            console.error(error);
+        });
+    editorInstance.config.height = '75%';
+</script>
+
+<style>
+    .ck-editor__editable_inline {
+        min-height: 400px;
+    }
+</style>

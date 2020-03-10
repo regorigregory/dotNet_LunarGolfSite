@@ -1,0 +1,33 @@
+﻿@using System.Collections;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model LinkedList<LunarSports.Areas.Admin.Controllers.MenuEntry>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+
+<div class="container">
+    <a class="navbar-brand" asp-controller="Default" asp-action="Index">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="col-12">
+        <ul class="navbar-nav ">
+
+            @foreach (LunarSports.Areas.Admin.Controllers.MenuEntry me in Model)
+            {
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="@me.Controller" asp-action="@me.Action">@me.DisplayName</a>
+                </li>
+            }
+
+
+        </ul>
+
+    </div>
+</div>
