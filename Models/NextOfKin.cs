@@ -23,6 +23,7 @@ namespace LunarSports.Models
         [Display(Name = "Relationship with this person")]
 
         public string RelationShip { get; set; }
+        public int UserID { get; set; }
        
      
 

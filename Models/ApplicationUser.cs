@@ -24,7 +24,6 @@ namespace LunarSports.Models
        // public Rank UserRank { get; set; }
 
         public bool Active { get; set; }
-        public int NextOfKinID { get; set; }
 
 
 
