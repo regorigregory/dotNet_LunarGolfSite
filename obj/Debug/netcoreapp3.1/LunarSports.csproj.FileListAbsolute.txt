@@ -413,7 +413,6 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pag
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Index.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetMenuEntries\Default.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\WYSIWYG.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -429,3 +428,6 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Adm
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csprojAssemblyReference.cache
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\OLD_Layout.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetMenuEntries\OldDefault.cshtml.g.cs
