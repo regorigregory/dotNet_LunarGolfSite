@@ -1,0 +1,201 @@
+ID,LocationName,BuildingNumber,StreetAddress,Locality,Region,Postcode,CountryCode,Lat,Long,IsLunarLocation,ContactDetailID
+1,Job,78250,69114 Kenwood Road,Colorado Springs,Colorado,WL12W,US,38.9497,-104.767,0,1
+2,Y-Solowarm,377,98053 Summerview Road,Denver,Colorado,NS64H,US,39.7388,-104.4083,1,1
+3,Solarbreeze,49,20 Jay Alley,Daytona Beach,Florida,WC61C,US,29.0838,-81.0336,0,1
+4,Wrapsafe,4,5781 Bartillon Junction,Newport Beach,California,LK39U,US,33.6062,-117.8931,1,1
+5,Konklux,3,027 Algoma Parkway,Worcester,Massachusetts,FQ16N,US,42.2894,-71.7888,0,1
+6,Holdlamis,40303,98447 Donald Plaza,Duluth,Minnesota,NP22X,US,46.8147,-92.1998,1,2
+7,Duobam,583,706 Golf Course Avenue,Maple Plain,Minnesota,BY63Y,US,45.0159,-93.4719,0,2
+8,Home Ing,678,75885 4th Drive,Little Rock,Arkansas,IJ65G,US,34.6725,-92.3529,1,2
+9,Konklux,1,120 Derek Drive,Lakewood,Washington,EC06B,US,47.1591,-122.5485,0,2
+10,Fix San,5263,955 Ridgeway Road,Hartford,Connecticut,OZ86Z,US,41.7918,-72.7188,1,2
+11,Zathin,4607,9791 Northport Park,Austin,Texas,AW83X,US,30.3264,-97.7713,0,3
+12,Namfix,754,90 Loftsgordon Drive,Glendale,California,HE40S,US,33.7866,-118.2987,1,3
+13,Y-find,53650,59784 Meadow Vale Parkway,Newton,Massachusetts,PK49T,US,42.3528,-71.1875,0,3
+14,Otcom,7,871 Northport Park,Philadelphia,Pennsylvania,OI92G,US,39.9772,-75.2545,1,3
+15,Bitchip,88503,8942 American Place,Corpus Christi,Texas,KS79U,US,27.777,-97.4632,0,3
+16,Transcof,56409,0341 Dakota Circle,Duluth,Georgia,AZ33A,US,33.9845,-84.1529,1,4
+17,Alpha,118,02756 Merchant Hill,New York City,New York,FA60V,US,40.6964,-74.0253,0,4
+18,Holdlamis,6,8 Bunting Circle,Boca Raton,Florida,BZ33P,US,26.6459,-80.4303,1,4
+19,Alphazap,35,4008 Moose Street,Little Rock,Arkansas,VW30W,US,34.7269,-92.344,0,4
+20,Fix San,46,09236 Lukken Pass,Tuscaloosa,Alabama,WF71X,US,33.1617,-87.5144,1,4
+21,Konklux,898,343 Farmco Court,Bloomington,Indiana,YF21A,US,39.1682,-86.5186,0,5
+22,Daltfresh,4,22714 Vahlen Street,Norfolk,Virginia,UI17A,US,36.9312,-76.2397,1,5
+23,Fintone,58172,2 Melvin Crossing,Madison,Wisconsin,HF02Y,US,43.0696,-89.4239,0,5
+24,Fixflex,0333,766 Mallard Lane,Norfolk,Virginia,DM23F,US,36.9312,-76.2397,1,5
+25,Konklux,1797,55 Crownhardt Street,Tulsa,Oklahoma,AS38A,US,36.1499,-95.7923,0,5
+26,Voyatouch,77,6 Killdeer Crossing,Oakland,California,QD51O,US,37.6802,-121.9215,1,6
+27,Bitwolf,9,56469 Stoughton Street,Johnstown,Pennsylvania,EY23W,US,40.3522,-78.9383,0,6
+28,Opela,63579,804 Fair Oaks Street,Las Vegas,Nevada,BX20K,US,36.3265,-115.3398,1,6
+29,Konklux,882,89687 4th Avenue,Oklahoma City,Oklahoma,HY73C,US,35.5514,-97.4075,0,6
+30,Latlux,683,3759 Thierer Street,Arlington,Texas,EQ08R,US,32.7714,-97.2915,1,6
+31,Zaam-Dox,2,700 Dovetail Point,Miami,Florida,SB21V,US,25.5584,-80.4582,0,7
+32,Regrant,46,2797 Carberry Avenue,Irvine,California,PA94A,US,33.6607,-117.8264,1,7
+33,Namfix,9,785 Fairview Alley,Sacramento,California,FB35R,US,38.3774,-121.4444,0,7
+34,Y-Solowarm,408,396 Mayfield Alley,Boulder,Colorado,FM42W,US,39.9807,-105.2531,1,7
+35,Job,43922,78744 Schiller Plaza,Kissimmee,Florida,DI27O,US,27.9953,-81.2593,0,7
+36,Zaam-Dox,8,433 Lakeland Pass,Lancaster,Pennsylvania,UG25C,US,40.0418,-76.3012,1,8
+37,Aerified,698,7420 Sundown Avenue,Stamford,Connecticut,RG93O,US,41.0888,-73.5435,0,8
+38,Zontrax,7343,1 Bonner Trail,Miami,Florida,MG56P,US,25.813,-80.232,1,8
+39,Ronstring,5,367 Grim Point,Scottsdale,Arizona,VY30U,US,33.2765,-112.1872,0,8
+40,Otcom,76120,5 Manufacturers Point,Washington,District of Columbia,SR57G,US,38.896,-77.0177,1,8
+41,It,9,73 East Lane,Bakersfield,California,GF03S,US,35.3855,-118.986,0,9
+42,Bigtax,9266,41052 Sullivan Circle,Detroit,Michigan,ZL12G,US,42.2719,-83.1545,1,9
+43,Bitwolf,19844,71680 Stang Plaza,Boise,Idaho,AH57X,US,43.4599,-116.244,0,9
+44,Ventosanzap,070,14 Trailsway Plaza,Baton Rouge,Louisiana,WO80D,US,30.4558,-91.0596,1,9
+45,Trippledex,124,7089 Ryan Lane,Santa Barbara,California,QU84Z,US,34.2628,-119.8486,0,9
+46,Job,0,557 6th Plaza,Dayton,Ohio,TF82L,US,39.7617,-84.1498,1,10
+47,Cookley,65,3074 Colorado Avenue,Las Vegas,Nevada,NV71I,US,36.086,-115.1471,0,10
+48,Span,92,2005 Forest Dale Street,Brooklyn,New York,AO82U,US,40.6794,-74.0014,1,10
+49,Tempsoft,5646,48 Loomis Avenue,Houston,Texas,OI75B,US,29.7758,-95.3121,0,10
+50,Stronghold,7,72314 Oak Alley,Chicago,Illinois,JG53F,US,41.8119,-87.6873,1,10
+51,Zontrax,30729,30 Michigan Junction,Philadelphia,Pennsylvania,EY84M,US,39.9496,-75.1637,0,11
+52,Sonair,581,7516 Gale Road,Decatur,Georgia,TP12Y,US,33.7749,-84.3046,1,11
+53,Tampflex,91154,4 Sullivan Terrace,Pensacola,Florida,JK09O,US,30.4124,-87.2035,0,11
+54,Latlux,57,52 Rigney Road,Salem,Oregon,EY28N,US,44.9364,-123.0381,1,11
+55,Overhold,90,855 Debs Trail,Des Moines,Iowa,FU21B,US,41.6727,-93.5722,0,11
+56,Tresom,32630,82003 Stoughton Plaza,Fort Worth,Texas,VA23M,US,32.6469,-97.3325,1,12
+57,Stronghold,06549,4954 Transport Point,Virginia Beach,Virginia,HL53T,US,36.7957,-76.0126,0,12
+58,Zamit,1287,359 Lotheville Junction,Bridgeport,Connecticut,MX41T,US,41.3089,-73.3637,1,12
+59,Veribet,26,2913 Dottie Hill,Saint Paul,Minnesota,HS35B,US,45.0059,-93.1059,0,12
+60,Rank,293,3 Fair Oaks Place,Minneapolis,Minnesota,GZ24T,US,44.9054,-93.2361,1,12
+61,Lotstring,371,7246 Cherokee Avenue,Bakersfield,California,XD50M,US,35.3855,-118.986,0,13
+62,Treeflex,54384,246 American Street,Washington,District of Columbia,SD17L,US,38.8933,-77.0146,1,13
+63,Otcom,528,3 Butternut Hill,College Station,Texas,DI56B,US,30.6521,-96.341,0,13
+64,Zontrax,4216,20 Farragut Circle,Charlottesville,Virginia,KZ47A,US,38.0339,-78.4924,1,13
+65,Bigtax,98,723 Dorton Lane,Port Saint Lucie,Florida,NA98W,US,27.3822,-80.409,0,13
+66,Tresom,1,7729 Tennessee Pass,West Palm Beach,Florida,ZU94Y,US,26.6459,-80.4303,1,14
+67,Temp,0,5944 Lindbergh Street,Columbia,South Carolina,DM44W,US,34.006,-80.9708,0,14
+68,Tresom,97,96663 Schmedeman Avenue,San Jose,California,ZH03G,US,37.31,-121.9011,1,14
+69,Tempsoft,7,3 Milwaukee Parkway,Savannah,Georgia,WZ66J,US,31.9714,-81.0716,0,14
+70,Voyatouch,271,4 Florence Lane,Brooklyn,New York,PU22P,US,40.6412,-74.0133,1,14
+71,Otcom,729,3001 4th Center,Spring,Texas,RM79H,US,30.0505,-95.4695,0,15
+72,Bitchip,751,79319 Dexter Center,Sacramento,California,WK95N,US,38.3774,-121.4444,1,15
+73,Andalax,4590,9912 Kipling Hill,Spokane,Washington,AG66H,US,47.6536,-117.4317,0,15
+74,Bamity,076,6 Veith Drive,Baltimore,Maryland,ER34W,US,39.2847,-76.6205,1,15
+75,Bitchip,07007,6259 Pawling Road,Houston,Texas,NL80W,US,29.834,-95.4342,0,15
+76,Fix San,28494,66 Maryland Pass,Simi Valley,California,GC17N,US,34.0324,-119.1343,1,16
+77,Y-Solowarm,57568,643 Homewood Street,Boston,Massachusetts,PI71H,US,42.3389,-70.9196,0,16
+78,Lotstring,9,1226 6th Center,Panama City,Florida,DH77C,US,30.2345,-85.692,1,16
+79,Trippledex,079,1 Lunder Terrace,San Bernardino,California,DT95P,US,34.84,-115.9671,0,16
+80,Fix San,0092,053 Alpine Crossing,Reading,Pennsylvania,VO63H,US,40.338,-75.978,1,16
+81,Treeflex,371,60776 Fulton Hill,Dallas,Texas,ZN77I,US,32.8756,-96.7495,0,17
+82,Konklab,90,5688 Truax Plaza,Midland,Michigan,AS50Y,US,43.6375,-84.2568,1,17
+83,Ronstring,3,9 Lighthouse Bay Alley,Orlando,Florida,UJ09I,US,28.5559,-81.3535,0,17
+84,Stim,77,2913 Di Loreto Plaza,Honolulu,Hawaii,NE65J,US,21.3278,-157.8294,1,17
+85,Ventosanzap,5,1 Meadow Ridge Trail,Spring Hill,Florida,LJ50D,US,28.5642,-82.4165,0,17
+86,Hatity,413,88 Debra Trail,Washington,District of Columbia,VY99J,US,38.8933,-77.0146,1,18
+87,Vagram,7555,598 Manley Street,Carol Stream,Illinois,YP52L,US,41.9166,-88.1208,0,18
+88,Voyatouch,8671,436 School Street,Columbia,South Carolina,FW55P,US,34.006,-80.9708,1,18
+89,Home Ing,2611,2252 Walton Drive,Trenton,New Jersey,JS79J,US,40.2805,-74.712,0,18
+90,Lotstring,691,39642 Messerschmidt Road,Jackson,Mississippi,GA66F,US,32.3386,-90.1708,1,18
+91,Tres-Zap,4110,5045 Mcbride Terrace,Irvine,California,KI20X,US,33.6462,-117.8398,0,19
+92,Tin,32,57409 Mosinee Parkway,Des Moines,Iowa,JW73B,US,41.6727,-93.5722,1,19
+93,Ventosanzap,64,67 Huxley Place,Mesquite,Texas,WL32B,US,32.7403,-96.5618,0,19
+94,Job,508,32 Sloan Drive,Fort Worth,Texas,JO53K,US,32.7714,-97.2915,1,19
+95,Temp,3,7 Dovetail Crossing,New York City,New York,DH46P,US,40.7506,-73.9894,0,19
+96,Bigtax,745,4801 Northwestern Park,Worcester,Massachusetts,KU60Y,US,42.3648,-71.8969,1,20
+97,Bamity,79949,8 Hoepker Center,Chicago,Illinois,KG83Q,US,41.8119,-87.6873,0,20
+98,Bamity,362,69 Dapin Drive,Ridgely,Maryland,UW11B,US,38.8893,-75.8612,1,20
+99,Holdlamis,22,83752 Arapahoe Terrace,Birmingham,Alabama,DW68C,US,33.5446,-86.9292,0,20
+100,Namfix,23621,3 Petterle Hill,Honolulu,Hawaii,KF38E,US,21.2811,-157.8266,1,20
+101,Stringtough,4590,02 Mayer Hill,Washington,District of Columbia,DZ69N,US,38.8933,-77.0146,0,21
+102,Tin,8,7653 Waywood Road,Stamford,Connecticut,KO28X,US,41.0516,-73.5143,1,21
+103,Fintone,34351,643 Lakeland Hill,Washington,District of Columbia,SM93Q,US,38.8932,-77.049,0,21
+104,Flowdesk,84,44244 Fallview Center,Lakeland,Florida,IW33N,US,27.9865,-82.0139,1,21
+105,Matsoft,8,67636 Schiller Crossing,Norfolk,Virginia,DT17U,US,36.8586,-76.2686,0,21
+106,Regrant,5509,904 Hauk Circle,Huntington,West Virginia,RO63T,US,38.4134,-82.2774,1,22
+107,Home Ing,3,83058 Onsgard Crossing,Atlanta,Georgia,JT31R,US,33.8444,-84.474,0,22
+108,Quo Lux,34265,7766 Melby Pass,South Bend,Indiana,KW15Y,US,41.5968,-86.293,1,22
+109,Treeflex,0468,8 Green Park,Buffalo,New York,IW21V,US,42.8614,-78.8206,0,22
+110,Treeflex,227,07794 Banding Court,Austin,Texas,JN20C,US,30.3423,-97.6673,1,22
+111,Wrapsafe,647,4229 Packers Road,Louisville,Kentucky,BI97Q,US,38.189,-85.6768,0,23
+112,Redhold,18,013 Graedel Lane,Littleton,Colorado,IF20P,US,39.7388,-104.4083,1,23
+113,Alphazap,7155,5 Merchant Crossing,Fresno,California,XH95E,US,36.7464,-119.6397,0,23
+114,Hatity,779,8 Cherokee Trail,Amarillo,Texas,PY43B,US,35.0763,-101.8349,1,23
+115,Home Ing,2385,87 Maywood Lane,Alexandria,Virginia,JT94I,US,38.8158,-77.09,0,23
+116,Aerified,92629,5294 Roth Center,Tuscaloosa,Alabama,CA12C,US,33.3072,-87.5859,1,24
+117,Sub-Ex,0260,078 Cottonwood Road,Austin,Texas,OT38C,US,30.43,-97.8326,0,24
+118,Bamity,9,29 Northwestern Park,Corpus Christi,Texas,DR18L,US,27.7762,-97.4271,1,24
+119,Toughjoyfax,011,7 Nobel Center,Las Vegas,Nevada,ZK45Z,US,36.2235,-115.2655,0,24
+120,Zoolab,6628,1568 Sundown Pass,Columbus,Ohio,RZ71W,US,40.1454,-82.9817,1,24
+121,Hatity,6,43215 Division Place,Katy,Texas,MF32Q,US,29.8678,-95.8298,0,25
+122,It,8674,005 Forest Dale Crossing,Elizabeth,New Jersey,BJ35K,US,40.6747,-74.2239,1,25
+123,Zamit,896,867 Cordelia Street,Los Angeles,California,ZG29E,US,33.7866,-118.2987,0,25
+124,Kanlam,0,73 Hauk Point,Durham,North Carolina,NO80Q,US,36.0512,-78.8577,1,25
+125,Wrapsafe,7,47912 Forest Run Crossing,Richmond,Virginia,KB27Y,US,37.4011,-77.4615,0,25
+126,Zamit,07049,1828 Oak Valley Court,Kansas City,Kansas,HO82X,US,39.116,-94.764,1,26
+127,Flowdesk,288,64782 Melvin Circle,Springfield,Illinois,SV50L,US,39.7495,-89.606,0,26
+128,Span,2116,2513 Sommers Avenue,New York City,New York,FQ98K,US,40.7808,-73.9772,1,26
+129,Zoolab,0,0590 Sherman Crossing,Newton,Massachusetts,PX82B,US,42.3319,-71.254,0,26
+130,Bamity,2320,03093 Hallows Avenue,Ogden,Utah,TE88B,US,41.2553,-111.9567,1,26
+131,Voyatouch,61456,4 Scott Circle,Tulsa,Oklahoma,JQ07B,US,36.0467,-95.8841,0,27
+132,Tres-Zap,7,18 Center Place,Charlotte,North Carolina,UW49B,US,35.26,-80.8042,1,27
+133,Hatity,100,3496 Waxwing Junction,Vancouver,Washington,TG00Q,US,45.8016,-122.5203,0,27
+134,Sub-Ex,54216,7 Toban Point,Charlotte,North Carolina,VP65P,US,35.26,-80.8042,1,27
+135,Stringtough,97,9510 Texas Way,Evansville,Indiana,HV76O,US,37.9971,-87.575,0,27
+136,Sonsing,28993,96908 4th Plaza,Pittsburgh,Pennsylvania,PL25V,US,40.4344,-80.0248,1,28
+137,Keylex,8591,0 Transport Court,New Haven,Connecticut,JQ72N,US,41.3657,-72.9275,0,28
+138,Duobam,7,42973 Morningstar Lane,Louisville,Kentucky,HG58F,US,38.189,-85.6768,1,28
+139,Viva,8831,7429 Roxbury Pass,Trenton,New Jersey,PR88R,US,40.2805,-74.712,0,28
+140,Kanlam,929,8900 Eastwood Lane,Fort Worth,Texas,PQ58B,US,32.7714,-97.2915,1,28
+141,Bitwolf,4,31907 Lakeland Pass,Rochester,New York,NJ75D,US,43.286,-77.6843,0,29
+142,Bamity,62112,8011 Hallows Way,Peoria,Illinois,JL53U,US,40.7681,-89.6026,1,29
+143,Lotstring,613,57866 Helena Street,Sacramento,California,XI38G,US,38.3774,-121.4444,0,29
+144,Gembucket,81,812 Schurz Hill,Nashville,Tennessee,MX83P,US,36.1866,-86.7852,1,29
+145,Quo Lux,42,25208 Sugar Way,Shawnee Mission,Kansas,JC92P,US,38.8999,-94.832,0,29
+146,Matsoft,57022,991 Bellgrove Street,Saint Petersburg,Florida,CG20V,US,27.8918,-82.7248,1,30
+147,Biodex,76,354 Drewry Alley,Fort Lauderdale,Florida,KS96R,US,26.0663,-80.3339,0,30
+148,Lotstring,11,62439 Dixon Crossing,Naples,Florida,NF33N,US,26.2416,-81.8071,1,30
+149,Span,5,72220 Waxwing Hill,Saint Louis,Missouri,IP76S,US,38.6531,-90.2435,0,30
+150,Konklab,4573,6 Ridgeway Pass,Tacoma,Washington,WT45G,US,47.2484,-122.4644,1,30
+151,Gembucket,7748,0 Sloan Crossing,Mobile,Alabama,UO69Z,US,30.6589,-88.178,0,31
+152,Zamit,2,918 Sutherland Circle,Orlando,Florida,DM78V,US,28.5663,-81.2608,1,31
+153,Asoka,0732,6400 Elka Point,Orlando,Florida,OI69T,US,28.5803,-81.4396,0,31
+154,Temp,78573,2 Del Mar Lane,Seattle,Washington,CH70R,US,47.6063,-122.3308,1,31
+155,Wrapsafe,59290,53 Burning Wood Drive,Evansville,Indiana,TL25C,US,37.9971,-87.575,0,31
+156,Trippledex,02,88 Lotheville Trail,Pasadena,Texas,OX12Y,US,29.6518,-95.1464,1,32
+157,Bitchip,69,1730 East Park,Los Angeles,California,SN70S,US,34.0665,-118.3022,0,32
+158,Zathin,86276,7 Sutherland Road,Wilmington,North Carolina,UY20J,US,34.0881,-77.8526,1,32
+159,Gembucket,65,65 Marquette Trail,Newton,Massachusetts,MW84Q,US,42.3319,-71.254,0,32
+160,Latlux,93,94 Everett Place,Brooklyn,New York,YU89G,US,40.6407,-73.9028,1,32
+161,Latlux,39,56 Village Park,Johnstown,Pennsylvania,MH99F,US,40.3522,-78.9383,0,33
+162,Otcom,2,23206 Drewry Point,Spring,Texas,DU70X,US,30.1288,-95.4239,1,33
+163,Cardify,359,6 Buhler Terrace,Portland,Oregon,PL73S,US,45.5806,-122.3748,0,33
+164,Regrant,21,4388 Dryden Street,Washington,District of Columbia,UH04Y,US,38.8976,-77.027,1,33
+165,Gembucket,0,097 Beilfuss Circle,Alhambra,California,TF91V,US,33.7866,-118.2987,0,33
+166,Greenlam,3,0 Sutteridge Way,Lincoln,Nebraska,XM22J,US,40.9008,-96.7201,1,34
+167,Bytecard,39469,92567 Dahle Parkway,Arlington,Virginia,BE49N,US,38.8808,-77.113,0,34
+168,Job,44,6453 Darwin Crossing,Sparks,Nevada,FM63L,US,39.6269,-119.7081,1,34
+169,Namfix,0,54456 Forest Dale Alley,Tucson,Arizona,TL28K,US,31.9701,-111.8907,0,34
+170,Zoolab,7145,8060 Nevada Terrace,Charleston,South Carolina,KN52I,US,32.7831,-79.937,1,34
+171,Andalax,6344,3 Crescent Oaks Avenue,Boynton Beach,Florida,PN91E,US,26.5354,-80.1124,0,35
+172,Alpha,4,445 Rockefeller Plaza,Miami,Florida,GP87T,US,25.5584,-80.4582,1,35
+173,Cookley,3,32 Oak Crossing,San Diego,California,AT42E,US,32.8891,-117.1005,0,35
+174,Gembucket,577,1861 Mifflin Drive,Young America,Minnesota,AK75M,US,44.8055,-93.7665,1,35
+175,Asoka,859,461 Kinsman Plaza,Phoenix,Arizona,ZL59I,US,33.3022,-112.1226,0,35
+176,Rank,24,89 Artisan Alley,Indianapolis,Indiana,WQ71O,US,39.7851,-86.1595,1,36
+177,Latlux,6,113 Buell Pass,Washington,District of Columbia,KQ82O,US,38.8933,-77.0146,0,36
+178,Zamit,3,779 Hoffman Parkway,Long Beach,California,VT46Z,US,33.7866,-118.2987,1,36
+179,Sonsing,05,735 Rieder Avenue,Long Beach,California,AL88E,US,33.7678,-118.1994,0,36
+180,Zamit,6671,45 Grim Alley,Mobile,Alabama,IR33K,US,30.6589,-88.178,1,36
+181,Prodder,1,101 Columbus Street,Evansville,Indiana,XN69K,US,37.9971,-87.575,0,37
+182,Viva,25800,60566 Del Sol Terrace,Lake Charles,Louisiana,JD71S,US,30.2642,-93.3265,1,37
+183,Overhold,6,994 Banding Trail,Houston,Texas,YK43N,US,29.834,-95.4342,0,37
+184,Biodex,58756,6 Debs Place,Albuquerque,New Mexico,RH39K,US,35.0443,-106.6729,1,37
+185,Job,095,328 Westerfield Hill,Charleston,West Virginia,SM75F,US,38.354,-81.6394,0,37
+186,Asoka,21638,426 Trailsway Place,Washington,District of Columbia,MI00M,US,38.8933,-77.0146,1,38
+187,Overhold,80995,88 Towne Parkway,Tuscaloosa,Alabama,KB22H,US,33.3072,-87.5859,0,38
+188,Stronghold,5,23066 Stephen Trail,Knoxville,Tennessee,WR00L,US,36.032,-83.8021,1,38
+189,Asoka,1,33 Miller Terrace,Saint Louis,Missouri,IU67F,US,38.6128,-90.2185,0,38
+190,Ventosanzap,66,99726 Thackeray Park,Salt Lake City,Utah,RI95Z,US,40.7259,-111.9394,1,38
+191,Tres-Zap,9364,13045 4th Junction,Los Angeles,California,GP45I,US,33.7866,-118.2987,0,39
+192,Keylex,3,82 Oriole Park,New Haven,Connecticut,SR80W,US,41.3657,-72.9275,1,39
+193,Lotstring,56368,6 Jana Street,Wichita,Kansas,FK97Q,US,37.7194,-97.2936,0,39
+194,Asoka,1,2 Monterey Trail,Odessa,Texas,RA56N,US,31.7466,-102.567,1,39
+195,Zathin,8,6 Bobwhite Junction,Tucson,Arizona,KN04K,US,32.3366,-111.1771,0,39
+196,Y-find,82258,80 Walton Point,Phoenix,Arizona,NQ28O,US,33.4061,-112.0265,1,40
+197,Subin,03,24108 Hovde Street,Wichita,Kansas,PG08C,US,37.5422,-97.2871,0,40
+198,Regrant,84145,34 Summerview Plaza,Tucson,Arizona,EN26Y,US,32.2519,-110.82,1,40
+199,Overhold,8414,94674 Erie Avenue,Wichita Falls,Texas,NU38S,US,33.9995,-98.3938,0,40
+200,Sonsing,20227,762 Northridge Parkway,Wichita,Kansas,KG86Q,US,37.7639,-97.4269,1,40

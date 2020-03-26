@@ -1,501 +1,501 @@
-LocationName,BuildingNumber,StreetAddress,Locality,Region,Postcode,CountryCode,UserID,IsNextOfKin,IsPrimary
-Qingdao University,1,5 Almo Parkway,Jiulong,,YX03F,CN,1,True,True
-Yelets State University,86,0402 Magdeline Center,Kharabali,,TS11A,RU,2,True,True
-Lorestan University of Medical Sciences,5999,5 Glacier Hill Avenue,Sepīdān,,RQ63Z,IR,3,True,True
-Chongqing University of Technology,3002,4904 Hanson Hill,Luoping,,BI76Z,CN,4,True,True
-Emeishan Buddhist College,72,6418 Dennis Street,Xinhe,,DR24Q,CN,5,True,True
-Universidad Fidélitas,407,36 Ramsey Lane,West Island,,HJ24D,CC,6,True,True
-Ningxia Medical College,58000,0 Esker Road,Jiufeng,,AL58D,CN,7,True,True
-Al al-Bayt University,10,4593 Dawn Plaza,Safi,,TS51K,JO,8,True,True
-"American University of the Caribbean, School of Medicine",469,90 Alpine Street,San Pedro,,EL35K,BZ,9,True,True
-Göteborg University,7,52 Pepper Wood Avenue,Kungälv,Västra Götaland,HG07X,SE,10,True,True
-Belgorod State Agricultural Academy,66,9035 Vidon Way,Ilovlya,,WX72Q,RU,11,True,True
-Tbilisi State University,40891,14243 Kinsman Court,Gudauta,,VW10L,GE,12,True,True
-Saratov State Academy of Law,61811,968 Kennedy Trail,Tyret’ Pervaya,,CS71G,RU,13,True,True
-"St. Petersburg State University of Information Technologies, Mechanics and Optics",390,11296 Sage Way,Proletarskiy,,KV51W,RU,14,True,True
-Polytechnic Institute of Turin,23226,2 Ryan Drive,Padova,Veneto,JL01O,IT,15,True,True
-University of Technology,0045,1 Maryland Avenue,Chamouny,,LH83G,MU,16,True,True
-Universidade Estadual de Montes Claros,99,41793 Ridge Oak Center,Barreiras,,SK53Z,BR,17,True,True
-Moscow State University of Forestry Engineering,71,12163 Monica Lane,Uchkeken,,NQ58K,RU,18,True,True
-Tuva State University,86645,3 Kedzie Lane,Novogurovskiy,,PL06H,RU,19,True,True
-Herat University,32,47 Tennessee Park,Khōst,,MU40H,AF,20,True,True
-Universidad Los Angeles de Chimbote,76,3 Marcy Hill,Sinchao,,MZ99J,PE,21,True,True
-Université d'Auvergne (Clermont-Ferrand I),99060,35484 Caliangt Trail,Cergy-Pontoise,Île-de-France,GL96F,FR,22,True,True
-Université Libre de Tunis,50817,08143 Washington Hill,Banī Khallād,,OJ63Y,TN,23,True,True
-"Deutsch-Ordens Fachhochschule Riedlingen, Hochschule für Wirtschaft",5,68 Kingsford Circle,Berlin,Berlin,JE70L,DE,24,True,True
-Carlow Institute of Technology,060,24 Nancy Drive,Valleymount,,NV84B,IE,25,True,True
-National University of Ireland,644,0 Fieldstone Crossing,Cobh,,MD71B,IE,26,True,True
-Binus University,3214,3572 Fallview Pass,Langsa,,IF15Y,ID,27,True,True
-Instituto Politécnico de Setúbal,6422,47773 Daystar Park,Paços,Aveiro,ZK13Q,PT,28,True,True
-Institut Teknologi Bandung,2131,6833 Dryden Drive,Nangabere,,WF90W,ID,29,True,True
-Institute of Accountancy Arusha,2652,8 Mallory Point,Nkove,,TJ95N,TZ,30,True,True
-Shanghai University of Finance and Economics,8,017 Arapahoe Plaza,Wuyanquan,,ZO89Z,CN,31,True,True
-Universidad Dr. Rafael Belloso Chacín,25,30 Rockefeller Avenue,Las Vegas,,OC60Q,VE,32,True,True
-Universitas Jayabaya,00,66644 Barby Point,Sinjai,,ZH36L,ID,33,True,True
-Hellenic Open University,59,82844 Di Loreto Terrace,Pentaplátano,,YO15I,GR,34,True,True
-Brno University of Technology,766,483 Namekagon Alley,Svatava,,VS75S,CZ,35,True,True
-Södertörn University College,308,8621 East Road,Linköping,Östergötland,UF75D,SE,36,True,True
-Universitat Rámon Llull,37,534 Linden Way,Sevilla,Andalucia,RV16W,ES,37,True,True
-Vongchavalitkul University,202,46 Marcy Pass,Nong Ruea,,MU66Y,TH,38,True,True
-Hehai University,897,5 Green Plaza,Yushu,,MH22W,CN,39,True,True
-Kursk State Technical University,19,7 Bluejay Junction,Borzoy,,BA07V,RU,40,True,True
-Universidad Tecnológica del Peru,530,301 Farwell Drive,El Tambo,,KI04A,PE,41,True,True
-Nizhny Novgorod State Academy of Medicine,7,06272 Buell Alley,Krasnoyarka,,WI48P,RU,42,True,True
-Hallym University,66832,54 Hagan Road,Incheon,,NL07S,KR,43,True,True
-Tomas Bata University in Zlin,77,299 Russell Road,Slavkov u Brna,,MI12T,CZ,44,True,True
-Universitas Bengkulu,7800,091 Moland Point,Bunder,,QP14O,ID,45,True,True
-Xi'an Jiaotong University,5,6479 Clove Pass,Benniu,,NL95T,CN,46,True,True
-Latvian Academy of Music,426,5447 Division Plaza,Rēzekne,,DR05I,LV,47,True,True
-Tafila Technical University ,6,768 Tennyson Drive,Amman,,NF75O,JO,48,True,True
-Tibet University,2527,15 Oak Valley Street,Jiashan,,TQ30A,CN,49,True,True
-Syrian International Private University for Science & Technology,57,97 Logan Road,Qadsīyā,,CX87F,SY,50,True,True
-Central University for Nationalities,2733,2861 Dryden Plaza,Kunyang,,NJ63Z,CN,51,True,True
-Neijiang Teacher University,665,764 Monument Lane,Fengli,,PG56Z,CN,52,True,True
-University of Pangasinan,55,4737 Shelley Hill,Sinisian,,OY39U,PH,53,True,True
-Keiwa College,2441,49 Meadow Valley Drive,Nishishinminato,,GN02U,JP,54,True,True
-Epoka University,8989,475 Basil Way,Kryevidh,,AJ82F,AL,55,True,True
-Universidade Federal do Maranhão,75183,611 Reinke Circle,Leme,,XW39I,BR,56,True,True
-Kharkiv National University,24,9 Butterfield Drive,Mizoch,,KI70S,UA,57,True,True
-Xiangtan Normal University,73625,9 Portage Hill,Chadian,,DO39S,CN,58,True,True
-Universidade do Porto,61,64 Acker Drive,Zambujal,Lisboa,ED07T,PT,59,True,True
-Port Said University,90,4 Forest Run Court,Madīnat Sittah Uktūbar,,OS36P,EG,60,True,True
-Universidad de la Fraternidad de Agrupaciones Santo Tomas de Aquino (FASTA),0848,8716 Rigney Point,Cerro Corá,,LE13J,AR,61,True,True
-Arellano University,34,03185 Village Court,Mabilang,,GK06J,PH,62,True,True
-Xinjiang Normal University,961,74 Darwin Terrace,Supu,,FS21E,CN,63,True,True
-Institute of Information Technology,67844,0 Everett Terrace,Omuthiya,,ZB85A,NA,64,True,True
-"Universidad de Bogotá ""Jorge Tadeo Lozano""",033,68 Kropf Alley,Cañasgordas,,TL81Z,CO,65,True,True
-Nordic School of Public Health,73,2 Bellgrove Circle,Värmdö,Stockholm,PN37B,SE,66,True,True
-Wenzhou Medical College,9598,1400 Loeprich Circle,Huayan,,SV36F,CN,67,True,True
-Petro Mohyla Black Sea State University,1,49 Fairfield Point,Khorol,,WO79K,UA,68,True,True
-Swedish University of Agricultural Sciences,81,6 Old Gate Parkway,Solna,Stockholm,AS23Y,SE,69,True,True
-University of Fine Arts Belgrade,3,5 Cottonwood Way,Putinci,,AL12B,RS,70,True,True
-Yantai Education Institute & Yantai Television University,7,5197 Reindahl Court,Jiekou,,BP59J,CN,71,True,True
-Shenyang Polytechnic University,2,78 Graceland Park,Bei’an,,LY01Y,CN,72,True,True
-Ecole Nationale Supérieure des Industries Textiles de Mulhouse,9,564 Barby Point,Lille,Nord-Pas-de-Calais,ME43Y,FR,73,True,True
-Universitas Nasional Pasim,454,36 Arkansas Way,Sulo,,ZN64C,ID,74,True,True
-Universidade Salvador,98364,7123 Redwing Drive,Birigui,,TS94F,BR,75,True,True
-"Federal University of Technology, Minna",9,14 Fuller Park,Tambawel,,IF49G,NG,76,True,True
-Tama Art University,4,37 Karstens Point,Tsukumiura,,ZN37I,JP,77,True,True
-Charles University Prague,567,55 Fisk Circle,Žďár nad Sázavou Druhy,,GP10Q,CZ,78,True,True
-Universitas Trilogi,14,1505 Lighthouse Bay Place,Montor Timur,,CL89H,ID,79,True,True
-Universitas Wijaya Kusuma Surabaya,46,88 Manley Avenue,Rahayu,,RF22I,ID,80,True,True
-Abfi Institute Perbanas Jakarta,156,60547 Roth Park,Padangtiji,,FB81N,ID,81,True,True
-University of Wroclaw,8,92680 Merrick Junction,Gizałki,,MP55S,PL,82,True,True
-Université Abdou Moumouni de Niamey,6487,2 Carey Hill,Tillabéri,,OI41X,NE,83,True,True
-Ecole Supérieure d'Informatique et de Management,6,44192 Nelson Park,Arazane,,SC72N,MA,84,True,True
-University of Lower Silesia of the Association for the Advancement of Education in Wroclaw.,42,43 Hansons Trail,Skoroszyce,,WP61B,PL,85,True,True
-Dalian University of Technology,65086,07138 Anzinger Parkway,Yanggu,,GL21E,CN,86,True,True
-Université de Corse Pascal Paoli,9,1 Summerview Point,Montpellier,Languedoc-Roussillon,GC18E,FR,87,True,True
-Universitas Islam Jakarta,7,55 Ruskin Place,Kabar Utara,,CV94H,ID,88,True,True
-Feati University,40730,10107 Merry Crossing,Muricay,,YS84S,PH,89,True,True
-Universitas Muhammadiyah Makassar,590,6 Towne Place,Muara,,CR26P,ID,90,True,True
-Universidad Nacional de La Plata,06801,1585 Waxwing Court,La Quiaca,,ND74E,AR,91,True,True
-Suzhou University,8,6364 Brown Terrace,Jiazhi,,FM51Q,CN,92,True,True
-International University of Japan,98506,22 Almo Way,Uwajima,,KI09R,JP,93,True,True
-University of the Philippines Diliman,37601,3344 Prentice Point,Culasian,,IJ24M,PH,94,True,True
-Universidad Rafael Urdaneta,9,81725 Hoard Junction,Santa María de Caparo,,RU26M,VE,95,True,True
-University of Victoria,12,7 Golf Course Road,Oxford,Nova Scotia,AY44C,CA,96,True,True
-Beijing University of Chinese Medicine and Pharmacology,41,6 Straubel Place,Tiyuguan,,KP74B,CN,97,True,True
-Obninsk State Technical University for Nuclear Power Engineering,0436,600 Northview Crossing,Iset’,,PY00D,RU,98,True,True
-Bishop's University,49844,57057 Mayer Circle,Saint John,New Brunswick,KM44I,CA,99,True,True
-Qinghai Normal University,108,4 Raven Street,Nantian,,DB11Z,CN,100,True,True
-Canadian College of Business & Computers,22,1132 Del Mar Trail,Carleton Place,Ontario,IW25R,CA,101,True,True
-Universidade do Estado do Rio Grande do Norte,64,20212 Warbler Crossing,Itapetininga,,WI03U,BR,102,True,True
-Universidade Catolica Portuguesa,910,311 Anhalt Center,Outeiro,Vila Real,FU77P,PT,103,True,True
-Ecole Nationale Vétérinaire de Nantes,0159,8346 Bunting Avenue,Issy-les-Moulineaux,Île-de-France,TE71M,FR,104,True,True
-University of Sarajevo,1606,105 Rockefeller Road,Živinice,,UH04U,BA,105,True,True
-Universitas Pattimura,7722,67 Valley Edge Trail,Pangatikan,,DJ80N,ID,106,True,True
-Institut Teknologi Adhi Tama Surabaya,8831,6804 Elmside Trail,Lendan,,IX36U,ID,107,True,True
-Shanxi Agricultural University,15072,496 Merrick Court,Shufeng,,TN66X,CN,108,True,True
-Victoria University of Wellington,9,52504 Golf Course Way,Ngaruawahia,,AR21J,NZ,109,True,True
-Universidad Tecnológica del Peru,90,2 Farwell Alley,Pallasca,,OW20O,PE,110,True,True
-University of Lagos,6454,74059 Di Loreto Pass,Barakani,,DT30C,KM,111,True,True
-Riga Teacher Training and Educational Management Academy,88,464 Ryan Trail,Vaiņode,,HX07B,LV,112,True,True
-Universitas Tadulako,9,346 Kipling Drive,Sukoanyar,,KE39T,ID,113,True,True
-Université de Bamako,3622,651 Brown Terrace,Tominian,,XQ48X,ML,114,True,True
-Université Stendhal (Grenoble III),96,43783 Dixon Crossing,Paris 11,Île-de-France,IE60J,FR,115,True,True
-NTI University,6403,51692 Buell Avenue,Sneek,Provincie Friesland,MN95A,NL,116,True,True
-Universidad Tecnológica Oteima,81,7 Spohn Parkway,Los Lotes,,KQ58C,PA,117,True,True
-Manarat International University,05056,1033 Becker Place,Chilmāri,,CR36Q,BD,118,True,True
-Universidad Champagnat,58524,3 Oak Park,Quilino,,YX52O,AR,119,True,True
-Universidade Vale do Rio Doce,90,5537 Mendota Court,Brumado,,MA13S,BR,120,True,True
-Saratov State Agrarian University,411,451 Porter Hill,Gusev,,TZ48H,RU,121,True,True
-University of King's College,1396,0 Cordelia Hill,Cabano,Québec,EI89U,CA,122,True,True
-Universidad del Pacifico,1407,365 Oak Crossing,Sojo,,WZ65J,PE,123,True,True
-Universidad Nacional Pedro Ruíz Gallo,73,3 West Pass,Acobamba,,PK43H,PE,124,True,True
-Nara Medical University,971,82378 Spenser Way,Usuki,,IX43G,JP,125,True,True
-Ecole Nationale Supérieure de Biologie Appliquée à la Nutrition et à l'Alementation,897,21 Sugar Circle,Rungis,Île-de-France,EQ40H,FR,126,True,True
-"Physical Education Academy ""Jozef Pilsudski"" in Warsaw",5,78 Raven Court,Winnica,,UO94G,PL,127,True,True
-Trisakti Institute of Tourism ,716,12 Manley Trail,Tebluru,,SL19C,ID,128,True,True
-Dnepropetrovsk National University,76321,53 Hudson Street,Hola Prystan’,,XT46I,UA,129,True,True
-Universitas Klabat,017,66346 Homewood Point,Pumai,,GT86L,ID,130,True,True
-Ecole Supérieure d'Electricité,32,9251 Moland Road,Nîmes,Languedoc-Roussillon,KS33K,FR,131,True,True
-Victoria University of Wellington,709,71 Prentice Circle,Picton,,LG05K,NZ,132,True,True
-University of Finance and Management in Bialystok,0,74424 Coleman Avenue,Pierzchnica,,HV85W,PL,133,True,True
-Assumption University of Thailand,2,860 Homewood Pass,Pak Phanang,,RO72B,TH,134,True,True
-DEI Bachelor & Master Degrees,3,02106 Helena Trail,Lamía,,VC92E,GR,135,True,True
-Universidad Católica de Santa Fé,464,41 Fisk Plaza,Berón de Astrada,,PT60V,AR,136,True,True
-Anhui Medical University,98362,9328 Dryden Court,Dasheng,,FR29J,CN,137,True,True
-Universitas Tidar Magelang,55,0454 Welch Trail,Pocokan Satu,,CD48H,ID,138,True,True
-Tomas Bata University in Zlin,4532,317 Reinke Street,Mnichovo Hradiště,,HV73L,CZ,139,True,True
-Tyumen State Agricultural Academy,740,99294 Jenna Pass,Nogliki,,EQ91Q,RU,140,True,True
-Samara State Agricultural Academy,1804,06 Crowley Circle,Kharp,,LI66H,RU,141,True,True
-Takoradi Polytechnic ,1,65767 Mccormick Park,Akim Swedru,,IQ36Y,GH,142,True,True
-Université de Bretagne Sud,0,28 Haas Road,Crépy-en-Valois,Picardie,BC41U,FR,143,True,True
-Harbin Engineering University,0837,140 Leroy Lane,Changyanbao,,MB12O,CN,144,True,True
-"University College of Arts, Crafts and Design",515,93552 Duke Lane,Tyresö,Stockholm,DX69H,SE,145,True,True
-University College of Trollhättan/Uddevalla,13,10843 Kinsman Hill,Ängelholm,Skåne,WA75E,SE,146,True,True
-Centro Regional Universitário de Espiríto Santo do Pinhal,2991,3995 Scoville Avenue,Aparecida,,AT10E,BR,147,True,True
-North China University of Technology,3104,3 Oakridge Lane,Xinsheng,,PI95N,CN,148,True,True
-Irkutsk State University,346,76 Roth Way,Kabakovo,,WR15I,RU,149,True,True
-North-West State Technical University,27,8 Esker Avenue,Chaltyr,,EP08L,RU,150,True,True
-University of Reggio Calabria,4,923 Havey Point,Elato,,BZ06K,FM,151,True,True
-"Escuela de Policia ""General Santander""",84083,28694 Linden Parkway,Philipsburg,,CL19H,SX,152,True,True
-Centro Regional Universitário de Espiríto Santo do Pinhal,07,6455 Maryland Circle,Garibaldi,,RE94U,BR,153,True,True
-Brock University,7,74446 Pleasure Pass,Stratford,Ontario,EJ96B,CA,154,True,True
-Universidad del Istmo,00,78 Meadow Valley Trail,Huité,,TB24Z,GT,155,True,True
-"Instituto de Artes Visuais, Design e Marketing - IADE",66214,34 Buell Center,Covas da Raposa,Setúbal,OK76F,PT,156,True,True
-Institut Teknologi Adhi Tama Surabaya,5925,92 5th Trail,Komes,,SF36S,ID,157,True,True
-Dagestan State University,8036,21 Ridge Oak Center,Yutsa,,RK97Y,RU,158,True,True
-Neumann College,0,99782 Granby Way,Detroit,Michigan,ZJ63C,US,159,True,True
-Universidad Francisco de Paula Santander,85491,2 Kim Court,Bagadó,,ZV77J,CO,160,True,True
-Nanjing University of Chemical Technology,1589,6 Fordem Center,Biyong,,KW65H,CN,161,True,True
-Beijing University of Chinese Medicine and Pharmacology,565,9 Sunbrook Lane,Yengiawat,,LR87Z,CN,162,True,True
-Hadhramout University of Science and Technology ,5371,3 Hanson Place,Yufrus,,BR51A,YE,163,True,True
-Universidade do Vale do Itajaí,33877,415 Autumn Leaf Pass,Contagem,,PJ28D,BR,164,True,True
-Ecole Nationale Supérieure de Chimie de Mulhouse,23202,0945 International Park,Aubagne,Provence-Alpes-Côte d'Azur,HE16O,FR,165,True,True
-University of Guelph,18,147 Monument Park,Ladner,British Columbia,QZ86V,CA,166,True,True
-Universidad de Cádiz,873,475 Spohn Junction,Santander,Cantabria,KF16R,ES,167,True,True
-Universitas Diponegoro,70822,767 Reindahl Trail,Sindangsari,,QD51M,ID,168,True,True
-3rd Military Medical University,4,501 Almo Terrace,Gulong,,PX50W,CN,169,True,True
-Ecole Nationale Supérieur de Mécanique et d'Aéronautique,65,0590 Crowley Center,Laval,Pays de la Loire,BS13L,FR,170,True,True
-Universidad de Sonsonate,96735,55577 Anthes Pass,Tenancingo,,FH24I,SV,171,True,True
-Xinjiang University,903,593 Swallow Point,Guanshan,,GM60S,CN,172,True,True
-Karelian State Pedagogical University,7920,0066 Morrow Point,Yaroslavskaya,,KG45N,RU,173,True,True
-Institute of Management and Economy,2,3292 Bayside Crossing,Strelka,,WI76W,RU,174,True,True
-Cape Peninsula University of Technology,8295,29010 Crowley Lane,Knysna,,AX92S,ZA,175,True,True
-Universitas Merdeka Madiun,3,49671 Manufacturers Circle,Nginjen,,MK54B,ID,176,True,True
-Kalmyk State University,04,510 Chinook Avenue,Pavlovka,,DZ08Z,RU,177,True,True
-Drake University,9281,27978 Northridge Alley,Knoxville,Tennessee,ZP03H,US,178,True,True
-Russian-Armenian (Slavonic) State University,98266,6 Lawn Road,Gagarin,,ZO87R,AM,179,True,True
-"Florida Metropolitan University, Tampa College Lakeland",4649,3990 Hagan Street,Sacramento,California,UT63U,US,180,True,True
-Al Yarmouk University College,8,30659 Johnson Pass,‘Anat al Qadīmah,,DB64H,IQ,181,True,True
-Beijing Sport University,33635,2701 Lawn Court,Huochang,,IP24X,CN,182,True,True
-Ecole Universitaire d'Ingénieurs de Lille,8495,53376 Warrior Plaza,Wissous,Île-de-France,AY55S,FR,183,True,True
-Université de Ouagadougou,4514,9641 Northfield Trail,Koupéla,,WY72K,BF,184,True,True
-Universidade de Marília,514,1978 Scoville Trail,Osasco,,BT61I,BR,185,True,True
-Xi'an University of Architecture and Technology,45,1 Hintze Point,Partang,,AJ39T,CN,186,True,True
-Universidad Nacional de Entre Ríos,553,3 Stang Parkway,San Salvador de Jujuy,,GH07C,AR,187,True,True
-University of Ulster,20712,646 Thierer Drive,Birmingham,England,RA52E,GB,188,True,True
-National Mining University,13233,1596 Miller Way,Nova Kakhovka,,MB23N,UA,189,True,True
-"University of Perpetual Help, System Dalta",904,91 Ronald Regan Terrace,Tarangnan,,JN67W,PH,190,True,True
-Lampang Vocational College   ,780,5979 Starling Hill,Kamalasai,,SN20C,TH,191,True,True
-Herzen State Pedagogical University of Russia,1820,8 Bowman Road,Priyutovo,,GB58X,RU,192,True,True
-University of Technology,4,06 Ronald Regan Way,Mahébourg,,SQ33L,MU,193,True,True
-Kazan State University of Technology,02654,0887 Merrick Hill,Shakhty,,UC51E,RU,194,True,True
-Asia Europe University,7304,83 John Wall Court,Pursat,,YO00E,KH,195,True,True
-Instituto Politécnico de Setúbal,097,64814 Shasta Parkway,Tarouca,Viseu,BQ84L,PT,196,True,True
-Kharkiv National University of Economics,396,54833 Pennsylvania Lane,Shakhtars’k,,NA43J,UA,197,True,True
-Universidad Santa Fe,60,677 Bunting Court,Emiliano Zapata,Mexico,MO16Q,MX,198,True,True
-University of the Philippines Open University,231,8588 Lyons Road,Olutanga,,UD50I,PH,199,True,True
-Universidad Juárez del Estado de Durango,20612,566 Moulton Way,Benito Juarez,Morelos,NG82O,MX,200,True,True
-Université de Bamako,13250,6778 Lien Center,Gourma Rharous,,VU72D,ML,201,True,True
-Medical University Pleven,27,1 Lien Crossing,Primorsko,,IQ38M,BG,202,True,True
-Ateneo de Zamboanga University,782,29 Colorado Park,Paombong,,TG26V,PH,203,True,True
-Huaihua Radio and Television University,04299,5 Dixon Parkway,Huaxijie,,YG81K,CN,204,True,True
-Universitas Simalungun,0940,533 Crest Line Court,Klapagading,,LP08L,ID,205,True,True
-Gotland University College,914,35 Melby Crossing,Kristinehamn,Värmland,FS74S,SE,206,True,True
-Technical University of Mining and Metallurgy Ostrava,57929,0198 Troy Trail,Horka nad Moravou,,JH03I,CZ,207,True,True
-Philippine Christian University,05,00 Kropf Plaza,La Roxas,,QA50D,PH,208,True,True
-Universitas Negeri Semarang,4105,279 Vermont Drive,Pora,,KI21A,ID,209,True,True
-Universitas Ngurah Rai,1,0951 Artisan Park,Panjerrejo,,WG38V,ID,210,True,True
-"Islamic Azad University, Ardabil",010,82381 Farmco Place,Khvānsār,,IX38P,IR,211,True,True
-Kazak American University,0280,4212 Starling Trail,Egindiköl,,BH69H,KZ,212,True,True
-Northwestern University of the Philippines,6133,41 Fisk Alley,Nama,,RK31T,PH,213,True,True
-Universitas Lampung,77581,9736 Warrior Pass,Pamotan,,EA72Z,ID,214,True,True
-Chiba University of Commerce,530,38443 Pierstorff Alley,Kanie,,OL36L,JP,215,True,True
-Universidade Lusiada,85,4845 Paget Drive,Cruzeiro,Viana do Castelo,SC40A,PT,216,True,True
-Tampere University of Technology,8504,5849 Cordelia Circle,Hirvensalmi,,OK87G,FI,217,True,True
-Yanbian University of Science and Technology,50,22817 Talisman Court,Xinghai,,GA54P,CN,218,True,True
-Hebei Agricultural University,69,62974 Express Plaza,Nantang,,EA96Q,CN,219,True,True
-Ecole Universitaire d'Ingénieurs de Lille,6,88326 Gale Circle,Paris 14,Île-de-France,EQ98M,FR,220,True,True
-International University Institute of Luxembourg,864,0 Ramsey Way,Eschweiler,,XG67R,LU,221,True,True
-Saint Ferdinand College,23,22 Clove Road,Battung,,GJ23L,PH,222,True,True
-Groupe Sup de Co Montpellier,21,06 Elgar Crossing,Avon,Île-de-France,IE45I,FR,223,True,True
-University of Santo Tomas,981,390 Red Cloud Alley,Apalit,,LJ26K,PH,224,True,True
-Ecole Supérieure d'Ingénieurs en Electronique et Electrotechnique,2,7 Waywood Junction,Roscoff,Bretagne,HW11F,FR,225,True,True
-Universidad Simón Bolivar,2,0788 Moulton Drive,San Casimiro,,QJ92G,VE,226,True,True
-Mbarara University of Science and Technology,2,4 Sullivan Lane,Buyende,,VB12D,UG,227,True,True
-Shanghai Normal University,29642,1 Westerfield Circle,Liulin,,ZR39N,CN,228,True,True
-Dawat University,5720,92895 Burning Wood Circle,Dāngām,,HU86R,AF,229,True,True
-Universitas Nasional Pasim,1,032 Menomonie Terrace,Negeriagung,,TB95I,ID,230,True,True
-Centro Universitário Monte Serrat,3227,152 Cottonwood Junction,Acaraú,,FW91D,BR,231,True,True
-University of Lower Silesia of the Association for the Advancement of Education in Wroclaw.,18,5062 Homewood Point,Ryczów,,YM11H,PL,232,True,True
-South China University of Technology,16322,87 Oneill Point,Gaoqiao,,GC22Y,CN,233,True,True
-University of Pardubice,987,3 Bartelt Alley,Horní Bříza,,LW73I,CZ,234,True,True
-Universitas Khairun,6,2466 West Place,Luti,,RD35X,ID,235,True,True
-University of the Philippines Mindanao,0038,4 Crownhardt Circle,Taluksangay,,MB22B,PH,236,True,True
-Universitas Sebelas Maret,33145,264 Anzinger Point,Pandean,,SO60Y,ID,237,True,True
-Nanjing University of Chemical Technology,3,0 Anhalt Plaza,Donggong,,DN64L,CN,238,True,True
-Nagoya University of Commerce and Business Administration,87,0 Katie Circle,Tōkamachi,,XF42Y,JP,239,True,True
-Universidade de Mogi das Cruzes,4005,670 Charing Cross Circle,Brasília,,QY67L,BR,240,True,True
-African University of Science and Technology,9118,9272 Buell Hill,Amper,,GD46B,NG,241,True,True
-University of Benghazi,63,077 Killdeer Point,Hūn,,XZ54C,LY,242,True,True
-Yaroslavl State Technical University,18961,235 Clove Terrace,Mortka,,IC62S,RU,243,True,True
-South China University,498,52045 Birchwood Court,Pailou,,FB57B,CN,244,True,True
-Pyongyang University of Science and Technology,1,3 Sugar Junction,Hamhŭng,,RS57V,KP,245,True,True
-Universidad Antonio Nariño,73,7 Doe Crossing Trail,Sabaneta,,XP89B,CO,246,True,True
-Instituto Superior de Saúde do Alto Ave,6,8738 Hudson Trail,Cabra Figa,Lisboa,MR03F,PT,247,True,True
-Universitas Islam Syekh-Yusuf ,0,97 Columbus Center,Suwangi Utara,,ZR59G,ID,248,True,True
-International Turkmen Turkish University,68,5 Walton Plaza,Gazojak,,RN55Y,TM,249,True,True
-Fiji School of Medicine,14,58 Monument Street,Nadi,,UF13C,FJ,250,True,True
-Far Eastern University,57,7 Buell Plaza,Magdug,,XU99R,PH,251,True,True
-Harbin Engineering University,4153,6 Paget Court,Humen,,OF10X,CN,252,True,True
-Drzavni Univerzitet u Novom Pazaru,6,51 Bowman Road,Sremski Karlovci,,FQ77X,RS,253,True,True
-University of Ancona,581,12 Bunker Hill Terrace,Genova,Liguria,KV39N,IT,254,True,True
-China University of Mining Technology - Beijing,52126,422 Beilfuss Center,Turgun,,JO55P,CN,255,True,True
-Multnomah Bible College,7127,88 Manufacturers Plaza,Olympia,Washington,SY03N,US,256,True,True
-"Universidad Católica Boliviana, La Paz",44,49302 Summit Road,Riberalta,,VJ64X,BO,257,True,True
-University of Otago,16,997 Harbort Street,Lower Hutt,,GB74V,NZ,258,True,True
-Samara State Medical University,970,68574 Washington Place,Vykhino-Zhulebino,,BC90N,RU,259,True,True
-Universidad Tecnológica Centroamericana,0,66213 Buell Avenue,El Escanito,,FL31U,HN,260,True,True
-Instituto Superior de Paços de Brandão,166,5 Paget Park,Carvoeira,Lisboa,ZF47F,PT,261,True,True
-El Colegio de México,5020,1570 Monument Road,San Miguel,Chiapas,BY57N,MX,262,True,True
-University of Perpetual Help,0,2577 Eagan Park,Besao,,ZC62K,PH,263,True,True
-University of Southeastern Philippines,7,7 Arapahoe Plaza,Santa Fe,,ZV69G,PH,264,True,True
-University College Dublin,84371,4 Express Drive,Old Kilcullen,,JI25Q,IE,265,True,True
-Universidad Santo Tomás,351,51 Bobwhite Park,Socorro,,BM94E,CO,266,True,True
-Kabul Health Sciences Institute,2,25 Bayside Circle,Khānaqāh,,YP56F,AF,267,True,True
-Instituto Tecnológico de Aguascalientes,47,4 Eastwood Terrace,Bellavista,Veracruz Llave,PX83M,MX,268,True,True
-St. Thomas University,77,67 Nobel Circle,Niverville,Manitoba,MQ35F,CA,269,True,True
-Manuel S. Enverga University Foundation,78906,73 Vahlen Street,Gabaldon,,RV70U,PH,270,True,True
-Ecole Supérieure de Commerce de Pau,66545,0479 Carioca Way,Paris 08,Île-de-France,PH92B,FR,271,True,True
-Samara State Agricultural Academy,4,93372 Vernon Crossing,Sorokino,,OA22P,RU,272,True,True
-Universidad Tecnológica de Santiago,867,489 Harper Hill,Ciudad Nueva,,DO77T,DO,273,True,True
-Xinjiang University of Finance and Economics,4,744 Fairview Park,Chedao,,MY02M,CN,274,True,True
-Hazara University,33,4 Rutledge Drive,Qila Abdullāh,,JP03D,PK,275,True,True
-Ningxia University,93,0 Laurel Park,Baimajing,,AJ40J,CN,276,True,True
-National University of Ostroh Academy,9149,7 Maple Trail,Vorzel’,,FX18V,UA,277,True,True
-American University of Armenia,6994,4 Vahlen Alley,Hrazdan,,LN22Z,AM,278,True,True
-Universidad Adventista de Colombia,1899,224 Steensland Parkway,Lorica,,MX38B,CO,279,True,True
-Fujian Agricultural University,000,470 Mayfield Center,Canghou,,EQ40Y,CN,280,True,True
-Ivanovo State Academy of Medicine,3,788 Cottonwood Way,Solnechnoye,,SN96R,RU,281,True,True
-Ibrahim Babangida University,93,1030 Norway Maple Lane,Owerri,,PA20Q,NG,282,True,True
-International Tourism Institute,4522,808 Fallview Alley,Pembroke,,PO96P,MT,283,True,True
-Ecole des Hautes Etudes Industrielles de Lille,005,90 Farmco Parkway,Évry,Île-de-France,XV70U,FR,284,True,True
-St. Petersburg State University of Engineering and Economics,5444,1 John Wall Crossing,Pelym,,HT24R,RU,285,True,True
-Huanghe Science & Technology University,60,24 Longview Court,Shuicha,,SY71E,CN,286,True,True
-Bishkek Humanities University,1686,64 Erie Crossing,Batken,,GE71E,KG,287,True,True
-Hunan University,72052,4328 Maryland Point,Aiximan,,UL63U,CN,288,True,True
-Universidad de Tarapacá,3423,0 Forest Dale Road,Viña del Mar,,HB43H,CL,289,True,True
-Yangzhou University,97,3 Fulton Circle,Jiaowei,,VK93M,CN,290,True,True
-Université de Technologie de Compiègne,5,940 Springview Plaza,Paris La Défense,Île-de-France,WA61H,FR,291,True,True
-New College of California,178,54728 Glacier Hill Crossing,Washington,District of Columbia,XN00Q,US,292,True,True
-Mogilev State University A.A. Kuleshov,26028,97 Fulton Way,Khal’ch,,RG12O,BY,293,True,True
-Instituto Superior de Gestão - ISG,87495,5273 Monica Drive,Vale Mourão,Lisboa,BS21I,PT,294,True,True
-University College of Gävle,3062,63837 Knutson Alley,Ljungbyholm,Kalmar,SJ26B,SE,295,True,True
-Bashkir State Pedagogical University named After M. Akmullah,5074,39275 Dorton Junction,Karata,,TP27H,RU,296,True,True
-Pontifícia Universidade Católica do Rio Grande do Sul,24583,1773 Rockefeller Crossing,Santa Gertrudes,,KT29Q,BR,297,True,True
-Universidade de Lisboa,4787,46 Northland Point,Brejieira,Leiria,FS22V,PT,298,True,True
-Instituto Tecnológico de Aeronáutica,3340,90 Sullivan Junction,Farroupilha,,ZH23A,BR,299,True,True
-University of Fine Arts Belgrade,48,7 Myrtle Drive,Doljevac,,MI33S,RS,300,True,True
-Universidad Autónoma del Caribe,11,940 Monterey Road,Barranco de Loba,,MJ13U,CO,301,True,True
-"Music Academy ""Fryderyk Chopin"" in Warszaw",4,9267 Hauk Terrace,Solec-Zdrój,,BH65I,PL,302,True,True
-"National American University, Kansas City",340,70651 Debs Place,Denver,Colorado,UT16H,US,303,True,True
-University of Education Hradec Kralove,753,302 Monterey Road,Polešovice,,RY37S,CZ,304,True,True
-"Universidad Católica Boliviana, Cochabamba",8,480 4th Pass,Nueva Manoa,,RK17Z,BO,305,True,True
-Shanghai Ouhua Vocational Technical College,47875,5 Park Meadow Crossing,Baoji,,QW89R,CN,306,True,True
-Foundation University,31,2192 Sunbrook Street,Santo Niño,,ZS04K,PH,307,True,True
-Université Hassan II - Aïn Chock,99389,294 Towne Point,Taouima,,JE39B,MA,308,True,True
-Ural Gorkij State University,0111,38 Scott Place,Troitsk,,YO67U,RU,309,True,True
-Bicol University,023,7 Erie Park,Bongao,,YH31F,PH,310,True,True
-Universitas Sumatera Utara,689,41553 Washington Lane,Tilamuta,,VL18E,ID,311,True,True
-Hochschule Mittweida (FH),397,61 5th Lane,Berlin,Berlin,ZC20U,DE,312,True,True
-Southern Yangtze University,34,80 Marcy Road,Gaoyan,,TB09D,CN,313,True,True
-Universidad Metropolitana de Honduras,75467,00488 Spenser Lane,Aramecina,,QI84H,HN,314,True,True
-University of Cebu,3,69203 Mesta Place,Molave,,BS06H,PH,315,True,True
-Colegio de San Juan de Letran,97574,77356 Lawn Junction,Bungabon,,GQ67A,PH,316,True,True
-Akita University of Economics and Law,53,19913 Kings Trail,Ujiie,,UA47E,JP,317,True,True
-Universitas Sumatera Utara,9458,42 Hudson Way,Mertani,,OL94J,ID,318,True,True
-Institut d'Etudes Politiques de Bordeaux,40435,28130 Carpenter Alley,Chantepie,Bretagne,QE03F,FR,319,True,True
-Nagoya University,47,1588 Briar Crest Terrace,Fukayachō,,PC46Z,JP,320,True,True
-Nanjing Forestry University,610,838 Garrison Road,Yaogu,,US42I,CN,321,True,True
-Universidad Católica de La Plata,18338,137 Hermina Parkway,Tinogasta,,YO18H,AR,322,True,True
-Wenzhou University,396,0 Clarendon Avenue,Lianhe,,UE31C,CN,323,True,True
-Irkutsk State University,8935,6 Upham Plaza,Galyugayevskaya,,KU19L,RU,324,True,True
-Gansu University of Technology,560,7562 Delladonna Road,Shuangqiao,,HE80I,CN,325,True,True
-Universidad Experimental Felix Adam,52761,6530 Packers Lane,Hato Mayor del Rey,,ID09S,DO,326,True,True
-Hubei University,5060,9019 Thackeray Terrace,Yingtou,,ZJ21H,CN,327,True,True
-Universidad Católica de Honduras,67,293 Pennsylvania Court,Carbajales,,FH19M,HN,328,True,True
-University of Science and Technology of China,5721,06818 Southridge Court,Futang,,VF25M,CN,329,True,True
-University of Southern Mindanao,71,854 Arapahoe Street,Alacaygan,,GA40J,PH,330,True,True
-Dneprodzerzhinsk State Technical University,65,261 Graceland Trail,Chervonopartyzans’k,,IM94Z,UA,331,True,True
-Kamchatka State University Vitus Bering,917,4524 Elmside Plaza,Leninsk,,CP68C,RU,332,True,True
-Tenri University,28436,82 Mayer Alley,Mutsu,,WX89B,JP,333,True,True
-Lanzhou University,939,20 Eliot Place,Xiangrong,,VK48A,CN,334,True,True
-Al-Nasser University,028,0230 Old Shore Center,Az̧ Z̧alī‘ah,,MJ20N,YE,335,True,True
-National University of Defense Technology,16551,256 Hallows Circle,Leiyang,,ZP04M,CN,336,True,True
-Universidad del Tolima,8494,55 Marquette Alley,Salamina,,RM61I,CO,337,True,True
-South University of Science and Technology of China ,719,6080 Continental Alley,Dongjie,,GC30R,CN,338,True,True
-Faculdades Integradas do Brasil - UNIBRASIL,45676,72 Blackbird Avenue,Aparecida,,OZ24P,BR,339,True,True
-CETYS Universidad,217,20 Haas Pass,Patsi,,VF85K,KM,340,True,True
-Ludwik Solski State Academy of Theatre in Cracow,6078,0477 Basil Plaza,Leśnica,,FS59O,PL,341,True,True
-Kerman Graduate University of Technology,21345,102 Hudson Point,Gonābād,,BC54L,IR,342,True,True
-Mendel University of Agriculture and Forestry,935,9855 Westport Junction,Štítná nad Vláří,,JK62R,CZ,343,True,True
-Foshan University,06995,3 Ronald Regan Road,Yanhu,,EA35T,CN,344,True,True
-The Queen's University Belfast,5487,86873 Welch Avenue,Aston,England,SG71Q,GB,345,True,True
-Beijing Medical University,51,6053 Myrtle Point,Liuzu,,KY52T,CN,346,True,True
-Yarmouk Private University ,833,753 Redwing Circle,Khān Shaykhūn,,LA30F,SY,347,True,True
-Taiyuan University of Technology,8098,41 Chinook Place,Ganjun,,HQ72T,CN,348,True,True
-Technical University of Mining and Metallurgy Ostrava,0245,11105 Toban Pass,Jesenice,,CE05Y,CZ,349,True,True
-University of Commerce Luigi Bocconi,257,334 Del Mar Pass,Messina,Sicilia,EK95V,IT,350,True,True
-Azerbaijan University ol Languages,17,41 Bashford Terrace,Imishli,,ZB70H,AZ,351,True,True
-University of the Faroe Islands,09,25 5th Lane,Tvøroyri,,BU00O,FO,352,True,True
-Instituto Superior de Ciências Empresariais e de Turismo,96,9 Northfield Alley,Espinho,Coimbra,AE10U,PT,353,True,True
-Universitas Proklamasi 45,7,28388 Badeau Parkway,Desa Wetan Ciakar,,LW53V,ID,354,True,True
-Universitas Jambi,46693,2801 Calypso Plaza,Dalam,,JG39J,ID,355,True,True
-Rizal Technological University,4,66376 Oneill Way,Canjulao,,BF14U,PH,356,True,True
-Universidad Notarial Argentina,989,212 Marcy Parkway,Federal,,NQ42L,AR,357,True,True
-South China Construction University,8882,1160 Novick Court,Wuma,,VX80A,CN,358,True,True
-Nizhny Novgorod State Academy of Medicine,3,6438 Daystar Point,Rasshevatskaya,,ND80Y,RU,359,True,True
-Universidad Panamericana de San Salvador,76112,9285 Park Meadow Crossing,Atiquizaya,,NK71R,SV,360,True,True
-"Institute of Management Sciences, Lahore (IMS)",9,1 Vera Terrace,Parachinar,,IW67E,PK,361,True,True
-Göteborg University,36697,034 Dexter Point,Solna,Stockholm,IT94H,SE,362,True,True
-Universitas Proklamasi 45,0365,142 Sycamore Road,Gambiran,,EV05Z,ID,363,True,True
-Western Mindanao State University,18,800 Michigan Way,Can-Avid,,TL06B,PH,364,True,True
-Universitas Bung Hatta,15465,4 Maple Wood Lane,Barisan,,TF06T,ID,365,True,True
-University of Luxemburg,972,2821 Parkside Park,Beckerich,,UQ11W,LU,366,True,True
-Notre Dame of Marbel University,31689,05234 Melvin Park,Nagbalaye,,TK45A,PH,367,True,True
-Universidade do Grande Rio,7436,6 Buhler Crossing,Astorga,,AQ02N,BR,368,True,True
-Universitas Kristen Maranatha,666,90 Duke Place,Dairiti,,KS86L,ID,369,True,True
-"Corporación Educativa Mayor del Desarrollo ""Simón Bolivar""",38,9821 Longview Way,Piedrancha,,DJ09I,CO,370,True,True
-University of Split,44833,58544 Cody Park,Primošten,,PC12X,HR,371,True,True
-Guangdong University of Technology,3,787 Morrow Alley,Kunheda Woerzu Manzu,,OJ34T,CN,372,True,True
-Liaoning University,14238,2 Meadow Vale Park,Lianghekou,,KI18U,CN,373,True,True
-Katowice School of Economics,6350,43 Tony Crossing,Kostrzyn nad Odrą,,CX32U,PL,374,True,True
-Pomorsk State University,87,8 Thierer Place,Polunochnoye,,MK22B,RU,375,True,True
-Samara State Agricultural Academy,6,1 Moland Plaza,Nauchnyy Gorodok,,AV72X,RU,376,True,True
-Universidad del Istmo,806,84720 Farwell Lane,Cabricán,,NG41H,GT,377,True,True
-Open University of Tanzania,8,8241 Bayside Crossing,Kasulu,,XP87T,TZ,378,True,True
-Tibet University,212,291 Basil Place,Xinyi,,SJ14B,CN,379,True,True
-Taganrog State University of Radioengineering,1049,1 Acker Avenue,Gordeyevka,,YV59N,RU,380,True,True
-Ho Chi Minh City University of Social Sciences and Humanities,8786,8 Atwood Court,Phú Khương,,NA81T,VN,381,True,True
-Tunku Syed Sirajuddin Polytechnic,7,15730 Pennsylvania Pass,Kuala Terengganu,Terengganu,YT45K,MY,382,True,True
-Universitas Wijaya Kusuma Purwokerto,03,45263 Kings Park,Tanagara,,ME09R,ID,383,True,True
-Sekolah Tinggi Akuntansi Negara (STAN),61516,13 Mayfield Terrace,Kiraman,,TX91K,ID,384,True,True
-Universidad de Buenos Aires,1756,847 Maryland Way,Aluminé,,UI93B,AR,385,True,True
-European University,26712,77488 Dovetail Pass,Stari Banovci,,SQ90P,RS,386,True,True
-Lulea University of Technology,509,5577 Milwaukee Parkway,Hallstavik,Stockholm,SG53Y,SE,387,True,True
-University of Ostrava,605,06 Stone Corner Plaza,Kořenov,,QK83G,CZ,388,True,True
-Adventist University of the Philippines,9244,5 Shopko Alley,Tucuran,,VT18V,PH,389,True,True
-Greenwich University,9792,249 Kensington Pass,Mach,,EJ50U,PK,390,True,True
-Herat University,37158,0868 Oriole Street,Jabal os Saraj,,RW68L,AF,391,True,True
-Crimea State Medical University,7575,924 Vidon Way,Horodnya,,GP13O,UA,392,True,True
-Baze University Abuja,6,2 Rutledge Point,Esuk Oron,,TK60B,NG,393,True,True
-Universitas Mulawarman,681,89696 Atwood Center,Krajan,,UA05J,ID,394,True,True
-Mindanao State University,07256,3826 Reindahl Parkway,Bulacan,,NM90U,PH,395,True,True
-Shanghai Maritime University,1,9503 Holmberg Avenue,Tunzhai,,LJ09D,CN,396,True,True
-Obong University,2402,143 Kenwood Park,Wamba,,SI86X,NG,397,True,True
-Novosibirsk State Agricultural University,4419,00084 Meadow Valley Parkway,Krasnyy Kholm,,MB81C,RU,398,True,True
-Universitas Simalungun,1951,0739 Grasskamp Plaza,Lasiana,,TU97J,ID,399,True,True
-Technical University of Crete,903,42 Carberry Terrace,Skiáthos,,TG67Q,GR,400,True,True
-China University of Mining Technology - Beijing,6,53 Warner Place,Xinle,,MU96A,CN,401,True,True
-Union University,6705,66799 Lyons Court,Milwaukee,Wisconsin,LX45M,US,402,True,True
-Tashkent State University of Economics,3543,60 Drewry Alley,To’rtko’l Shahri,,PL26U,UZ,403,True,True
-Mid-Sweden University,06925,7911 Burrows Point,Kävlinge,Skåne,FO37J,SE,404,True,True
-Leon Kozminski Academy of Entrepreneurship and Mangement in Warsaw,11180,501 Larry Trail,Pyzdry,,TW66U,PL,405,True,True
-University of Central Greece,621,119 Browning Crossing,Áthyra,,UK19I,GR,406,True,True
-"Universidad Pedagógica Nacional ""Francisco Morazán""",6,87635 Norway Maple Trail,La Libertad,,SQ63L,HN,407,True,True
-Sevastopol National Technical University,64,09 Drewry Lane,Bezlyudivka,,SP17C,UA,408,True,True
-"University of the West Indies, Mona",5,84 Orin Circle,Gayle,,EP80K,JM,409,True,True
-Ecole Centrale de Lille,4297,526 Melvin Park,Dijon,Bourgogne,VH68I,FR,410,True,True
-Guangdong Peizheng College ,21204,01955 Morningstar Court,Jagdaqi,,MH71L,CN,411,True,True
-Universidade do Minho,0,64324 Corry Road,Sanguinheira,Coimbra,LZ80C,PT,412,True,True
-Universidade Federal de Campina Grande,6,93 Magdeline Point,Penha,,HP84J,BR,413,True,True
-Al-hikmah University,69252,763 Luster Drive,Kaltungo,,EQ93S,NG,414,True,True
-Universidade Federal Rural do Semi-Árido,2568,21288 Basil Parkway,Tietê,,RY64I,BR,415,True,True
-Hainan Normal University,7,938 Service Hill,Dongshe,,IE48A,CN,416,True,True
-Universidad Externado de Colombia,5,1459 Del Mar Way,Guachucal,,SC48W,CO,417,True,True
-University of Guelph,1755,426 Division Junction,Beaverlodge,Alberta,CM21N,CA,418,True,True
-Shanghai City College,1254,0543 Village Green Road,Gongji,,MU44P,CN,419,True,True
-St. Petersburg State University of Telecommunication,231,73 Iowa Plaza,Pushkino,,IZ29R,RU,420,True,True
-Central South University,610,969 Mitchell Hill,Hualong,,WE33X,CN,421,True,True
-Yaroslavl State Pedagogical University,059,1 Golden Leaf Avenue,Konëvo,,MF93X,RU,422,True,True
-Universidad Nacional Siglo XX Llallagua,55,929 Namekagon Terrace,Potolo,,QY83W,BO,423,True,True
-Jilin University,62895,73 Oakridge Plaza,Xinzhou,,MX95Q,CN,424,True,True
-University of the Philippines Manila,47520,0 Butterfield Park,San Casimiro,,QT16F,PH,425,True,True
-Zaporizhzhe National University,160,593 Stang Alley,Mysove,,LA90Y,UA,426,True,True
-Technological Education Institute of Piraeus,84,93312 Utah Terrace,Áyios Yeóryios,,PQ80K,GR,427,True,True
-Université Thierno Amadou Diallo,08832,68 Arkansas Crossing,Beyla,,XN93S,GN,428,True,True
-"Universidad ""Juan Agustín Maza""",0,2486 Bunting Circle,Goya,,YL73K,AR,429,True,True
-Universidade Federal Rural do Semi-Árido,044,9 Kensington Lane,Caldas Novas,,LS27Y,BR,430,True,True
-Universitas Kristen Maranatha,5429,98354 Rieder Way,Karangnunggal,,WB84R,ID,431,True,True
-Universitas Trisakti,551,2961 Bluestem Parkway,Kakaek,,YG30K,ID,432,True,True
-Agricultural University of Lublin,0156,3 Sauthoff Plaza,Dąbie,,ZH53Z,PL,433,True,True
-Centro Universitário Newton Paiva,4120,9407 Prairie Rose Court,São Sebastião,,IQ37U,BR,434,True,True
-Universitas 17 Agustus 1945 Banyuwangi,41087,62 Muir Terrace,Temuji,,DW53C,ID,435,True,True
-Universitas Negeri Surabaya,82,0 Cottonwood Lane,Baranusa,,MI83Q,ID,436,True,True
-Institut National Supérieur de Formation Agro-Alimentaire,6137,62100 Gulseth Alley,Angoulême,Poitou-Charentes,HU86Z,FR,437,True,True
-Université d'Antsiranana,5243,1792 Carberry Place,Andovoranto,,RN04X,MG,438,True,True
-Konan Women's University,6481,29 Waubesa Avenue,Iwai,,YC19X,JP,439,True,True
-Singidunum University,3619,384 Farragut Place,Ćićevac,,GM47Q,RS,440,True,True
-National University,7896,39259 Longview Terrace,Tagbina,,WN88E,PH,441,True,True
-University of Ontario Institute of Technology,7453,3 Northwestern Circle,Sicamous,British Columbia,LQ43M,CA,442,True,True
-Smolny University,4,3 Kings Center,Uvarovka,,DR50Q,RU,443,True,True
-Shanghai Lida Polytechnic Institute,7415,307 Warrior Pass,Youlan,,MP72Y,CN,444,True,True
-Royal lnstitute of Technology,4,5055 Carey Junction,Jönköping,Jönköping,PF47P,SE,445,True,True
-Baze University Abuja,3517,50 Northridge Parkway,Gorgoram,,IH99X,NG,446,True,True
-Bingham University,0,147 Dorton Terrace,Bassa,,ZJ81U,NG,447,True,True
-Hebei University of Technology,8764,14347 Harbort Place,Pinghu,,HE53Q,CN,448,True,True
-University of Human Development (Kurdistan Region),9675,458 New Castle Court,Nahiyat Ghammas,,NA90N,IQ,449,True,True
-Vilnius Gediminas Technical University,2,66565 Algoma Lane,Tytuvėnėliai,,JX33Y,LT,450,True,True
-Ural Academy of Public Administration,30,84 Westerfield Parkway,Pridonskoy,,QU39Q,RU,451,True,True
-Central Mindanao University,835,2261 Bultman Park,Lombog,,WD94B,PH,452,True,True
-Universitas Negeri Gorontalo,8,3 Mccormick Street,Oekuu,,NX30Z,ID,453,True,True
-Universitas Negeri Gorontalo,44,310 Porter Junction,Krajandadapmulyo,,OS51I,ID,454,True,True
-Southwest University of Political Science and Law,1851,5292 Helena Terrace,Wansheng,,PU03O,CN,455,True,True
-Universitas Lampung,308,9337 Hoard Avenue,Krajan Gajihan,,BH69U,ID,456,True,True
-Ryszard Lazarski University of Commerce and Law in Warsaw,9120,91744 Grayhawk Trail,Dubiecko,,UY31W,PL,457,True,True
-Universidad Privada San Juan Bautista,2973,22 Eagan Drive,Tres Unidos,,DB03F,PE,458,True,True
-Bicol University,341,485 Sachs Park,Polloc,,SK72Y,PH,459,True,True
-Beijing Sport University,87168,16329 Dunning Center,Liangdang Chengguanzhen,,QT99J,CN,460,True,True
-Université Julius Nyerere Kankan,2,28501 West Park,Beyla,,EF84K,GN,461,True,True
-Royal College of Surgeons,822,8397 Stone Corner Court,Blarney,,GE50E,IE,462,True,True
-University of Ioannina,014,4 Hallows Hill,Palaiomonástiron,,KU77P,GR,463,True,True
-Universiti Tunku Abdul Rahman,6969,00 Logan Parkway,Kota Kinabalu,Sabah,ZV76H,MY,464,True,True
-Tianjin University,8829,8625 Gerald Plaza,Diancun,,UC39A,CN,465,True,True
-Universitas Airlangga,906,126 Vera Drive,Pangrumasan,,HU20T,ID,466,True,True
-"International School of New Media, University of Lübeck",90964,7946 Onsgard Street,Freiburg im Breisgau,Baden-Württemberg,LB25R,DE,467,True,True
-Tiffin University Prague,27,443 Reindahl Court,Štítná nad Vláří,,KA31R,CZ,468,True,True
-Universidad Nacional Agraria de la Selva,37,0576 Eastwood Point,Huaylillas,,DO67T,PE,469,True,True
-Anhui University of Traditional Chinese Medicine,92204,5569 Westend Avenue,Huangjin,,KY84M,CN,470,True,True
-Higher School of Economics,8,42197 Starling Way,Tver,,SB47J,RU,471,True,True
-Nairobi Technical Training Institute ,32110,93 Raven Junction,Nanyuki,,IP24K,KE,472,True,True
-Shandong Normal University,0,08 Glacier Hill Plaza,Junkou,,UP41O,CN,473,True,True
-University of Oulu,82,9 Dwight Drive,Viitasaari,,FC61D,FI,474,True,True
-Universidade Estadual do Oeste do Paraná,8477,9 8th Way,Abaetetuba,,NB26V,BR,475,True,True
-Universidad Fray Luca Paccioli,4895,1 Schlimgen Parkway,Tierra y Libertad,Chihuahua,SP53Z,MX,476,True,True
-Komsomolsk-on-Amur State Technical University,679,0577 Summit Avenue,Rostokino,,AG32O,RU,477,True,True
-University of Lower Silesia of the Association for the Advancement of Education in Wroclaw.,3,5001 Fulton Center,Lwówek Śląski,,OC51Q,PL,478,True,True
-Tiffin University Prague,159,35 Huxley Terrace,Želešice,,WS66Y,CZ,479,True,True
-Chongqing University of Communications,382,5 Ludington Trail,Zhize,,ZA31B,CN,480,True,True
-Xi'an Jiaotong University,66,6422 Superior Point,Bailang,,SU81Y,CN,481,True,True
-Tiffin University Prague,89,188 Meadow Vale Junction,Moravská Nová Ves,,JO05U,CZ,482,True,True
-Naresuan University,3841,1 Montana Alley,Akat Amnuai,,NG66W,TH,483,True,True
-Ecole Nationale Supérieure du Pétrole et des Monteurs,81629,65972 Farwell Way,Lyon,Rhône-Alpes,GO62C,FR,484,True,True
-Kaliningrad State Technical University,1,81106 Thierer Pass,Odesskoye,,PQ23C,RU,485,True,True
-Universidade Candido Mendes,9,20954 Nelson Plaza,Palmeira,,OR31D,BR,486,True,True
-Brescia University,62,52693 Utah Plaza,El Paso,Texas,JP75L,US,487,True,True
-Xi'an University of Technology,80420,39 International Lane,Dahedian,,RE87S,CN,488,True,True
-Universitas Pancasila,41827,31187 Thierer Pass,Cigaleuh Kulon,,MP84X,ID,489,True,True
-China USA Business University,90,84 Buena Vista Avenue,Tuopu Luke,,BC89K,CN,490,True,True
-Altai State Medical University,7397,3356 Dexter Hill,Nekhayevskiy,,UJ22T,RU,491,True,True
-Huanghe Science & Technology University,70422,110 Sutteridge Hill,Ji’an,,TO89H,CN,492,True,True
-Umea University,82,46388 Waxwing Avenue,Västerås,Västmanland,UV76D,SE,493,True,True
-Universitas Muhammadiyah Sumatra Utara,3,85364 Utah Street,Suwaduk,,SR25V,ID,494,True,True
-Universidade de Franca,378,1 Shoshone Terrace,Bandeirantes,,BX28T,BR,495,True,True
-University of Montenegro,5544,2 Scott Plaza,Budva,,ZN10U,ME,496,True,True
-Ludwik Solski State Academy of Theatre in Cracow,1,35742 Linden Avenue,Knyszyn,,GU53E,PL,497,True,True
-Tiffin University Prague,967,119 Ronald Regan Trail,Hrob,,YL92X,CZ,498,True,True
-Polytechnic University of the Philippines,02430,81 Steensland Alley,Bucay,,QV93G,PH,499,True,True
-University of Regina Carmeli,525,464 1st Plaza,Cagdianao,,DT32I,PH,500,True,True
+ID,LocationName,BuildingNumber,StreetAddress,Locality,Region,Postcode,CountryCode,UserID,IsNextOfKin,IsPrimary
+1001,Qingdao University,1,5 Almo Parkway,Jiulong,,YX03F,CN,1,1,1
+1002,Yelets State University,86,0402 Magdeline Center,Kharabali,,TS11A,RU,2,1,1
+1003,Lorestan University of Medical Sciences,5999,5 Glacier Hill Avenue,Sepīdān,,RQ63Z,IR,3,1,1
+1004,Chongqing University of Technology,3002,4904 Hanson Hill,Luoping,,BI76Z,CN,4,1,1
+1005,Emeishan Buddhist College,72,6418 Dennis Street,Xinhe,,DR24Q,CN,5,1,1
+1006,Universidad Fidélitas,407,36 Ramsey Lane,West Island,,HJ24D,CC,6,1,1
+1007,Ningxia Medical College,58000,0 Esker Road,Jiufeng,,AL58D,CN,7,1,1
+1008,Al al-Bayt University,10,4593 Dawn Plaza,Safi,,TS51K,JO,8,1,1
+1009,"American University of the Caribbean, School of Medicine",469,90 Alpine Street,San Pedro,,EL35K,BZ,9,1,1
+1010,Göteborg University,7,52 Pepper Wood Avenue,Kungälv,Västra Götaland,HG07X,SE,10,1,1
+1011,Belgorod State Agricultural Academy,66,9035 Vidon Way,Ilovlya,,WX72Q,RU,11,1,1
+1012,Tbilisi State University,40891,14243 Kinsman Court,Gudauta,,VW10L,GE,12,1,1
+1013,Saratov State Academy of Law,61811,968 Kennedy Trail,Tyret’ Pervaya,,CS71G,RU,13,1,1
+1014,"St. Petersburg State University of Information Technologies, Mechanics and Optics",390,11296 Sage Way,Proletarskiy,,KV51W,RU,14,1,1
+1015,Polytechnic Institute of Turin,23226,2 Ryan Drive,Padova,Veneto,JL01O,IT,15,1,1
+1016,University of Technology,45,1 Maryland Avenue,Chamouny,,LH83G,MU,16,1,1
+1017,Universidade Estadual de Montes Claros,99,41793 Ridge Oak Center,Barreiras,,SK53Z,BR,17,1,1
+1018,Moscow State University of Forestry Engineering,71,12163 Monica Lane,Uchkeken,,NQ58K,RU,18,1,1
+1019,Tuva State University,86645,3 Kedzie Lane,Novogurovskiy,,PL06H,RU,19,1,1
+1020,Herat University,32,47 Tennessee Park,Khōst,,MU40H,AF,20,1,1
+1021,Universidad Los Angeles de Chimbote,76,3 Marcy Hill,Sinchao,,MZ99J,PE,21,1,1
+1022,Université d'Auvergne (Clermont-Ferrand I),99060,35484 Caliangt Trail,Cergy-Pontoise,Île-de-France,GL96F,FR,22,1,1
+1023,Université Libre de Tunis,50817,08143 Washington Hill,Banī Khallād,,OJ63Y,TN,23,1,1
+1024,"Deutsch-Ordens Fachhochschule Riedlingen, Hochschule für Wirtschaft",5,68 Kingsford Circle,Berlin,Berlin,JE70L,DE,24,1,1
+1025,Carlow Institute of Technology,60,24 Nancy Drive,Valleymount,,NV84B,IE,25,1,1
+1026,National University of Ireland,644,0 Fieldstone Crossing,Cobh,,MD71B,IE,26,1,1
+1027,Binus University,3214,3572 Fallview Pass,Langsa,,IF15Y,ID,27,1,1
+1028,Instituto Politécnico de Setúbal,6422,47773 Daystar Park,Paços,Aveiro,ZK13Q,PT,28,1,1
+1029,Institut Teknologi Bandung,2131,6833 Dryden Drive,Nangabere,,WF90W,ID,29,1,1
+1030,Institute of Accountancy Arusha,2652,8 Mallory Point,Nkove,,TJ95N,TZ,30,1,1
+1031,Shanghai University of Finance and Economics,8,017 Arapahoe Plaza,Wuyanquan,,ZO89Z,CN,31,1,1
+1032,Universidad Dr. Rafael Belloso Chacín,25,30 Rockefeller Avenue,Las Vegas,,OC60Q,VE,32,1,1
+1033,Universitas Jayabaya,0,66644 Barby Point,Sinjai,,ZH36L,ID,33,1,1
+1034,Hellenic Open University,59,82844 Di Loreto Terrace,Pentaplátano,,YO15I,GR,34,1,1
+1035,Brno University of Technology,766,483 Namekagon Alley,Svatava,,VS75S,CZ,35,1,1
+1036,Södertörn University College,308,8621 East Road,Linköping,Östergötland,UF75D,SE,36,1,1
+1037,Universitat Rámon Llull,37,534 Linden Way,Sevilla,Andalucia,RV16W,ES,37,1,1
+1038,Vongchavalitkul University,202,46 Marcy Pass,Nong Ruea,,MU66Y,TH,38,1,1
+1039,Hehai University,897,5 Green Plaza,Yushu,,MH22W,CN,39,1,1
+1040,Kursk State Technical University,19,7 Bluejay Junction,Borzoy,,BA07V,RU,40,1,1
+1041,Universidad Tecnológica del Peru,530,301 Farwell Drive,El Tambo,,KI04A,PE,41,1,1
+1042,Nizhny Novgorod State Academy of Medicine,7,06272 Buell Alley,Krasnoyarka,,WI48P,RU,42,1,1
+1043,Hallym University,66832,54 Hagan Road,Incheon,,NL07S,KR,43,1,1
+1044,Tomas Bata University in Zlin,77,299 Russell Road,Slavkov u Brna,,MI12T,CZ,44,1,1
+1045,Universitas Bengkulu,7800,091 Moland Point,Bunder,,QP14O,ID,45,1,1
+1046,Xi'an Jiaotong University,5,6479 Clove Pass,Benniu,,NL95T,CN,46,1,1
+1047,Latvian Academy of Music,426,5447 Division Plaza,Rēzekne,,DR05I,LV,47,1,1
+1048,Tafila Technical University ,6,768 Tennyson Drive,Amman,,NF75O,JO,48,1,1
+1049,Tibet University,2527,15 Oak Valley Street,Jiashan,,TQ30A,CN,49,1,1
+1050,Syrian International Private University for Science & Technology,57,97 Logan Road,Qadsīyā,,CX87F,SY,50,1,1
+1051,Central University for Nationalities,2733,2861 Dryden Plaza,Kunyang,,NJ63Z,CN,51,1,1
+1052,Neijiang Teacher University,665,764 Monument Lane,Fengli,,PG56Z,CN,52,1,1
+1053,University of Pangasinan,55,4737 Shelley Hill,Sinisian,,OY39U,PH,53,1,1
+1054,Keiwa College,2441,49 Meadow Valley Drive,Nishishinminato,,GN02U,JP,54,1,1
+1055,Epoka University,8989,475 Basil Way,Kryevidh,,AJ82F,AL,55,1,1
+1056,Universidade Federal do Maranhão,75183,611 Reinke Circle,Leme,,XW39I,BR,56,1,1
+1057,Kharkiv National University,24,9 Butterfield Drive,Mizoch,,KI70S,UA,57,1,1
+1058,Xiangtan Normal University,73625,9 Portage Hill,Chadian,,DO39S,CN,58,1,1
+1059,Universidade do Porto,61,64 Acker Drive,Zambujal,Lisboa,ED07T,PT,59,1,1
+1060,Port Said University,90,4 Forest Run Court,Madīnat Sittah Uktūbar,,OS36P,EG,60,1,1
+1061,Universidad de la Fraternidad de Agrupaciones Santo Tomas de Aquino (FASTA),848,8716 Rigney Point,Cerro Corá,,LE13J,AR,61,1,1
+1062,Arellano University,34,03185 Village Court,Mabilang,,GK06J,PH,62,1,1
+1063,Xinjiang Normal University,961,74 Darwin Terrace,Supu,,FS21E,CN,63,1,1
+1064,Institute of Information Technology,67844,0 Everett Terrace,Omuthiya,,ZB85A,NA,64,1,1
+1065,"Universidad de Bogotá ""Jorge Tadeo Lozano""",33,68 Kropf Alley,Cañasgordas,,TL81Z,CO,65,1,1
+1066,Nordic School of Public Health,73,2 Bellgrove Circle,Värmdö,Stockholm,PN37B,SE,66,1,1
+1067,Wenzhou Medical College,9598,1400 Loeprich Circle,Huayan,,SV36F,CN,67,1,1
+1068,Petro Mohyla Black Sea State University,1,49 Fairfield Point,Khorol,,WO79K,UA,68,1,1
+1069,Swedish University of Agricultural Sciences,81,6 Old Gate Parkway,Solna,Stockholm,AS23Y,SE,69,1,1
+1070,University of Fine Arts Belgrade,3,5 Cottonwood Way,Putinci,,AL12B,RS,70,1,1
+1071,Yantai Education Institute & Yantai Television University,7,5197 Reindahl Court,Jiekou,,BP59J,CN,71,1,1
+1072,Shenyang Polytechnic University,2,78 Graceland Park,Bei’an,,LY01Y,CN,72,1,1
+1073,Ecole Nationale Supérieure des Industries Textiles de Mulhouse,9,564 Barby Point,Lille,Nord-Pas-de-Calais,ME43Y,FR,73,1,1
+1074,Universitas Nasional Pasim,454,36 Arkansas Way,Sulo,,ZN64C,ID,74,1,1
+1075,Universidade Salvador,98364,7123 Redwing Drive,Birigui,,TS94F,BR,75,1,1
+1076,"Federal University of Technology, Minna",9,14 Fuller Park,Tambawel,,IF49G,NG,76,1,1
+1077,Tama Art University,4,37 Karstens Point,Tsukumiura,,ZN37I,JP,77,1,1
+1078,Charles University Prague,567,55 Fisk Circle,Žďár nad Sázavou Druhy,,GP10Q,CZ,78,1,1
+1079,Universitas Trilogi,14,1505 Lighthouse Bay Place,Montor Timur,,CL89H,ID,79,1,1
+1080,Universitas Wijaya Kusuma Surabaya,46,88 Manley Avenue,Rahayu,,RF22I,ID,80,1,1
+1081,Abfi Institute Perbanas Jakarta,156,60547 Roth Park,Padangtiji,,FB81N,ID,81,1,1
+1082,University of Wroclaw,8,92680 Merrick Junction,Gizałki,,MP55S,PL,82,1,1
+1083,Université Abdou Moumouni de Niamey,6487,2 Carey Hill,Tillabéri,,OI41X,NE,83,1,1
+1084,Ecole Supérieure d'Informatique et de Management,6,44192 Nelson Park,Arazane,,SC72N,MA,84,1,1
+1085,University of Lower Silesia of the Association for the Advancement of Education in Wroclaw.,42,43 Hansons Trail,Skoroszyce,,WP61B,PL,85,1,1
+1086,Dalian University of Technology,65086,07138 Anzinger Parkway,Yanggu,,GL21E,CN,86,1,1
+1087,Université de Corse Pascal Paoli,9,1 Summerview Point,Montpellier,Languedoc-Roussillon,GC18E,FR,87,1,1
+1088,Universitas Islam Jakarta,7,55 Ruskin Place,Kabar Utara,,CV94H,ID,88,1,1
+1089,Feati University,40730,10107 Merry Crossing,Muricay,,YS84S,PH,89,1,1
+1090,Universitas Muhammadiyah Makassar,590,6 Towne Place,Muara,,CR26P,ID,90,1,1
+1091,Universidad Nacional de La Plata,6801,1585 Waxwing Court,La Quiaca,,ND74E,AR,91,1,1
+1092,Suzhou University,8,6364 Brown Terrace,Jiazhi,,FM51Q,CN,92,1,1
+1093,International University of Japan,98506,22 Almo Way,Uwajima,,KI09R,JP,93,1,1
+1094,University of the Philippines Diliman,37601,3344 Prentice Point,Culasian,,IJ24M,PH,94,1,1
+1095,Universidad Rafael Urdaneta,9,81725 Hoard Junction,Santa María de Caparo,,RU26M,VE,95,1,1
+1096,University of Victoria,12,7 Golf Course Road,Oxford,Nova Scotia,AY44C,CA,96,1,1
+1097,Beijing University of Chinese Medicine and Pharmacology,41,6 Straubel Place,Tiyuguan,,KP74B,CN,97,1,1
+1098,Obninsk State Technical University for Nuclear Power Engineering,436,600 Northview Crossing,Iset’,,PY00D,RU,98,1,1
+1099,Bishop's University,49844,57057 Mayer Circle,Saint John,New Brunswick,KM44I,CA,99,1,1
+1100,Qinghai Normal University,108,4 Raven Street,Nantian,,DB11Z,CN,100,1,1
+1101,Canadian College of Business & Computers,22,1132 Del Mar Trail,Carleton Place,Ontario,IW25R,CA,101,1,1
+1102,Universidade do Estado do Rio Grande do Norte,64,20212 Warbler Crossing,Itapetininga,,WI03U,BR,102,1,1
+1103,Universidade Catolica Portuguesa,910,311 Anhalt Center,Outeiro,Vila Real,FU77P,PT,103,1,1
+1104,Ecole Nationale Vétérinaire de Nantes,159,8346 Bunting Avenue,Issy-les-Moulineaux,Île-de-France,TE71M,FR,104,1,1
+1105,University of Sarajevo,1606,105 Rockefeller Road,Živinice,,UH04U,BA,105,1,1
+1106,Universitas Pattimura,7722,67 Valley Edge Trail,Pangatikan,,DJ80N,ID,106,1,1
+1107,Institut Teknologi Adhi Tama Surabaya,8831,6804 Elmside Trail,Lendan,,IX36U,ID,107,1,1
+1108,Shanxi Agricultural University,15072,496 Merrick Court,Shufeng,,TN66X,CN,108,1,1
+1109,Victoria University of Wellington,9,52504 Golf Course Way,Ngaruawahia,,AR21J,NZ,109,1,1
+1110,Universidad Tecnológica del Peru,90,2 Farwell Alley,Pallasca,,OW20O,PE,110,1,1
+1111,University of Lagos,6454,74059 Di Loreto Pass,Barakani,,DT30C,KM,111,1,1
+1112,Riga Teacher Training and Educational Management Academy,88,464 Ryan Trail,Vaiņode,,HX07B,LV,112,1,1
+1113,Universitas Tadulako,9,346 Kipling Drive,Sukoanyar,,KE39T,ID,113,1,1
+1114,Université de Bamako,3622,651 Brown Terrace,Tominian,,XQ48X,ML,114,1,1
+1115,Université Stendhal (Grenoble III),96,43783 Dixon Crossing,Paris 11,Île-de-France,IE60J,FR,115,1,1
+1116,NTI University,6403,51692 Buell Avenue,Sneek,Provincie Friesland,MN95A,NL,116,1,1
+1117,Universidad Tecnológica Oteima,81,7 Spohn Parkway,Los Lotes,,KQ58C,PA,117,1,1
+1118,Manarat International University,5056,1033 Becker Place,Chilmāri,,CR36Q,BD,118,1,1
+1119,Universidad Champagnat,58524,3 Oak Park,Quilino,,YX52O,AR,119,1,1
+1120,Universidade Vale do Rio Doce,90,5537 Mendota Court,Brumado,,MA13S,BR,120,1,1
+1121,Saratov State Agrarian University,411,451 Porter Hill,Gusev,,TZ48H,RU,121,1,1
+1122,University of King's College,1396,0 Cordelia Hill,Cabano,Québec,EI89U,CA,122,1,1
+1123,Universidad del Pacifico,1407,365 Oak Crossing,Sojo,,WZ65J,PE,123,1,1
+1124,Universidad Nacional Pedro Ruíz Gallo,73,3 West Pass,Acobamba,,PK43H,PE,124,1,1
+1125,Nara Medical University,971,82378 Spenser Way,Usuki,,IX43G,JP,125,1,1
+1126,Ecole Nationale Supérieure de Biologie Appliquée à la Nutrition et à l'Alementation,897,21 Sugar Circle,Rungis,Île-de-France,EQ40H,FR,126,1,1
+1127,"Physical Education Academy ""Jozef Pilsudski"" in Warsaw",5,78 Raven Court,Winnica,,UO94G,PL,127,1,1
+1128,Trisakti Institute of Tourism ,716,12 Manley Trail,Tebluru,,SL19C,ID,128,1,1
+1129,Dnepropetrovsk National University,76321,53 Hudson Street,Hola Prystan’,,XT46I,UA,129,1,1
+1130,Universitas Klabat,17,66346 Homewood Point,Pumai,,GT86L,ID,130,1,1
+1131,Ecole Supérieure d'Electricité,32,9251 Moland Road,Nîmes,Languedoc-Roussillon,KS33K,FR,131,1,1
+1132,Victoria University of Wellington,709,71 Prentice Circle,Picton,,LG05K,NZ,132,1,1
+1133,University of Finance and Management in Bialystok,0,74424 Coleman Avenue,Pierzchnica,,HV85W,PL,133,1,1
+1134,Assumption University of Thailand,2,860 Homewood Pass,Pak Phanang,,RO72B,TH,134,1,1
+1135,DEI Bachelor & Master Degrees,3,02106 Helena Trail,Lamía,,VC92E,GR,135,1,1
+1136,Universidad Católica de Santa Fé,464,41 Fisk Plaza,Berón de Astrada,,PT60V,AR,136,1,1
+1137,Anhui Medical University,98362,9328 Dryden Court,Dasheng,,FR29J,CN,137,1,1
+1138,Universitas Tidar Magelang,55,0454 Welch Trail,Pocokan Satu,,CD48H,ID,138,1,1
+1139,Tomas Bata University in Zlin,4532,317 Reinke Street,Mnichovo Hradiště,,HV73L,CZ,139,1,1
+1140,Tyumen State Agricultural Academy,740,99294 Jenna Pass,Nogliki,,EQ91Q,RU,140,1,1
+1141,Samara State Agricultural Academy,1804,06 Crowley Circle,Kharp,,LI66H,RU,141,1,1
+1142,Takoradi Polytechnic ,1,65767 Mccormick Park,Akim Swedru,,IQ36Y,GH,142,1,1
+1143,Université de Bretagne Sud,0,28 Haas Road,Crépy-en-Valois,Picardie,BC41U,FR,143,1,1
+1144,Harbin Engineering University,837,140 Leroy Lane,Changyanbao,,MB12O,CN,144,1,1
+1145,"University College of Arts, Crafts and Design",515,93552 Duke Lane,Tyresö,Stockholm,DX69H,SE,145,1,1
+1146,University College of Trollhättan/Uddevalla,13,10843 Kinsman Hill,Ängelholm,Skåne,WA75E,SE,146,1,1
+1147,Centro Regional Universitário de Espiríto Santo do Pinhal,2991,3995 Scoville Avenue,Aparecida,,AT10E,BR,147,1,1
+1148,North China University of Technology,3104,3 Oakridge Lane,Xinsheng,,PI95N,CN,148,1,1
+1149,Irkutsk State University,346,76 Roth Way,Kabakovo,,WR15I,RU,149,1,1
+1150,North-West State Technical University,27,8 Esker Avenue,Chaltyr,,EP08L,RU,150,1,1
+1151,University of Reggio Calabria,4,923 Havey Point,Elato,,BZ06K,FM,151,1,1
+1152,"Escuela de Policia ""General Santander""",84083,28694 Linden Parkway,Philipsburg,,CL19H,SX,152,1,1
+1153,Centro Regional Universitário de Espiríto Santo do Pinhal,7,6455 Maryland Circle,Garibaldi,,RE94U,BR,153,1,1
+1154,Brock University,7,74446 Pleasure Pass,Stratford,Ontario,EJ96B,CA,154,1,1
+1155,Universidad del Istmo,0,78 Meadow Valley Trail,Huité,,TB24Z,GT,155,1,1
+1156,"Instituto de Artes Visuais, Design e Marketing - IADE",66214,34 Buell Center,Covas da Raposa,Setúbal,OK76F,PT,156,1,1
+1157,Institut Teknologi Adhi Tama Surabaya,5925,92 5th Trail,Komes,,SF36S,ID,157,1,1
+1158,Dagestan State University,8036,21 Ridge Oak Center,Yutsa,,RK97Y,RU,158,1,1
+1159,Neumann College,0,99782 Granby Way,Detroit,Michigan,ZJ63C,US,159,1,1
+1160,Universidad Francisco de Paula Santander,85491,2 Kim Court,Bagadó,,ZV77J,CO,160,1,1
+1161,Nanjing University of Chemical Technology,1589,6 Fordem Center,Biyong,,KW65H,CN,161,1,1
+1162,Beijing University of Chinese Medicine and Pharmacology,565,9 Sunbrook Lane,Yengiawat,,LR87Z,CN,162,1,1
+1163,Hadhramout University of Science and Technology ,5371,3 Hanson Place,Yufrus,,BR51A,YE,163,1,1
+1164,Universidade do Vale do Itajaí,33877,415 Autumn Leaf Pass,Contagem,,PJ28D,BR,164,1,1
+1165,Ecole Nationale Supérieure de Chimie de Mulhouse,23202,0945 International Park,Aubagne,Provence-Alpes-Côte d'Azur,HE16O,FR,165,1,1
+1166,University of Guelph,18,147 Monument Park,Ladner,British Columbia,QZ86V,CA,166,1,1
+1167,Universidad de Cádiz,873,475 Spohn Junction,Santander,Cantabria,KF16R,ES,167,1,1
+1168,Universitas Diponegoro,70822,767 Reindahl Trail,Sindangsari,,QD51M,ID,168,1,1
+1169,3rd Military Medical University,4,501 Almo Terrace,Gulong,,PX50W,CN,169,1,1
+1170,Ecole Nationale Supérieur de Mécanique et d'Aéronautique,65,0590 Crowley Center,Laval,Pays de la Loire,BS13L,FR,170,1,1
+1171,Universidad de Sonsonate,96735,55577 Anthes Pass,Tenancingo,,FH24I,SV,171,1,1
+1172,Xinjiang University,903,593 Swallow Point,Guanshan,,GM60S,CN,172,1,1
+1173,Karelian State Pedagogical University,7920,0066 Morrow Point,Yaroslavskaya,,KG45N,RU,173,1,1
+1174,Institute of Management and Economy,2,3292 Bayside Crossing,Strelka,,WI76W,RU,174,1,1
+1175,Cape Peninsula University of Technology,8295,29010 Crowley Lane,Knysna,,AX92S,ZA,175,1,1
+1176,Universitas Merdeka Madiun,3,49671 Manufacturers Circle,Nginjen,,MK54B,ID,176,1,1
+1177,Kalmyk State University,4,510 Chinook Avenue,Pavlovka,,DZ08Z,RU,177,1,1
+1178,Drake University,9281,27978 Northridge Alley,Knoxville,Tennessee,ZP03H,US,178,1,1
+1179,Russian-Armenian (Slavonic) State University,98266,6 Lawn Road,Gagarin,,ZO87R,AM,179,1,1
+1180,"Florida Metropolitan University, Tampa College Lakeland",4649,3990 Hagan Street,Sacramento,California,UT63U,US,180,1,1
+1181,Al Yarmouk University College,8,30659 Johnson Pass,‘Anat al Qadīmah,,DB64H,IQ,181,1,1
+1182,Beijing Sport University,33635,2701 Lawn Court,Huochang,,IP24X,CN,182,1,1
+1183,Ecole Universitaire d'Ingénieurs de Lille,8495,53376 Warrior Plaza,Wissous,Île-de-France,AY55S,FR,183,1,1
+1184,Université de Ouagadougou,4514,9641 Northfield Trail,Koupéla,,WY72K,BF,184,1,1
+1185,Universidade de Marília,514,1978 Scoville Trail,Osasco,,BT61I,BR,185,1,1
+1186,Xi'an University of Architecture and Technology,45,1 Hintze Point,Partang,,AJ39T,CN,186,1,1
+1187,Universidad Nacional de Entre Ríos,553,3 Stang Parkway,San Salvador de Jujuy,,GH07C,AR,187,1,1
+1188,University of Ulster,20712,646 Thierer Drive,Birmingham,England,RA52E,GB,188,1,1
+1189,National Mining University,13233,1596 Miller Way,Nova Kakhovka,,MB23N,UA,189,1,1
+1190,"University of Perpetual Help, System Dalta",904,91 Ronald Regan Terrace,Tarangnan,,JN67W,PH,190,1,1
+1191,Lampang Vocational College   ,780,5979 Starling Hill,Kamalasai,,SN20C,TH,191,1,1
+1192,Herzen State Pedagogical University of Russia,1820,8 Bowman Road,Priyutovo,,GB58X,RU,192,1,1
+1193,University of Technology,4,06 Ronald Regan Way,Mahébourg,,SQ33L,MU,193,1,1
+1194,Kazan State University of Technology,2654,0887 Merrick Hill,Shakhty,,UC51E,RU,194,1,1
+1195,Asia Europe University,7304,83 John Wall Court,Pursat,,YO00E,KH,195,1,1
+1196,Instituto Politécnico de Setúbal,97,64814 Shasta Parkway,Tarouca,Viseu,BQ84L,PT,196,1,1
+1197,Kharkiv National University of Economics,396,54833 Pennsylvania Lane,Shakhtars’k,,NA43J,UA,197,1,1
+1198,Universidad Santa Fe,60,677 Bunting Court,Emiliano Zapata,Mexico,MO16Q,MX,198,1,1
+1199,University of the Philippines Open University,231,8588 Lyons Road,Olutanga,,UD50I,PH,199,1,1
+1200,Universidad Juárez del Estado de Durango,20612,566 Moulton Way,Benito Juarez,Morelos,NG82O,MX,200,1,1
+1201,Université de Bamako,13250,6778 Lien Center,Gourma Rharous,,VU72D,ML,201,1,1
+1202,Medical University Pleven,27,1 Lien Crossing,Primorsko,,IQ38M,BG,202,1,1
+1203,Ateneo de Zamboanga University,782,29 Colorado Park,Paombong,,TG26V,PH,203,1,1
+1204,Huaihua Radio and Television University,4299,5 Dixon Parkway,Huaxijie,,YG81K,CN,204,1,1
+1205,Universitas Simalungun,940,533 Crest Line Court,Klapagading,,LP08L,ID,205,1,1
+1206,Gotland University College,914,35 Melby Crossing,Kristinehamn,Värmland,FS74S,SE,206,1,1
+1207,Technical University of Mining and Metallurgy Ostrava,57929,0198 Troy Trail,Horka nad Moravou,,JH03I,CZ,207,1,1
+1208,Philippine Christian University,5,00 Kropf Plaza,La Roxas,,QA50D,PH,208,1,1
+1209,Universitas Negeri Semarang,4105,279 Vermont Drive,Pora,,KI21A,ID,209,1,1
+1210,Universitas Ngurah Rai,1,0951 Artisan Park,Panjerrejo,,WG38V,ID,210,1,1
+1211,"Islamic Azad University, Ardabil",10,82381 Farmco Place,Khvānsār,,IX38P,IR,211,1,1
+1212,Kazak American University,280,4212 Starling Trail,Egindiköl,,BH69H,KZ,212,1,1
+1213,Northwestern University of the Philippines,6133,41 Fisk Alley,Nama,,RK31T,PH,213,1,1
+1214,Universitas Lampung,77581,9736 Warrior Pass,Pamotan,,EA72Z,ID,214,1,1
+1215,Chiba University of Commerce,530,38443 Pierstorff Alley,Kanie,,OL36L,JP,215,1,1
+1216,Universidade Lusiada,85,4845 Paget Drive,Cruzeiro,Viana do Castelo,SC40A,PT,216,1,1
+1217,Tampere University of Technology,8504,5849 Cordelia Circle,Hirvensalmi,,OK87G,FI,217,1,1
+1218,Yanbian University of Science and Technology,50,22817 Talisman Court,Xinghai,,GA54P,CN,218,1,1
+1219,Hebei Agricultural University,69,62974 Express Plaza,Nantang,,EA96Q,CN,219,1,1
+1220,Ecole Universitaire d'Ingénieurs de Lille,6,88326 Gale Circle,Paris 14,Île-de-France,EQ98M,FR,220,1,1
+1221,International University Institute of Luxembourg,864,0 Ramsey Way,Eschweiler,,XG67R,LU,221,1,1
+1222,Saint Ferdinand College,23,22 Clove Road,Battung,,GJ23L,PH,222,1,1
+1223,Groupe Sup de Co Montpellier,21,06 Elgar Crossing,Avon,Île-de-France,IE45I,FR,223,1,1
+1224,University of Santo Tomas,981,390 Red Cloud Alley,Apalit,,LJ26K,PH,224,1,1
+1225,Ecole Supérieure d'Ingénieurs en Electronique et Electrotechnique,2,7 Waywood Junction,Roscoff,Bretagne,HW11F,FR,225,1,1
+1226,Universidad Simón Bolivar,2,0788 Moulton Drive,San Casimiro,,QJ92G,VE,226,1,1
+1227,Mbarara University of Science and Technology,2,4 Sullivan Lane,Buyende,,VB12D,UG,227,1,1
+1228,Shanghai Normal University,29642,1 Westerfield Circle,Liulin,,ZR39N,CN,228,1,1
+1229,Dawat University,5720,92895 Burning Wood Circle,Dāngām,,HU86R,AF,229,1,1
+1230,Universitas Nasional Pasim,1,032 Menomonie Terrace,Negeriagung,,TB95I,ID,230,1,1
+1231,Centro Universitário Monte Serrat,3227,152 Cottonwood Junction,Acaraú,,FW91D,BR,231,1,1
+1232,University of Lower Silesia of the Association for the Advancement of Education in Wroclaw.,18,5062 Homewood Point,Ryczów,,YM11H,PL,232,1,1
+1233,South China University of Technology,16322,87 Oneill Point,Gaoqiao,,GC22Y,CN,233,1,1
+1234,University of Pardubice,987,3 Bartelt Alley,Horní Bříza,,LW73I,CZ,234,1,1
+1235,Universitas Khairun,6,2466 West Place,Luti,,RD35X,ID,235,1,1
+1236,University of the Philippines Mindanao,38,4 Crownhardt Circle,Taluksangay,,MB22B,PH,236,1,1
+1237,Universitas Sebelas Maret,33145,264 Anzinger Point,Pandean,,SO60Y,ID,237,1,1
+1238,Nanjing University of Chemical Technology,3,0 Anhalt Plaza,Donggong,,DN64L,CN,238,1,1
+1239,Nagoya University of Commerce and Business Administration,87,0 Katie Circle,Tōkamachi,,XF42Y,JP,239,1,1
+1240,Universidade de Mogi das Cruzes,4005,670 Charing Cross Circle,Brasília,,QY67L,BR,240,1,1
+1241,African University of Science and Technology,9118,9272 Buell Hill,Amper,,GD46B,NG,241,1,1
+1242,University of Benghazi,63,077 Killdeer Point,Hūn,,XZ54C,LY,242,1,1
+1243,Yaroslavl State Technical University,18961,235 Clove Terrace,Mortka,,IC62S,RU,243,1,1
+1244,South China University,498,52045 Birchwood Court,Pailou,,FB57B,CN,244,1,1
+1245,Pyongyang University of Science and Technology,1,3 Sugar Junction,Hamhŭng,,RS57V,KP,245,1,1
+1246,Universidad Antonio Nariño,73,7 Doe Crossing Trail,Sabaneta,,XP89B,CO,246,1,1
+1247,Instituto Superior de Saúde do Alto Ave,6,8738 Hudson Trail,Cabra Figa,Lisboa,MR03F,PT,247,1,1
+1248,Universitas Islam Syekh-Yusuf ,0,97 Columbus Center,Suwangi Utara,,ZR59G,ID,248,1,1
+1249,International Turkmen Turkish University,68,5 Walton Plaza,Gazojak,,RN55Y,TM,249,1,1
+1250,Fiji School of Medicine,14,58 Monument Street,Nadi,,UF13C,FJ,250,1,1
+1251,Far Eastern University,57,7 Buell Plaza,Magdug,,XU99R,PH,251,1,1
+1252,Harbin Engineering University,4153,6 Paget Court,Humen,,OF10X,CN,252,1,1
+1253,Drzavni Univerzitet u Novom Pazaru,6,51 Bowman Road,Sremski Karlovci,,FQ77X,RS,253,1,1
+1254,University of Ancona,581,12 Bunker Hill Terrace,Genova,Liguria,KV39N,IT,254,1,1
+1255,China University of Mining Technology - Beijing,52126,422 Beilfuss Center,Turgun,,JO55P,CN,255,1,1
+1256,Multnomah Bible College,7127,88 Manufacturers Plaza,Olympia,Washington,SY03N,US,256,1,1
+1257,"Universidad Católica Boliviana, La Paz",44,49302 Summit Road,Riberalta,,VJ64X,BO,257,1,1
+1258,University of Otago,16,997 Harbort Street,Lower Hutt,,GB74V,NZ,258,1,1
+1259,Samara State Medical University,970,68574 Washington Place,Vykhino-Zhulebino,,BC90N,RU,259,1,1
+1260,Universidad Tecnológica Centroamericana,0,66213 Buell Avenue,El Escanito,,FL31U,HN,260,1,1
+1261,Instituto Superior de Paços de Brandão,166,5 Paget Park,Carvoeira,Lisboa,ZF47F,PT,261,1,1
+1262,El Colegio de México,5020,1570 Monument Road,San Miguel,Chiapas,BY57N,MX,262,1,1
+1263,University of Perpetual Help,0,2577 Eagan Park,Besao,,ZC62K,PH,263,1,1
+1264,University of Southeastern Philippines,7,7 Arapahoe Plaza,Santa Fe,,ZV69G,PH,264,1,1
+1265,University College Dublin,84371,4 Express Drive,Old Kilcullen,,JI25Q,IE,265,1,1
+1266,Universidad Santo Tomás,351,51 Bobwhite Park,Socorro,,BM94E,CO,266,1,1
+1267,Kabul Health Sciences Institute,2,25 Bayside Circle,Khānaqāh,,YP56F,AF,267,1,1
+1268,Instituto Tecnológico de Aguascalientes,47,4 Eastwood Terrace,Bellavista,Veracruz Llave,PX83M,MX,268,1,1
+1269,St. Thomas University,77,67 Nobel Circle,Niverville,Manitoba,MQ35F,CA,269,1,1
+1270,Manuel S. Enverga University Foundation,78906,73 Vahlen Street,Gabaldon,,RV70U,PH,270,1,1
+1271,Ecole Supérieure de Commerce de Pau,66545,0479 Carioca Way,Paris 08,Île-de-France,PH92B,FR,271,1,1
+1272,Samara State Agricultural Academy,4,93372 Vernon Crossing,Sorokino,,OA22P,RU,272,1,1
+1273,Universidad Tecnológica de Santiago,867,489 Harper Hill,Ciudad Nueva,,DO77T,DO,273,1,1
+1274,Xinjiang University of Finance and Economics,4,744 Fairview Park,Chedao,,MY02M,CN,274,1,1
+1275,Hazara University,33,4 Rutledge Drive,Qila Abdullāh,,JP03D,PK,275,1,1
+1276,Ningxia University,93,0 Laurel Park,Baimajing,,AJ40J,CN,276,1,1
+1277,National University of Ostroh Academy,9149,7 Maple Trail,Vorzel’,,FX18V,UA,277,1,1
+1278,American University of Armenia,6994,4 Vahlen Alley,Hrazdan,,LN22Z,AM,278,1,1
+1279,Universidad Adventista de Colombia,1899,224 Steensland Parkway,Lorica,,MX38B,CO,279,1,1
+1280,Fujian Agricultural University,0,470 Mayfield Center,Canghou,,EQ40Y,CN,280,1,1
+1281,Ivanovo State Academy of Medicine,3,788 Cottonwood Way,Solnechnoye,,SN96R,RU,281,1,1
+1282,Ibrahim Babangida University,93,1030 Norway Maple Lane,Owerri,,PA20Q,NG,282,1,1
+1283,International Tourism Institute,4522,808 Fallview Alley,Pembroke,,PO96P,MT,283,1,1
+1284,Ecole des Hautes Etudes Industrielles de Lille,5,90 Farmco Parkway,Évry,Île-de-France,XV70U,FR,284,1,1
+1285,St. Petersburg State University of Engineering and Economics,5444,1 John Wall Crossing,Pelym,,HT24R,RU,285,1,1
+1286,Huanghe Science & Technology University,60,24 Longview Court,Shuicha,,SY71E,CN,286,1,1
+1287,Bishkek Humanities University,1686,64 Erie Crossing,Batken,,GE71E,KG,287,1,1
+1288,Hunan University,72052,4328 Maryland Point,Aiximan,,UL63U,CN,288,1,1
+1289,Universidad de Tarapacá,3423,0 Forest Dale Road,Viña del Mar,,HB43H,CL,289,1,1
+1290,Yangzhou University,97,3 Fulton Circle,Jiaowei,,VK93M,CN,290,1,1
+1291,Université de Technologie de Compiègne,5,940 Springview Plaza,Paris La Défense,Île-de-France,WA61H,FR,291,1,1
+1292,New College of California,178,54728 Glacier Hill Crossing,Washington,District of Columbia,XN00Q,US,292,1,1
+1293,Mogilev State University A.A. Kuleshov,26028,97 Fulton Way,Khal’ch,,RG12O,BY,293,1,1
+1294,Instituto Superior de Gestão - ISG,87495,5273 Monica Drive,Vale Mourão,Lisboa,BS21I,PT,294,1,1
+1295,University College of Gävle,3062,63837 Knutson Alley,Ljungbyholm,Kalmar,SJ26B,SE,295,1,1
+1296,Bashkir State Pedagogical University named After M. Akmullah,5074,39275 Dorton Junction,Karata,,TP27H,RU,296,1,1
+1297,Pontifícia Universidade Católica do Rio Grande do Sul,24583,1773 Rockefeller Crossing,Santa Gertrudes,,KT29Q,BR,297,1,1
+1298,Universidade de Lisboa,4787,46 Northland Point,Brejieira,Leiria,FS22V,PT,298,1,1
+1299,Instituto Tecnológico de Aeronáutica,3340,90 Sullivan Junction,Farroupilha,,ZH23A,BR,299,1,1
+1300,University of Fine Arts Belgrade,48,7 Myrtle Drive,Doljevac,,MI33S,RS,300,1,1
+1301,Universidad Autónoma del Caribe,11,940 Monterey Road,Barranco de Loba,,MJ13U,CO,301,1,1
+1302,"Music Academy ""Fryderyk Chopin"" in Warszaw",4,9267 Hauk Terrace,Solec-Zdrój,,BH65I,PL,302,1,1
+1303,"National American University, Kansas City",340,70651 Debs Place,Denver,Colorado,UT16H,US,303,1,1
+1304,University of Education Hradec Kralove,753,302 Monterey Road,Polešovice,,RY37S,CZ,304,1,1
+1305,"Universidad Católica Boliviana, Cochabamba",8,480 4th Pass,Nueva Manoa,,RK17Z,BO,305,1,1
+1306,Shanghai Ouhua Vocational Technical College,47875,5 Park Meadow Crossing,Baoji,,QW89R,CN,306,1,1
+1307,Foundation University,31,2192 Sunbrook Street,Santo Niño,,ZS04K,PH,307,1,1
+1308,Université Hassan II - Aïn Chock,99389,294 Towne Point,Taouima,,JE39B,MA,308,1,1
+1309,Ural Gorkij State University,111,38 Scott Place,Troitsk,,YO67U,RU,309,1,1
+1310,Bicol University,23,7 Erie Park,Bongao,,YH31F,PH,310,1,1
+1311,Universitas Sumatera Utara,689,41553 Washington Lane,Tilamuta,,VL18E,ID,311,1,1
+1312,Hochschule Mittweida (FH),397,61 5th Lane,Berlin,Berlin,ZC20U,DE,312,1,1
+1313,Southern Yangtze University,34,80 Marcy Road,Gaoyan,,TB09D,CN,313,1,1
+1314,Universidad Metropolitana de Honduras,75467,00488 Spenser Lane,Aramecina,,QI84H,HN,314,1,1
+1315,University of Cebu,3,69203 Mesta Place,Molave,,BS06H,PH,315,1,1
+1316,Colegio de San Juan de Letran,97574,77356 Lawn Junction,Bungabon,,GQ67A,PH,316,1,1
+1317,Akita University of Economics and Law,53,19913 Kings Trail,Ujiie,,UA47E,JP,317,1,1
+1318,Universitas Sumatera Utara,9458,42 Hudson Way,Mertani,,OL94J,ID,318,1,1
+1319,Institut d'Etudes Politiques de Bordeaux,40435,28130 Carpenter Alley,Chantepie,Bretagne,QE03F,FR,319,1,1
+1320,Nagoya University,47,1588 Briar Crest Terrace,Fukayachō,,PC46Z,JP,320,1,1
+1321,Nanjing Forestry University,610,838 Garrison Road,Yaogu,,US42I,CN,321,1,1
+1322,Universidad Católica de La Plata,18338,137 Hermina Parkway,Tinogasta,,YO18H,AR,322,1,1
+1323,Wenzhou University,396,0 Clarendon Avenue,Lianhe,,UE31C,CN,323,1,1
+1324,Irkutsk State University,8935,6 Upham Plaza,Galyugayevskaya,,KU19L,RU,324,1,1
+1325,Gansu University of Technology,560,7562 Delladonna Road,Shuangqiao,,HE80I,CN,325,1,1
+1326,Universidad Experimental Felix Adam,52761,6530 Packers Lane,Hato Mayor del Rey,,ID09S,DO,326,1,1
+1327,Hubei University,5060,9019 Thackeray Terrace,Yingtou,,ZJ21H,CN,327,1,1
+1328,Universidad Católica de Honduras,67,293 Pennsylvania Court,Carbajales,,FH19M,HN,328,1,1
+1329,University of Science and Technology of China,5721,06818 Southridge Court,Futang,,VF25M,CN,329,1,1
+1330,University of Southern Mindanao,71,854 Arapahoe Street,Alacaygan,,GA40J,PH,330,1,1
+1331,Dneprodzerzhinsk State Technical University,65,261 Graceland Trail,Chervonopartyzans’k,,IM94Z,UA,331,1,1
+1332,Kamchatka State University Vitus Bering,917,4524 Elmside Plaza,Leninsk,,CP68C,RU,332,1,1
+1333,Tenri University,28436,82 Mayer Alley,Mutsu,,WX89B,JP,333,1,1
+1334,Lanzhou University,939,20 Eliot Place,Xiangrong,,VK48A,CN,334,1,1
+1335,Al-Nasser University,28,0230 Old Shore Center,Az̧ Z̧alī‘ah,,MJ20N,YE,335,1,1
+1336,National University of Defense Technology,16551,256 Hallows Circle,Leiyang,,ZP04M,CN,336,1,1
+1337,Universidad del Tolima,8494,55 Marquette Alley,Salamina,,RM61I,CO,337,1,1
+1338,South University of Science and Technology of China ,719,6080 Continental Alley,Dongjie,,GC30R,CN,338,1,1
+1339,Faculdades Integradas do Brasil - UNIBRASIL,45676,72 Blackbird Avenue,Aparecida,,OZ24P,BR,339,1,1
+1340,CETYS Universidad,217,20 Haas Pass,Patsi,,VF85K,KM,340,1,1
+1341,Ludwik Solski State Academy of Theatre in Cracow,6078,0477 Basil Plaza,Leśnica,,FS59O,PL,341,1,1
+1342,Kerman Graduate University of Technology,21345,102 Hudson Point,Gonābād,,BC54L,IR,342,1,1
+1343,Mendel University of Agriculture and Forestry,935,9855 Westport Junction,Štítná nad Vláří,,JK62R,CZ,343,1,1
+1344,Foshan University,6995,3 Ronald Regan Road,Yanhu,,EA35T,CN,344,1,1
+1345,The Queen's University Belfast,5487,86873 Welch Avenue,Aston,England,SG71Q,GB,345,1,1
+1346,Beijing Medical University,51,6053 Myrtle Point,Liuzu,,KY52T,CN,346,1,1
+1347,Yarmouk Private University ,833,753 Redwing Circle,Khān Shaykhūn,,LA30F,SY,347,1,1
+1348,Taiyuan University of Technology,8098,41 Chinook Place,Ganjun,,HQ72T,CN,348,1,1
+1349,Technical University of Mining and Metallurgy Ostrava,245,11105 Toban Pass,Jesenice,,CE05Y,CZ,349,1,1
+1350,University of Commerce Luigi Bocconi,257,334 Del Mar Pass,Messina,Sicilia,EK95V,IT,350,1,1
+1351,Azerbaijan University ol Languages,17,41 Bashford Terrace,Imishli,,ZB70H,AZ,351,1,1
+1352,University of the Faroe Islands,9,25 5th Lane,Tvøroyri,,BU00O,FO,352,1,1
+1353,Instituto Superior de Ciências Empresariais e de Turismo,96,9 Northfield Alley,Espinho,Coimbra,AE10U,PT,353,1,1
+1354,Universitas Proklamasi 45,7,28388 Badeau Parkway,Desa Wetan Ciakar,,LW53V,ID,354,1,1
+1355,Universitas Jambi,46693,2801 Calypso Plaza,Dalam,,JG39J,ID,355,1,1
+1356,Rizal Technological University,4,66376 Oneill Way,Canjulao,,BF14U,PH,356,1,1
+1357,Universidad Notarial Argentina,989,212 Marcy Parkway,Federal,,NQ42L,AR,357,1,1
+1358,South China Construction University,8882,1160 Novick Court,Wuma,,VX80A,CN,358,1,1
+1359,Nizhny Novgorod State Academy of Medicine,3,6438 Daystar Point,Rasshevatskaya,,ND80Y,RU,359,1,1
+1360,Universidad Panamericana de San Salvador,76112,9285 Park Meadow Crossing,Atiquizaya,,NK71R,SV,360,1,1
+1361,"Institute of Management Sciences, Lahore (IMS)",9,1 Vera Terrace,Parachinar,,IW67E,PK,361,1,1
+1362,Göteborg University,36697,034 Dexter Point,Solna,Stockholm,IT94H,SE,362,1,1
+1363,Universitas Proklamasi 45,365,142 Sycamore Road,Gambiran,,EV05Z,ID,363,1,1
+1364,Western Mindanao State University,18,800 Michigan Way,Can-Avid,,TL06B,PH,364,1,1
+1365,Universitas Bung Hatta,15465,4 Maple Wood Lane,Barisan,,TF06T,ID,365,1,1
+1366,University of Luxemburg,972,2821 Parkside Park,Beckerich,,UQ11W,LU,366,1,1
+1367,Notre Dame of Marbel University,31689,05234 Melvin Park,Nagbalaye,,TK45A,PH,367,1,1
+1368,Universidade do Grande Rio,7436,6 Buhler Crossing,Astorga,,AQ02N,BR,368,1,1
+1369,Universitas Kristen Maranatha,666,90 Duke Place,Dairiti,,KS86L,ID,369,1,1
+1370,"Corporación Educativa Mayor del Desarrollo ""Simón Bolivar""",38,9821 Longview Way,Piedrancha,,DJ09I,CO,370,1,1
+1371,University of Split,44833,58544 Cody Park,Primošten,,PC12X,HR,371,1,1
+1372,Guangdong University of Technology,3,787 Morrow Alley,Kunheda Woerzu Manzu,,OJ34T,CN,372,1,1
+1373,Liaoning University,14238,2 Meadow Vale Park,Lianghekou,,KI18U,CN,373,1,1
+1374,Katowice School of Economics,6350,43 Tony Crossing,Kostrzyn nad Odrą,,CX32U,PL,374,1,1
+1375,Pomorsk State University,87,8 Thierer Place,Polunochnoye,,MK22B,RU,375,1,1
+1376,Samara State Agricultural Academy,6,1 Moland Plaza,Nauchnyy Gorodok,,AV72X,RU,376,1,1
+1377,Universidad del Istmo,806,84720 Farwell Lane,Cabricán,,NG41H,GT,377,1,1
+1378,Open University of Tanzania,8,8241 Bayside Crossing,Kasulu,,XP87T,TZ,378,1,1
+1379,Tibet University,212,291 Basil Place,Xinyi,,SJ14B,CN,379,1,1
+1380,Taganrog State University of Radioengineering,1049,1 Acker Avenue,Gordeyevka,,YV59N,RU,380,1,1
+1381,Ho Chi Minh City University of Social Sciences and Humanities,8786,8 Atwood Court,Phú Khương,,NA81T,VN,381,1,1
+1382,Tunku Syed Sirajuddin Polytechnic,7,15730 Pennsylvania Pass,Kuala Terengganu,Terengganu,YT45K,MY,382,1,1
+1383,Universitas Wijaya Kusuma Purwokerto,3,45263 Kings Park,Tanagara,,ME09R,ID,383,1,1
+1384,Sekolah Tinggi Akuntansi Negara (STAN),61516,13 Mayfield Terrace,Kiraman,,TX91K,ID,384,1,1
+1385,Universidad de Buenos Aires,1756,847 Maryland Way,Aluminé,,UI93B,AR,385,1,1
+1386,European University,26712,77488 Dovetail Pass,Stari Banovci,,SQ90P,RS,386,1,1
+1387,Lulea University of Technology,509,5577 Milwaukee Parkway,Hallstavik,Stockholm,SG53Y,SE,387,1,1
+1388,University of Ostrava,605,06 Stone Corner Plaza,Kořenov,,QK83G,CZ,388,1,1
+1389,Adventist University of the Philippines,9244,5 Shopko Alley,Tucuran,,VT18V,PH,389,1,1
+1390,Greenwich University,9792,249 Kensington Pass,Mach,,EJ50U,PK,390,1,1
+1391,Herat University,37158,0868 Oriole Street,Jabal os Saraj,,RW68L,AF,391,1,1
+1392,Crimea State Medical University,7575,924 Vidon Way,Horodnya,,GP13O,UA,392,1,1
+1393,Baze University Abuja,6,2 Rutledge Point,Esuk Oron,,TK60B,NG,393,1,1
+1394,Universitas Mulawarman,681,89696 Atwood Center,Krajan,,UA05J,ID,394,1,1
+1395,Mindanao State University,7256,3826 Reindahl Parkway,Bulacan,,NM90U,PH,395,1,1
+1396,Shanghai Maritime University,1,9503 Holmberg Avenue,Tunzhai,,LJ09D,CN,396,1,1
+1397,Obong University,2402,143 Kenwood Park,Wamba,,SI86X,NG,397,1,1
+1398,Novosibirsk State Agricultural University,4419,00084 Meadow Valley Parkway,Krasnyy Kholm,,MB81C,RU,398,1,1
+1399,Universitas Simalungun,1951,0739 Grasskamp Plaza,Lasiana,,TU97J,ID,399,1,1
+1400,Technical University of Crete,903,42 Carberry Terrace,Skiáthos,,TG67Q,GR,400,1,1
+1401,China University of Mining Technology - Beijing,6,53 Warner Place,Xinle,,MU96A,CN,401,1,1
+1402,Union University,6705,66799 Lyons Court,Milwaukee,Wisconsin,LX45M,US,402,1,1
+1403,Tashkent State University of Economics,3543,60 Drewry Alley,To’rtko’l Shahri,,PL26U,UZ,403,1,1
+1404,Mid-Sweden University,6925,7911 Burrows Point,Kävlinge,Skåne,FO37J,SE,404,1,1
+1405,Leon Kozminski Academy of Entrepreneurship and Mangement in Warsaw,11180,501 Larry Trail,Pyzdry,,TW66U,PL,405,1,1
+1406,University of Central Greece,621,119 Browning Crossing,Áthyra,,UK19I,GR,406,1,1
+1407,"Universidad Pedagógica Nacional ""Francisco Morazán""",6,87635 Norway Maple Trail,La Libertad,,SQ63L,HN,407,1,1
+1408,Sevastopol National Technical University,64,09 Drewry Lane,Bezlyudivka,,SP17C,UA,408,1,1
+1409,"University of the West Indies, Mona",5,84 Orin Circle,Gayle,,EP80K,JM,409,1,1
+1410,Ecole Centrale de Lille,4297,526 Melvin Park,Dijon,Bourgogne,VH68I,FR,410,1,1
+1411,Guangdong Peizheng College ,21204,01955 Morningstar Court,Jagdaqi,,MH71L,CN,411,1,1
+1412,Universidade do Minho,0,64324 Corry Road,Sanguinheira,Coimbra,LZ80C,PT,412,1,1
+1413,Universidade Federal de Campina Grande,6,93 Magdeline Point,Penha,,HP84J,BR,413,1,1
+1414,Al-hikmah University,69252,763 Luster Drive,Kaltungo,,EQ93S,NG,414,1,1
+1415,Universidade Federal Rural do Semi-Árido,2568,21288 Basil Parkway,Tietê,,RY64I,BR,415,1,1
+1416,Hainan Normal University,7,938 Service Hill,Dongshe,,IE48A,CN,416,1,1
+1417,Universidad Externado de Colombia,5,1459 Del Mar Way,Guachucal,,SC48W,CO,417,1,1
+1418,University of Guelph,1755,426 Division Junction,Beaverlodge,Alberta,CM21N,CA,418,1,1
+1419,Shanghai City College,1254,0543 Village Green Road,Gongji,,MU44P,CN,419,1,1
+1420,St. Petersburg State University of Telecommunication,231,73 Iowa Plaza,Pushkino,,IZ29R,RU,420,1,1
+1421,Central South University,610,969 Mitchell Hill,Hualong,,WE33X,CN,421,1,1
+1422,Yaroslavl State Pedagogical University,59,1 Golden Leaf Avenue,Konëvo,,MF93X,RU,422,1,1
+1423,Universidad Nacional Siglo XX Llallagua,55,929 Namekagon Terrace,Potolo,,QY83W,BO,423,1,1
+1424,Jilin University,62895,73 Oakridge Plaza,Xinzhou,,MX95Q,CN,424,1,1
+1425,University of the Philippines Manila,47520,0 Butterfield Park,San Casimiro,,QT16F,PH,425,1,1
+1426,Zaporizhzhe National University,160,593 Stang Alley,Mysove,,LA90Y,UA,426,1,1
+1427,Technological Education Institute of Piraeus,84,93312 Utah Terrace,Áyios Yeóryios,,PQ80K,GR,427,1,1
+1428,Université Thierno Amadou Diallo,8832,68 Arkansas Crossing,Beyla,,XN93S,GN,428,1,1
+1429,"Universidad ""Juan Agustín Maza""",0,2486 Bunting Circle,Goya,,YL73K,AR,429,1,1
+1430,Universidade Federal Rural do Semi-Árido,44,9 Kensington Lane,Caldas Novas,,LS27Y,BR,430,1,1
+1431,Universitas Kristen Maranatha,5429,98354 Rieder Way,Karangnunggal,,WB84R,ID,431,1,1
+1432,Universitas Trisakti,551,2961 Bluestem Parkway,Kakaek,,YG30K,ID,432,1,1
+1433,Agricultural University of Lublin,156,3 Sauthoff Plaza,Dąbie,,ZH53Z,PL,433,1,1
+1434,Centro Universitário Newton Paiva,4120,9407 Prairie Rose Court,São Sebastião,,IQ37U,BR,434,1,1
+1435,Universitas 17 Agustus 1945 Banyuwangi,41087,62 Muir Terrace,Temuji,,DW53C,ID,435,1,1
+1436,Universitas Negeri Surabaya,82,0 Cottonwood Lane,Baranusa,,MI83Q,ID,436,1,1
+1437,Institut National Supérieur de Formation Agro-Alimentaire,6137,62100 Gulseth Alley,Angoulême,Poitou-Charentes,HU86Z,FR,437,1,1
+1438,Université d'Antsiranana,5243,1792 Carberry Place,Andovoranto,,RN04X,MG,438,1,1
+1439,Konan Women's University,6481,29 Waubesa Avenue,Iwai,,YC19X,JP,439,1,1
+1440,Singidunum University,3619,384 Farragut Place,Ćićevac,,GM47Q,RS,440,1,1
+1441,National University,7896,39259 Longview Terrace,Tagbina,,WN88E,PH,441,1,1
+1442,University of Ontario Institute of Technology,7453,3 Northwestern Circle,Sicamous,British Columbia,LQ43M,CA,442,1,1
+1443,Smolny University,4,3 Kings Center,Uvarovka,,DR50Q,RU,443,1,1
+1444,Shanghai Lida Polytechnic Institute,7415,307 Warrior Pass,Youlan,,MP72Y,CN,444,1,1
+1445,Royal lnstitute of Technology,4,5055 Carey Junction,Jönköping,Jönköping,PF47P,SE,445,1,1
+1446,Baze University Abuja,3517,50 Northridge Parkway,Gorgoram,,IH99X,NG,446,1,1
+1447,Bingham University,0,147 Dorton Terrace,Bassa,,ZJ81U,NG,447,1,1
+1448,Hebei University of Technology,8764,14347 Harbort Place,Pinghu,,HE53Q,CN,448,1,1
+1449,University of Human Development (Kurdistan Region),9675,458 New Castle Court,Nahiyat Ghammas,,NA90N,IQ,449,1,1
+1450,Vilnius Gediminas Technical University,2,66565 Algoma Lane,Tytuvėnėliai,,JX33Y,LT,450,1,1
+1451,Ural Academy of Public Administration,30,84 Westerfield Parkway,Pridonskoy,,QU39Q,RU,451,1,1
+1452,Central Mindanao University,835,2261 Bultman Park,Lombog,,WD94B,PH,452,1,1
+1453,Universitas Negeri Gorontalo,8,3 Mccormick Street,Oekuu,,NX30Z,ID,453,1,1
+1454,Universitas Negeri Gorontalo,44,310 Porter Junction,Krajandadapmulyo,,OS51I,ID,454,1,1
+1455,Southwest University of Political Science and Law,1851,5292 Helena Terrace,Wansheng,,PU03O,CN,455,1,1
+1456,Universitas Lampung,308,9337 Hoard Avenue,Krajan Gajihan,,BH69U,ID,456,1,1
+1457,Ryszard Lazarski University of Commerce and Law in Warsaw,9120,91744 Grayhawk Trail,Dubiecko,,UY31W,PL,457,1,1
+1458,Universidad Privada San Juan Bautista,2973,22 Eagan Drive,Tres Unidos,,DB03F,PE,458,1,1
+1459,Bicol University,341,485 Sachs Park,Polloc,,SK72Y,PH,459,1,1
+1460,Beijing Sport University,87168,16329 Dunning Center,Liangdang Chengguanzhen,,QT99J,CN,460,1,1
+1461,Université Julius Nyerere Kankan,2,28501 West Park,Beyla,,EF84K,GN,461,1,1
+1462,Royal College of Surgeons,822,8397 Stone Corner Court,Blarney,,GE50E,IE,462,1,1
+1463,University of Ioannina,14,4 Hallows Hill,Palaiomonástiron,,KU77P,GR,463,1,1
+1464,Universiti Tunku Abdul Rahman,6969,00 Logan Parkway,Kota Kinabalu,Sabah,ZV76H,MY,464,1,1
+1465,Tianjin University,8829,8625 Gerald Plaza,Diancun,,UC39A,CN,465,1,1
+1466,Universitas Airlangga,906,126 Vera Drive,Pangrumasan,,HU20T,ID,466,1,1
+1467,"International School of New Media, University of Lübeck",90964,7946 Onsgard Street,Freiburg im Breisgau,Baden-Württemberg,LB25R,DE,467,1,1
+1468,Tiffin University Prague,27,443 Reindahl Court,Štítná nad Vláří,,KA31R,CZ,468,1,1
+1469,Universidad Nacional Agraria de la Selva,37,0576 Eastwood Point,Huaylillas,,DO67T,PE,469,1,1
+1470,Anhui University of Traditional Chinese Medicine,92204,5569 Westend Avenue,Huangjin,,KY84M,CN,470,1,1
+1471,Higher School of Economics,8,42197 Starling Way,Tver,,SB47J,RU,471,1,1
+1472,Nairobi Technical Training Institute ,32110,93 Raven Junction,Nanyuki,,IP24K,KE,472,1,1
+1473,Shandong Normal University,0,08 Glacier Hill Plaza,Junkou,,UP41O,CN,473,1,1
+1474,University of Oulu,82,9 Dwight Drive,Viitasaari,,FC61D,FI,474,1,1
+1475,Universidade Estadual do Oeste do Paraná,8477,9 8th Way,Abaetetuba,,NB26V,BR,475,1,1
+1476,Universidad Fray Luca Paccioli,4895,1 Schlimgen Parkway,Tierra y Libertad,Chihuahua,SP53Z,MX,476,1,1
+1477,Komsomolsk-on-Amur State Technical University,679,0577 Summit Avenue,Rostokino,,AG32O,RU,477,1,1
+1478,University of Lower Silesia of the Association for the Advancement of Education in Wroclaw.,3,5001 Fulton Center,Lwówek Śląski,,OC51Q,PL,478,1,1
+1479,Tiffin University Prague,159,35 Huxley Terrace,Želešice,,WS66Y,CZ,479,1,1
+1480,Chongqing University of Communications,382,5 Ludington Trail,Zhize,,ZA31B,CN,480,1,1
+1481,Xi'an Jiaotong University,66,6422 Superior Point,Bailang,,SU81Y,CN,481,1,1
+1482,Tiffin University Prague,89,188 Meadow Vale Junction,Moravská Nová Ves,,JO05U,CZ,482,1,1
+1483,Naresuan University,3841,1 Montana Alley,Akat Amnuai,,NG66W,TH,483,1,1
+1484,Ecole Nationale Supérieure du Pétrole et des Monteurs,81629,65972 Farwell Way,Lyon,Rhône-Alpes,GO62C,FR,484,1,1
+1485,Kaliningrad State Technical University,1,81106 Thierer Pass,Odesskoye,,PQ23C,RU,485,1,1
+1486,Universidade Candido Mendes,9,20954 Nelson Plaza,Palmeira,,OR31D,BR,486,1,1
+1487,Brescia University,62,52693 Utah Plaza,El Paso,Texas,JP75L,US,487,1,1
+1488,Xi'an University of Technology,80420,39 International Lane,Dahedian,,RE87S,CN,488,1,1
+1489,Universitas Pancasila,41827,31187 Thierer Pass,Cigaleuh Kulon,,MP84X,ID,489,1,1
+1490,China USA Business University,90,84 Buena Vista Avenue,Tuopu Luke,,BC89K,CN,490,1,1
+1491,Altai State Medical University,7397,3356 Dexter Hill,Nekhayevskiy,,UJ22T,RU,491,1,1
+1492,Huanghe Science & Technology University,70422,110 Sutteridge Hill,Ji’an,,TO89H,CN,492,1,1
+1493,Umea University,82,46388 Waxwing Avenue,Västerås,Västmanland,UV76D,SE,493,1,1
+1494,Universitas Muhammadiyah Sumatra Utara,3,85364 Utah Street,Suwaduk,,SR25V,ID,494,1,1
+1495,Universidade de Franca,378,1 Shoshone Terrace,Bandeirantes,,BX28T,BR,495,1,1
+1496,University of Montenegro,5544,2 Scott Plaza,Budva,,ZN10U,ME,496,1,1
+1497,Ludwik Solski State Academy of Theatre in Cracow,1,35742 Linden Avenue,Knyszyn,,GU53E,PL,497,1,1
+1498,Tiffin University Prague,967,119 Ronald Regan Trail,Hrob,,YL92X,CZ,498,1,1
+1499,Polytechnic University of the Philippines,2430,81 Steensland Alley,Bucay,,QV93G,PH,499,1,1
+1500,University of Regina Carmeli,525,464 1st Plaza,Cagdianao,,DT32I,PH,500,1,1

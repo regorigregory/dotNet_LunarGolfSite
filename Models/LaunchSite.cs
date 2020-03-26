@@ -10,7 +10,6 @@ namespace LunarSports.Models
     {
         public int ID { get; set; }
 
-        [Display(Name = "Whom to call for additional information")]
 
   
         public int Location { get; set; }

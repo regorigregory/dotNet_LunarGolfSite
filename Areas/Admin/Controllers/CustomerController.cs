@@ -20,13 +20,13 @@ namespace LunarSports.Areas.Admin.Controllers
 
         public CustomerController(UserManager<ApplicationUser> userManagerr)
         {
-            this.userManager = userManager;
+            this.userManager = userManagerr;
         }
         // GET: Customer
         public ActionResult Index()
         {
-            IQueryable<ApplicationUser> currentUSers = userManager.Users;
-            return View(currentUSers);
+            IQueryable<ApplicationUser> currentUsers = userManager.Users;
+            return View(currentUsers);
         }
 
 

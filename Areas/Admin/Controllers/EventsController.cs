@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LunarSports.Models;
+using LunarSports.ViewModels;
+
 using Microsoft.AspNetCore.Authorization;
 
 namespace LunarSports.Areas.Admin.Controllers
@@ -46,8 +48,14 @@ namespace LunarSports.Areas.Admin.Controllers
         }
 
         // GET: Admin/Events/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var query = from lsite in _context.LaunchSites
+                        join eLocation in _context.EventLocations on lsite.Location equals eLocation.ID
+                        select new LaunchSiteSelect{ ID = lsite.ID, Name = eLocation.LocationName };
+
+            ViewBag.LaunchSites = query.ToList<LaunchSiteSelect>();
+;
             return View();
         }
 

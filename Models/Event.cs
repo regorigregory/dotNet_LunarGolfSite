@@ -13,7 +13,7 @@ namespace LunarSports.Models
 
         [Display(Name = "Type of the event")]
 
-        public EventType EventType { get; set; }
+        public int EventType { get; set; }
 
         [Display(Name = "Title of the event")]
 
