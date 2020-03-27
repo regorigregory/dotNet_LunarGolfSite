@@ -7,11 +7,17 @@ namespace LunarSports.Shared.Components.GetMenuEntries
     #line hidden
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 3 "C:\Users\Madero\source\repos\LunarSports\_ViewImports.cshtml"
+using LunarSports.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
 #nullable restore
 #line 1 "C:\Users\Madero\source\repos\LunarSports\Views\_ViewImports.cshtml"
 using LunarSports;
@@ -33,9 +39,16 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\Madero\source\repos\LunarSports\Views\_ViewImports.cshtml"
+using System.Linq;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"25f911edabacfc805c8d977470ff43fdb1bd5772", @"/Views/Shared/Components/GetMenuEntries/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9c11e871220730c15051a83fcf7c04d017db1389", @"/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cda084e1aba10c99805c751d0686859adcddfd7d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b4f4a0c3237e9bc8afc6c45da77233d9554c0bb1", @"/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c5abc0aafb5206fbeb2f5cea989ab873e75f4476", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_GetMenuEntries_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<LunarSports.Models.Page>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -70,7 +83,7 @@ using Microsoft.AspNetCore.Identity;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("    <ul class=\"nav\">\r\n        <li class=\"nav-link\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f911edabacfc805c8d977470ff43fdb1bd57725788", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f911edabacfc805c8d977470ff43fdb1bd57726103", async() => {
                 WriteLiteral("Home");
             }
             );
@@ -90,7 +103,7 @@ using Microsoft.AspNetCore.Identity;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-link\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f911edabacfc805c8d977470ff43fdb1bd57727411", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f911edabacfc805c8d977470ff43fdb1bd57727726", async() => {
                 WriteLiteral("Events");
             }
             );
@@ -119,7 +132,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("            <li class=\"nav-link\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f911edabacfc805c8d977470ff43fdb1bd57729306", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f911edabacfc805c8d977470ff43fdb1bd57729621", async() => {
 #nullable restore
 #line 14 "C:\Users\Madero\source\repos\LunarSports\Views\Shared\Components\GetMenuEntries\Default.cshtml"
                                                                                             Write(p.Title);
@@ -179,7 +192,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("                <li class=\"nav-link\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f911edabacfc805c8d977470ff43fdb1bd577212818", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25f911edabacfc805c8d977470ff43fdb1bd577213133", async() => {
 #nullable restore
 #line 23 "C:\Users\Madero\source\repos\LunarSports\Views\Shared\Components\GetMenuEntries\Default.cshtml"
                                                                                                           Write(menuEntry.DisplayName);

@@ -7,11 +7,17 @@ namespace LunarSports.Shared.Components.GetMenuEntries
     #line hidden
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 3 "C:\Users\Madero\source\repos\LunarSports\_ViewImports.cshtml"
+using LunarSports.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
 #nullable restore
 #line 1 "C:\Users\Madero\source\repos\LunarSports\Views\_ViewImports.cshtml"
 using LunarSports;
@@ -33,9 +39,16 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\Madero\source\repos\LunarSports\Views\_ViewImports.cshtml"
+using System.Linq;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8792cbb83649591e958ae96eebacda812999154a", @"/Views/Shared/Components/GetMenuEntries/OldDefault.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9c11e871220730c15051a83fcf7c04d017db1389", @"/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cda084e1aba10c99805c751d0686859adcddfd7d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b4f4a0c3237e9bc8afc6c45da77233d9554c0bb1", @"/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c5abc0aafb5206fbeb2f5cea989ab873e75f4476", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_GetMenuEntries_OldDefault : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<LunarSports.Models.Page>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("navbar-brand"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -81,7 +94,7 @@ using Microsoft.AspNetCore.Identity;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n<nav class=\"navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3\">\r\n    <div class=\"container\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a8996", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a9311", async() => {
                 WriteLiteral("Home");
             }
             );
@@ -109,7 +122,7 @@ using Microsoft.AspNetCore.Identity;
 
                 <li class=""nav-item"">
                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a10898", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a11213", async() => {
                 WriteLiteral("Events feed");
             }
             );
@@ -130,7 +143,7 @@ using Microsoft.AspNetCore.Identity;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a12636", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a12951", async() => {
                 WriteLiteral("About");
             }
             );
@@ -160,7 +173,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"nav-item\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a14657", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a14972", async() => {
 #nullable restore
 #line 25 "C:\Users\Madero\source\repos\LunarSports\Views\Shared\Components\GetMenuEntries\OldDefault.cshtml"
                                                                                                                               Write(p.Title);
@@ -219,7 +232,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"nav-item\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a18359", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a18674", async() => {
                 WriteLiteral("\r\n                            <div class=\"form-group\">\r\n\r\n                                <button class=\"nav-link text-dark\">Logout ");
 #nullable restore
 #line 39 "C:\Users\Madero\source\repos\LunarSports\Views\Shared\Components\GetMenuEntries\OldDefault.cshtml"
@@ -260,7 +273,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("                        <li class=\"nav-item\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a21320", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a21635", async() => {
                 WriteLiteral("\r\n                                <div class=\"form-group\">\r\n\r\n                                    <button class=\"nav-link text-dark\"> Admin area</button>\r\n                                </div>\r\n                            ");
             }
             );
@@ -301,7 +314,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"nav-item\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a23992", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a24307", async() => {
                 WriteLiteral("Register");
             }
             );
@@ -322,7 +335,7 @@ using Microsoft.AspNetCore.Identity;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    </li>\r\n                    <li class=\"nav-item\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a25741", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8792cbb83649591e958ae96eebacda812999154a26056", async() => {
                 WriteLiteral("Login");
             }
             );

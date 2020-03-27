@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LunarSports.Models
 {
-    public class EventLocationContactDetail : Location
+    public class EventLocationContactDetail : ContactDetail
     {
         public string ContactName { get; set; }
     }

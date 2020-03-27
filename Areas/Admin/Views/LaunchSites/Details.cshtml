@@ -12,8 +12,9 @@
     <hr />
     <dl class="row">
        
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Location)
+            @(ViewBag.eventLocationsas as IEnumerable<LocationSelect>).First(loc => loc.ID.Equals(Model.Location) )
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Location)

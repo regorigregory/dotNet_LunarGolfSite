@@ -90,6 +90,9 @@ body {
   text-align: left;
   background-color: #1e1e2f;
 }
+select.form-control > option {
+    background-color: #525f7f !important;
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important;

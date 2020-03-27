@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LunarSports.Models;
+using LunarSports.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using System;
 
 namespace LunarSports.Areas.Admin.Controllers
 {
@@ -24,7 +24,13 @@ namespace LunarSports.Areas.Admin.Controllers
         // GET: Admin/LaunchSites
         public async Task<IActionResult> Index()
         {
-            return View(await _context.LaunchSites.ToListAsync());
+            var q = await (from lsite in _context.LaunchSites
+                    join eLocation in _context.EventLocations on lsite.Location equals eLocation.ID
+                    select new Tuple<EventLocation, LaunchSite>(eLocation, lsite)).ToListAsync();
+
+
+            return View(q);
+
         }
 
         // GET: Admin/LaunchSites/Details/5
@@ -48,6 +54,7 @@ namespace LunarSports.Areas.Admin.Controllers
         // GET: Admin/LaunchSites/Create
         public IActionResult Create()
         {
+            this.getLocations();
             return View();
         }
 
@@ -74,7 +81,7 @@ namespace LunarSports.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-
+            this.getLocations();
             var launchSite = await _context.LaunchSites.FindAsync(id);
             if (launchSite == null)
             {
@@ -150,6 +157,13 @@ namespace LunarSports.Areas.Admin.Controllers
         private bool LaunchSiteExists(int id)
         {
             return _context.LaunchSites.Any(e => e.ID == id);
+        }
+        private void getLocations()
+        {
+            var listedQuery = _context.EventLocations.Select(lsite => new LocationSelect { ID = lsite.ID, Name = lsite.LocationName }).ToList();
+
+            ViewBag.eventLocations = listedQuery;
+           
         }
     }
 }

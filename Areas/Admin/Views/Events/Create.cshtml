@@ -30,19 +30,19 @@
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
+            <div  class="form-check-label">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsVisible" /> @Html.DisplayNameFor(model => model.IsVisible)
+                    <input class="form-control checkbox" asp-for="IsVisible" /> @Html.DisplayNameFor(model => model.IsVisible)
                 </label>
             </div>
             <div class="form-group">
                 <label asp-for="StartDateTime" class="control-label"></label>
-                <input asp-for="StartDateTime" class="form-control" />
+                <input asp-for="StartDateTime" class="form-control"  type="date"/>
                 <span asp-validation-for="StartDateTime" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EndDateTime" class="control-label"></label>
-                <input asp-for="EndDateTime" class="form-control" />
+                <input asp-for="EndDateTime" class="form-control"  type="date" />
                 <span asp-validation-for="EndDateTime" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -55,6 +55,14 @@
                 <input asp-for="EventUserMaxCapacity" class="form-control" />
                 <span asp-validation-for="EventUserMaxCapacity" class="text-danger"></span>
             </div>
+            <select asp-for="EventType" class="form-control">
+                @foreach (var eventType in ViewBag.EventTypes)
+                {
+                    <option value="@eventType.ID">@eventType.Name</option>
+
+                }
+
+            </select>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
