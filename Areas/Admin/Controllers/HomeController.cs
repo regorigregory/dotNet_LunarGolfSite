@@ -21,54 +21,14 @@ namespace LunarSports.Areas.Admin.Controllers
         public LinkedList<MenuEntry> menuEntries;
         public HomeController()
         {
-            this.menuEntries = new LinkedList<MenuEntry>();
-
-            this.menuEntries.AddLast(new MenuEntry { Controller = "ApplicationRoles", Action = "Index", DisplayName = "Manage roles" });
-            this.menuEntries.AddLast(new MenuEntry
-            {
-                Controller = "Customer",
-                Action = "Index",
-                DisplayName = "Manage customers"
-            });
-            this.menuEntries.AddLast(new MenuEntry
-            {
-                Controller = "EventLocationContactDetails",
-                Action = "Index",
-                DisplayName = "Manage contact details"
-            });
-            this.menuEntries.AddLast(new MenuEntry
-            {
-                Controller = "EventLocations",
-                Action = "Index",
-                DisplayName = "Manage locations"
-            });
-            this.menuEntries.AddLast(new MenuEntry
-            {
-                Controller = "Events",
-                Action = "Index",
-                DisplayName = "Manage events"
-            });
-            this.menuEntries.AddLast(new MenuEntry
-            {
-                Controller = "EventTypes",
-                Action = "Index",
-                DisplayName = "Manage event types"
-            });
-            this.menuEntries.AddLast(new MenuEntry
-            {
-                Controller = "LaunchSites",
-                Action = "Index",
-                DisplayName = "Manage Launch sites"
-            });
-            this.menuEntries.AddLast(new MenuEntry { Controller = "Pages", Action = "Index", DisplayName = "Manage pages" });
-
+           
         }
 
 
 
         public IActionResult Index()
         {
-            return View(this.menuEntries);
+            return View();
         }
 
      

@@ -4684,7 +4684,6 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
 }
 
 .nav-link:hover,
@@ -17491,7 +17490,7 @@ table.tablesorter thead tr .headerSortDown {
 
 .sidebar .nav li>a,
 .off-canvas-sidebar .nav li>a {
-  margin: 10px 15px 0;
+  margin: 0px 15px 0px;
   border-radius: 30px;
   color: #ffffff;
   display: block;
@@ -17500,7 +17499,7 @@ table.tablesorter thead tr .headerSortDown {
   text-transform: uppercase;
   cursor: pointer;
   font-size: 0.62475rem;
-  padding: 10px 8px;
+  /*padding: 10px 8px;*/
   line-height: 1.625rem;
 }
 

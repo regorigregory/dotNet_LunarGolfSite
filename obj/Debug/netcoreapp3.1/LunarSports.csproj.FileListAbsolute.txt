@@ -406,10 +406,6 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Nex
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\NextOfKins\Details.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\NextOfKins\Edit.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\NextOfKins\Index.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Create.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Delete.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Details.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Edit.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Index.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetMenuEntries\Default.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\WYSIWYG.cshtml.g.cs
@@ -426,8 +422,9 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Adm
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ApplicationRoles\Delete.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ApplicationRoles\Index.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csprojAssemblyReference.cache
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\OLD_Layout.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetMenuEntries\OldDefault.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetMenuEntries\Breadcrumbs.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\ViewPage.cshtml.g.cs

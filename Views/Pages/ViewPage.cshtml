@@ -1,0 +1,23 @@
+﻿@model LunarSports.Models.Page
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>@Model.Title</h2>
+<hr />
+<div class="pageContent">
+    @Html.Raw(Model.Description)
+</div>
+
+<div class="datePublished">
+   Date published: @Html.DisplayFor(model => model.DatePublished)
+</div>
+<div class="dateModified">
+
+Date modified:   @Html.DisplayFor(model => model.DateModified)
+</div>
+    </div>
+<div>
+    <a asp-controller="Default" asp-action="Index">Back to Home</a>
+</div>
+

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<LunarSports.Models.Page>
     <ul class="nav">
         <li class="nav-link">
-            <a asp-controller="Default" asp-action="Home">Home</a>
+            <a asp-area="" asp-controller="Default" asp-action="Index">Home</a>
         </li>
         <li class="nav-link">
             <a asp-area="" asp-controller="Default" asp-action="Events">Events</a>
@@ -11,7 +11,7 @@
         @foreach (Page p in Model)
         {
             <li class="nav-link">
-                <a asp-area="" asp-controller="Pages" asp-action="Details" asp-route-id="@p.ID">@p.Title</a>
+                <a asp-area="" asp-controller="Pages" asp-action="ViewPage" asp-route-id="@p.ID">@p.Title</a>
             </li>
         }
         <hr/>

@@ -17,7 +17,7 @@
                 @Html.DisplayNameFor(model => model.Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+                @Html.DisplayNameFor(model => model.Description))
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.DatePublished)
@@ -38,7 +38,7 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
+               @Html.Raw(item.Description)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DatePublished)

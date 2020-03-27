@@ -33,7 +33,7 @@ namespace LunarSports.Areas.Admin.Controllers
 
 
         [HttpGet]
-        public IActionResult CreateRole()
+        public IActionResult Create()
         {
             return View();
         }
@@ -42,7 +42,7 @@ namespace LunarSports.Areas.Admin.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateRole(CreateRoleModel formInput)
+        public async Task<IActionResult> Create(CreateRoleModel formInput)
         {
             if (ModelState.IsValid)
             {
