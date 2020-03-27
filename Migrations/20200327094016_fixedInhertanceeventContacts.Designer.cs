@@ -3,14 +3,16 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LunarSports.Migrations
 {
     [DbContext(typeof(LunarSportsDBContext))]
-    partial class LunarSportsDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200327094016_fixedInhertanceeventContacts")]
+    partial class fixedInhertanceeventContacts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -192,14 +194,14 @@ namespace LunarSports.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("ContactDetailType")
+                        .HasColumnType("int");
+
                     b.Property<string>("ContactName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IsPrimary")
-                        .HasColumnType("int");
 
                     b.Property<string>("Landline")
                         .HasColumnType("nvarchar(max)");
@@ -379,14 +381,14 @@ namespace LunarSports.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("ContactDetailType")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsNextOfKin")
                         .HasColumnType("bit");
-
-                    b.Property<int>("IsPrimary")
-                        .HasColumnType("int");
 
                     b.Property<string>("Landline")
                         .HasColumnType("nvarchar(max)");

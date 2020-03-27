@@ -1,32 +1,28 @@
-﻿@model LunarSports.Models.UserContactDetail
+﻿@model LunarSports.Models.EventLocationContactDetail
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Edit</h1>
 
-<h4>UserContactDetail</h4>
+<h4>EventLocationContactDetail</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="User" class="control-label"></label>
-                <input asp-for="User" class="form-control" />
-                <span asp-validation-for="User" class="text-danger"></span>
+                <label asp-for="ContactName" class="control-label"></label>
+                <input asp-for="ContactName" class="form-control" />
+                <span asp-validation-for="ContactName" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsNextOfKin" /> @Html.DisplayNameFor(model => model.IsNextOfKin)
-                </label>
-            </div>
+            <input type="hidden" asp-for="ID" />
             <div class="form-group">
-                <label asp-for="ContactDetailType" class="control-label"></label>
-                <input asp-for="ContactDetailType" class="form-control" />
-                <span asp-validation-for="ContactDetailType" class="text-danger"></span>
+                <label asp-for="IsPrimary" class="control-label"></label>
+                <input asp-for="IsPrimary" class="form-control" />
+                <span asp-validation-for="IsPrimary" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Mobile" class="control-label"></label>
@@ -44,7 +40,7 @@
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -54,6 +50,3 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

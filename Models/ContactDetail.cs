@@ -13,7 +13,7 @@ namespace LunarSports.Models
 
         [Display(Name = "Will be a dropdown")]
 
-        public int ContactDetailType { get; set; }
+        public int IsPrimary { get; set; }
 
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "Mobile number")]

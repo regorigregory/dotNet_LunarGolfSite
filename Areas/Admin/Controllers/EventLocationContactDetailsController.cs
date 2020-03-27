@@ -6,12 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LunarSports.Models;
-using Microsoft.AspNetCore.Authorization;
 
 namespace LunarSports.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Administrator")]
     public class EventLocationContactDetailsController : Controller
     {
         private readonly LunarSportsDBContext _context;
@@ -55,8 +53,8 @@ namespace LunarSports.Areas.Admin.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        // [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ContactName,ID,LocationName,BuildingNO,StreetAddress,Locality,Region,PostCode,CountryCode")] EventLocationContactDetail eventLocationContactDetail)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("ContactName,ID,IsPrimary,Mobile,Landline,Email")] EventLocationContactDetail eventLocationContactDetail)
         {
             if (ModelState.IsValid)
             {
@@ -87,8 +85,8 @@ namespace LunarSports.Areas.Admin.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        // [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ContactName,ID,LocationName,BuildingNO,StreetAddress,Locality,Region,PostCode,CountryCode")] EventLocationContactDetail eventLocationContactDetail)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("ContactName,ID,IsPrimary,Mobile,Landline,Email")] EventLocationContactDetail eventLocationContactDetail)
         {
             if (id != eventLocationContactDetail.ID)
             {
@@ -138,7 +136,7 @@ namespace LunarSports.Areas.Admin.Controllers
 
         // POST: Admin/EventLocationContactDetails/Delete/5
         [HttpPost, ActionName("Delete")]
-        // [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var eventLocationContactDetail = await _context.EventLocationContactDetails.FindAsync(id);

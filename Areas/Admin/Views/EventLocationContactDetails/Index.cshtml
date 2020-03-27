@@ -1,4 +1,4 @@
-﻿@model IEnumerable<LunarSports.Models.UserContactDetail>
+﻿@model IEnumerable<LunarSports.Models.EventLocationContactDetail>
 
 @{
     ViewData["Title"] = "Index";
@@ -14,13 +14,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.User)
+                @Html.DisplayNameFor(model => model.ContactName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IsNextOfKin)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ContactDetailType)
+                @Html.DisplayNameFor(model => model.IsPrimary)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Mobile)
@@ -38,13 +35,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.User)
+                @Html.DisplayFor(modelItem => item.ContactName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IsNextOfKin)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ContactDetailType)
+                @Html.DisplayFor(modelItem => item.IsPrimary)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Mobile)

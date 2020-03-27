@@ -344,11 +344,6 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.Ass
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.TagHelpers.input.cache
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.TagHelpers.output.cache
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.RazorCoreGenerate.cache
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Create.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Delete.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Details.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Edit.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Index.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocations\Create.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocations\Delete.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocations\Details.cshtml.g.cs
@@ -388,11 +383,6 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Adm
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\AdminEvents\Details.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\AdminEvents\Edit.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\AdminEvents\Index.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Create.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Delete.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Details.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Edit.cshtml.g.cs
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\ContactDetails\Index.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Default\Feedback.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Default\Index.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Default\NotAuthorized.cshtml.g.cs
@@ -429,3 +419,8 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Sha
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetMenuEntries\Breadcrumbs.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Pages\ViewPage.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csprojAssemblyReference.cache
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Create.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Delete.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Details.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Edit.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Index.cshtml.g.cs
