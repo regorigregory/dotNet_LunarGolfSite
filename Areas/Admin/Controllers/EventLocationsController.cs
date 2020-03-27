@@ -48,6 +48,8 @@ namespace LunarSports.Areas.Admin.Controllers
         // GET: Admin/EventLocations/Create
         public IActionResult Create()
         {
+            var contacts = _context.EventLocationContactDetails.ToList();
+            ViewBag.EventLocationContactDetails = contacts;
             return View();
         }
 
@@ -80,6 +82,8 @@ namespace LunarSports.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            var contacts = _context.EventLocationContactDetails.ToList();
+            ViewBag.EventLocationContactDetails = contacts;
             return View(eventLocation);
         }
 

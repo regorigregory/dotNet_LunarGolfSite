@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    List<LunarSports.Models.EventLocationContactDetail> contactsss = ViewBag.EventLocationContactDetails;
 }
 
 <h1>Edit</h1>
@@ -26,12 +27,17 @@
             <div class="form-group form-check">
                 <label class="form-check-label">
                 </label>
-                <input class="form-check-input" asp-for="IsLunarLocation" /> @Html.DisplayNameFor(model => model.IsLunarLocation)
+                <input class="form-control" asp-for="IsLunarLocation" type="checkbox" /> @Html.DisplayNameFor(model => model.IsLunarLocation)
 
             </div>
             <div class="form-group">
                 <label asp-for="ContactDetail" class="control-label"></label>
-                <input asp-for="ContactDetail" class="form-control" />
+                <select asp-for="ContactDetail" class="form-control">
+                    @foreach (var contactDetail in contactsss)
+                    {
+                        <option value="@contactDetail.ID">@contactDetail.ContactName</option>
+                    }
+                </select>
                 <span asp-validation-for="ContactDetail" class="text-danger"></span>
             </div>
             <input type="hidden" asp-for="ID" />
