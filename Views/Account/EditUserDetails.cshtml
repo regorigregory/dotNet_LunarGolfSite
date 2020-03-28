@@ -7,11 +7,13 @@
 
 <h1>EditUserDetails</h1>
 
-<h4>@Model.DOB</h4>
 <hr />
+
+<!-- General details --------------------------------------------------------------------------------------------------->
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="UpdateUserDetails" method="post">
+    <form asp-action="UpdateUserDetails" method="post">
+
+        <div class="col-md-12">
             <div asp-validation-summary="All" class="text-danger"></div>
 
             <div class="form-group">
@@ -54,7 +56,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="BIO" class="control-label"></label>
-                <textarea asp-for="BIO" class="form-control" >
+                <textarea asp-for="BIO" class="form-control">
                 @Model.BIO
                 </textarea>
                 <span asp-validation-for="BIO" class="text-danger"></span>
@@ -69,11 +71,406 @@
                 <input asp-for="OldPassword" class="form-control" />
                 <span asp-validation-for="OldPassword" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Update details" class="btn btn-primary" />
+        </div>
+        @{ var sectionName = "moreContact";}
+        @{ var subSection = "";}
+        @{ var fieldName = sectionName + subSection;}
+
+
+        <!-- Contact details --------------------------------------------------------------------------------------------------->
+
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Contact details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = "Mobile";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Mobile: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{subSection = "Landline";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Landline: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-        </form>
-    </div>
+
+
+        </div>
+
+
+        <!-- HomeAddress --------------------------------------------------------------------------------------------------->
+        @{ sectionName = "HomeAddress";}
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Home address  details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = "Location";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Location name</label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = "Building";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Building number: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Street";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Street Address: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Localty";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Localty (town): </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Region";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Region (county): </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = "Postcode";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Postcode: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Country";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Country: </label>
+                        <select asp-for="@fieldName" class="form-control" />
+                        <option>--Please specify the country</option>
+                        </select>
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work contact --------------------------------------------------------------------------------------------------->
+
+        @{ sectionName = "WorkContact";}
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Work contact details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = "Mobile";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Mobile: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{subSection = "Landline";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Landline: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{subSection = "Email";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Email: </label>
+                        <input asp-for="@fieldName" class="form-control" type="email" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Work address --------------------------------------------------------------------------------------------------->
+
+        @{ sectionName = "WorkAddress";}
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Work address details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = "Location";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Location name</label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = "Building";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Building number: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Street";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Street Address: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Localty";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Localty (town): </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Region";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Region (county): </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = "Postcode";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Postcode: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Country";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Country: </label>
+                        <select asp-for="@fieldName" class="form-control" />
+                        <option>--Please specify the country</option>
+                        </select>
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- nextOfKind details --------------------------------------------------------------------------------------------------->
+        @{ sectionName = "NextOfKin";}
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Next of kin details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = "fname";}
+                    @{ fieldName = sectionName + subSection;}
+
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> First name: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = "lname";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Last name: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Relationship";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Relationship: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- nextOfKind contact --------------------------------------------------------------------------------------------------->
+
+        @{ sectionName = "NextOfKinContact";}
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Contact details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = "Mobile";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Mobile: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{subSection = "Landline";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Landline: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{subSection = "Email";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Email: </label>
+                        <input asp-for="@fieldName" class="form-control" type="email" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- nextOfKind address --------------------------------------------------------------------------------------------------->
+
+        @{ sectionName = "NextOfKinAddress";}
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Next of Kin address details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = "Location";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Location name</label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = "Building";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Building number: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Street";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Street Address: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Localty";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Localty (town): </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Region";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Region (county): </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = "Postcode"; }
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Postcode: </label>
+                        <input asp-for="@fieldName" class="form-control" />
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = "Country";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="@fieldName" class="control-label"> Country: </label>
+                        <select asp-for="@fieldName" class="form-control" />
+                        <option>--Please specify the country</option>
+                        </select>
+                        <span asp-validation-for="@fieldName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Update details" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
 </div>
 
 <div>

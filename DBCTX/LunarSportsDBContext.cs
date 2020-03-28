@@ -18,7 +18,9 @@ using Microsoft.EntityFrameworkCore;
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-       
+        builder.Entity<UserSignupsForEvents>()
+        .HasKey(c => new { c.UserID, c.EventID });
+
     }
 
    
@@ -27,6 +29,7 @@ using Microsoft.EntityFrameworkCore;
     public  DbSet<UserContactDetail> UserContactDetails { get; set; }
     public DbSet<UserAddress> UserAddresseses { get; set; }
     public DbSet<NextOfKin> NextOfKins { get; set; }
+    public DbSet<UserSignupsForEvents> UserSignupsForEvents { get; set; }
 
     //Events, pages...etc.
     public DbSet<Page> Pages { get; set; }
@@ -39,6 +42,7 @@ using Microsoft.EntityFrameworkCore;
     public DbSet<EventScheduleEntry> EventScheduleEntries { get; set; }
     public DbSet<LaunchSite> LaunchSites { get; set; }
     public DbSet<EventLocationContactDetail> EventLocationContactDetails { get; set; }
+
     //public DbSet<LunarSports.Models.ApplicationRole> ApplicationRole { get; set; }
 
 

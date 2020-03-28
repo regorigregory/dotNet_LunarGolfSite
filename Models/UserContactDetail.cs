@@ -7,7 +7,7 @@ namespace LunarSports.Models
 {
     public class UserContactDetail : ContactDetail
     {
-        public int User { get; set; }
+        public string User { get; set; }
         public bool IsNextOfKin { get; set; }
     }
 }
