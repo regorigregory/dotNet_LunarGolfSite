@@ -137,6 +137,7 @@ namespace LunarSports.Controllers
 
         //[Authorize]
         //[HttpPost]
+        [HttpGet]
         public async Task<IActionResult> EditUserDetails()
         {
             if (User != null)
@@ -155,7 +156,7 @@ namespace LunarSports.Controllers
         }
         //[Authorize]
         [HttpPost]
-        public async Task<IActionResult> UpdateUserDetails(EditUserModel formInput)
+        public async Task<IActionResult> EditUserDetails(EditUserModel formInput)
         {
 
             if (User == null)
@@ -180,7 +181,6 @@ namespace LunarSports.Controllers
                     ux.ProfilePictureURL = formInput.ProfilePictureURL;
                     ux.Gender = formInput.Gender;
                     ux.DOB =formInput.DOB;
-                    ux.ProfilePictureURL = formInput.ProfilePictureURL;
 
                     string successURL = string.Format("/Default/Feedback?message={0}", "The account details have been updated successfully.");
 
@@ -188,7 +188,6 @@ namespace LunarSports.Controllers
 
                     if (tempResult.Succeeded)
                     {
-                        UserAddress ha = formInput.HomeAddress;
                         formInput.HomeContact.User = ux.Id;
                         formInput.HomeContact.IsPrimary = true;
                         formInput.HomeContact.IsNextOfKin = false;
@@ -196,6 +195,16 @@ namespace LunarSports.Controllers
                         formInput.WorkContact.User = ux.Id;
                         formInput.WorkContact.IsPrimary = false;
                         formInput.WorkContact.IsNextOfKin = false;
+
+
+                        formInput.HomeAddress.User = ux.Id;
+                        formInput.HomeAddress.IsPrimary = true;
+                        formInput.HomeAddress.IsNextOfKin = false;
+
+                        formInput.WorkAddress.User = ux.Id;
+                        formInput.WorkAddress.IsPrimary = false;
+                        formInput.WorkAddress.IsNextOfKin = false;
+
 
 
                         formInput.NextOfKin.UserID = ux.Id;
@@ -250,7 +259,7 @@ namespace LunarSports.Controllers
                 }
 
             }
-            return View(User);
+            return View(formInput);
 
         }
 

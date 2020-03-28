@@ -12,14 +12,11 @@ namespace LunarSports.Models
         public int ID { get; set; }
 
         [Display(Name = "First name of your Next of Kin")]
-        [Required]
         public string FirstName { get; set; }
        
-        [Required]
         [Display(Name = "Last name of your Next of Kin")]
          public string LastName { get; set; }
 
-        [Required]
         [Display(Name = "Relationship with this person")]
 
         public string RelationShip { get; set; }

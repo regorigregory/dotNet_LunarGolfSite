@@ -12,6 +12,10 @@ namespace LunarSports.ViewModels
 
         private LunarSportsDBContext _context;
           
+        public EditUserModel()
+        {
+
+        }
         public EditUserModel(LunarSportsDBContext context) {
             this._context = context;
         }
@@ -37,7 +41,7 @@ namespace LunarSports.ViewModels
         public void GetAdditionalUserDetails()
         {
             this.HomeContact = this._context.UserContactDetails.Where(x=>x.User == this.Id & x.IsNextOfKin==false & x.IsPrimary==true).FirstOrDefault();
-            this.WorkContact = this._context.UserContactDetails.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary ==true).FirstOrDefault(); ;
+            this.WorkContact = this._context.UserContactDetails.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary ==false).FirstOrDefault(); ;
             this.NOKContact = this._context.UserContactDetails.Where(x => x.User == this.Id & x.IsNextOfKin == true).FirstOrDefault();
 
             this.HomeAddress = this._context.UserAddresseses.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary == true).FirstOrDefault();

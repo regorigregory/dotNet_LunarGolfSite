@@ -11,7 +11,7 @@
 
 <!-- General details --------------------------------------------------------------------------------------------------->
 <div class="row">
-    <form asp-action="UpdateUserDetails" method="post">
+    <form asp-action="EditUserDetails" method="post">
 
         <div class="col-md-12">
             <div asp-validation-summary="All" class="text-danger"></div>
@@ -164,7 +164,7 @@
                     @{ fieldName = sectionName + subSection;}
 
                     <div class="form-group">
-                        <label  asp-for="HomeAddress.PostCode" class="control-label"> Postcode: </labelasp-for="HomeAddress.Region">
+                        <label  asp-for="HomeAddress.PostCode" class="control-label"> Postcode: </label>
                         <input asp-for="HomeAddress.PostCode" class="form-control" />
                         <span asp-validation-for="HomeAddress.PostCode" class="text-danger"></span>
                     </div>
@@ -431,9 +431,9 @@
                     @{ fieldName = sectionName + subSection;}
 
                     <div class="form-group">
-                        <label asp-for="NOKAddress" class="control-label"> Region (county): </label>
-                        <input asp-for="NOKAddress" class="form-control" />
-                        <span asp-validation-for="NOKAddress" class="text-danger"></span>
+                        <label asp-for="NOKAddress.Region" class="control-label"> Region (county): </label>
+                        <input asp-for="NOKAddress.Region" class="form-control" />
+                        <span asp-validation-for="NOKAddress.Region" class="text-danger"></span>
                     </div>
 
                     @{ subSection = ".Postcode";}
