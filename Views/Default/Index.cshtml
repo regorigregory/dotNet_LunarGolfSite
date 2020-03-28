@@ -1,5 +1,29 @@
-﻿@*
+﻿@model LunarSports.Models.Page
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
+@if (Model != null)
+{
+    <h2> @Model.Title</h2>
+    <div class="metaData">
+
+    </div>
+    <div>
+        @Model.Description
+    </div>
+}
+else
+{
+    <h2> Site is under construction</h2>
+    <div class="metaData">
+
+    </div>
+    <div>
+       Please come back later.
+        This page is either under maintenance or construction. We are working really hard to be able to deliver the page you requested.
+    </div>
+}
+
+

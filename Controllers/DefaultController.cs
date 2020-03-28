@@ -9,9 +9,16 @@ namespace LunarSports.Controllers
  //   [Area("Public")]
     public class DefaultController : Controller
     {
+        private LunarSportsDBContext _context;
+        public DefaultController(LunarSportsDBContext context)
+        {
+            this._context = context;
+        }
         public IActionResult Index()
         {
-            return View();
+            var HomePage = this._context.Pages.Where(p => p.Title == "Home").FirstOrDefault();
+            
+            return View(HomePage);
         }
 
       
