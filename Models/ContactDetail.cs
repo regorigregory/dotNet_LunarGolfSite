@@ -8,7 +8,10 @@ namespace LunarSports.Models
 {
     public abstract class ContactDetail
     {
+        public ContactDetail()
+        {
 
+        }
         public int ID { get; set; }
 
         public bool IsPrimary { get; set; }

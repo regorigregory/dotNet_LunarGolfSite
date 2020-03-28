@@ -7,6 +7,10 @@ namespace LunarSports.Models
 {
     public class UserAddress : Location
     {
+        public UserAddress()
+        {
+
+        }
         public string User { get; set; }
         public bool IsNextOfKin { get; set; }
         public bool IsPrimary { get; set; }

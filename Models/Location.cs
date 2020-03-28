@@ -11,7 +11,10 @@ namespace LunarSports.Models
 
         //https://schema.org/PostalAddress
         //https://design-system.service.gov.uk/patterns/addresses/
+        public Location()
+        {
 
+        }
         public int ID { get; set; }
 
         [Display(Name = "Building/flat name.")]

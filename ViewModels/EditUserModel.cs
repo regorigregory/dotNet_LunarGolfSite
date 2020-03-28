@@ -38,16 +38,12 @@ namespace LunarSports.ViewModels
         {
             this.HomeContact = this._context.UserContactDetails.Where(x=>x.User == this.Id & x.IsNextOfKin==false & x.IsPrimary==true).FirstOrDefault();
             this.WorkContact = this._context.UserContactDetails.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary ==true).FirstOrDefault(); ;
-            this.NOKContact = this._context.UserContactDetails.Where(x => x.User == this.Id & x.IsNextOfKin == true).First();
+            this.NOKContact = this._context.UserContactDetails.Where(x => x.User == this.Id & x.IsNextOfKin == true).FirstOrDefault();
 
             this.HomeAddress = this._context.UserAddresseses.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary == true).FirstOrDefault();
             this.WorkAddress = this._context.UserAddresseses.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary == false).FirstOrDefault(); ;
-            this.NOKAddress = this._context.UserAddresseses.Where(x => x.User == this.Id & x.IsNextOfKin == true & x.IsPrimary == false).FirstOrDefault(); ;
+            this.NOKAddress = this._context.UserAddresseses.Where(x => x.User == this.Id & x.IsNextOfKin == true).FirstOrDefault(); ;
             this.NextOfKin = this._context.NextOfKins.Where(x => x.UserID == this.Id).FirstOrDefault();
-
-
-
-
         }
         public NextOfKin NextOfKin{get; set;}
         public UserAddress NOKAddress { get; set; }
