@@ -14,7 +14,7 @@ namespace LunarSports.Models
 
         public int ID { get; set; }
 
-        [Display(Name = "Home, work...etc.")]
+        [Display(Name = "Building/flat name.")]
 
         public string LocationName { get; set; }
 
@@ -42,7 +42,16 @@ namespace LunarSports.Models
         public string CountryCode { get; set; }
 
        
-
+        public void UpdateMe(Location newData)
+        {
+            this.LocationName = newData.LocationName;
+            this.BuildingNO = newData.BuildingNO;
+            this.StreetAddress = newData.StreetAddress;
+            this.Locality = newData.Locality;
+            this.Region = newData.Region;
+            this.PostCode = newData.PostCode;
+            this.CountryCode = newData.CountryCode;
+        }
 
 
     }

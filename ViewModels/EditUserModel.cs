@@ -9,12 +9,18 @@ namespace LunarSports.ViewModels
 {
     public class EditUserModel
     {
-        public EditUserModel(){
-            }
-        public EditUserModel(ApplicationUser au)
+
+        private LunarSportsDBContext _context;
+          
+        public EditUserModel(LunarSportsDBContext context) {
+            this._context = context;
+        }
+
+        public void SetApplicationUserDetails(ApplicationUser au)
         {
             if (au != null)
             {
+                this.Id = au.Id;
                 this.FirstName = au.FirstName;
                 this.LastName = au.LastName;
                 this.Email = au.Email;
@@ -27,6 +33,37 @@ namespace LunarSports.ViewModels
                 this.ProfilePictureURL = au.ProfilePictureURL;
             }
         }
+
+        public void GetAdditionalUserDetails()
+        {
+            this.HomeContact = this._context.UserContactDetails.Where(x=>x.User == this.Id & x.IsNextOfKin==false & x.IsPrimary==true).FirstOrDefault();
+            this.WorkContact = this._context.UserContactDetails.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary ==true).FirstOrDefault(); ;
+            this.NOKContact = this._context.UserContactDetails.Where(x => x.User == this.Id & x.IsNextOfKin == true).First();
+
+            this.HomeAddress = this._context.UserAddresseses.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary == true).FirstOrDefault();
+            this.WorkAddress = this._context.UserAddresseses.Where(x => x.User == this.Id & x.IsNextOfKin == false & x.IsPrimary == false).FirstOrDefault(); ;
+            this.NOKAddress = this._context.UserAddresseses.Where(x => x.User == this.Id & x.IsNextOfKin == true & x.IsPrimary == false).FirstOrDefault(); ;
+            this.NextOfKin = this._context.NextOfKins.Where(x => x.UserID == this.Id).FirstOrDefault();
+
+
+
+
+        }
+        public NextOfKin NextOfKin{get; set;}
+        public UserAddress NOKAddress { get; set; }
+
+        public UserContactDetail NOKContact { get; set; }
+
+        public UserAddress HomeAddress { get; set; }
+        public UserAddress WorkAddress { get; set; }
+
+        public UserContactDetail HomeContact { get; set; }
+
+        public UserContactDetail WorkContact { get; set; }
+
+
+        public string Id { get; set; }
+
 
         // public Rank UserRank { get; set; }
         [Display(Name = "First name")]
@@ -43,11 +80,6 @@ namespace LunarSports.ViewModels
 
         public string Email { get; set; }
 
-
-
-
-
-
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
 
@@ -62,8 +94,6 @@ namespace LunarSports.ViewModels
         [Display(Name = "Birth date")]
         public DateTime DOB { get; set; }
         public bool Active { get; set; }
-
-
 
         [Display(Name = "Gender")]
 

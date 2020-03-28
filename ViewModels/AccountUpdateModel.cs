@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LunarSports.ViewModels
 {
-    public class EditUserDetails
+    public class AccountUpdateModel
     {
     }
 }

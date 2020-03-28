@@ -20,8 +20,11 @@ namespace LunarSports.Controllers
         public UserManager<ApplicationUser> userManager { get; }
         public SignInManager<ApplicationUser> signInManager { get; }
         public RoleManager<IdentityRole> roleManager { get; }
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<IdentityRole> roleManager)
+
+        private LunarSportsDBContext _context;
+        public AccountController(LunarSportsDBContext context, UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<IdentityRole> roleManager)
         {
+            this._context = context;
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.roleManager = roleManager;
@@ -139,7 +142,9 @@ namespace LunarSports.Controllers
             if (User != null)
             {
                 ApplicationUser ux = await userManager.GetUserAsync(User);
-                EditUserModel em = new EditUserModel(ux);
+                EditUserModel em = new EditUserModel(this._context);
+                em.SetApplicationUserDetails(ux);
+                em.GetAdditionalUserDetails();
                 return View(em);
             }
 
@@ -181,16 +186,57 @@ namespace LunarSports.Controllers
 
                     IdentityResult tempResult = await userManager.UpdateAsync(ux);
 
+                    if (tempResult.Succeeded)
+                    {
+                        UserAddress ha = formInput.HomeAddress;
+                        formInput.HomeContact.User = ux.Id;
+                        formInput.HomeContact.IsPrimary = true;
+                        formInput.HomeContact.IsNextOfKin = false;
+
+                        formInput.WorkContact.User = ux.Id;
+                        formInput.WorkContact.IsPrimary = false;
+                        formInput.WorkContact.IsNextOfKin = false;
+
+
+                        formInput.NextOfKin.UserID = ux.Id;
+
+                        formInput.NOKAddress.User = ux.Id;
+                        formInput.NOKAddress.IsNextOfKin = true;
+
+                        formInput.NOKContact.User = ux.Id;
+                        formInput.NOKContact.IsNextOfKin = true;
+
+                        EditUserModel currentlyStored = new EditUserModel(this._context);
+                        currentlyStored.SetApplicationUserDetails(ux);
+                        currentlyStored.GetAdditionalUserDetails();
+
+
+                        if(currentlyStored.HomeAddress == null) this._context.UserAddresseses.Add(formInput.HomeAddress); else currentlyStored.HomeAddress.UpdateMe(formInput.HomeAddress);
+
+                        if (currentlyStored.WorkAddress == null) this._context.UserAddresseses.Add(formInput.WorkAddress); else currentlyStored.WorkAddress.UpdateMe(formInput.WorkAddress);
+
+                        if (currentlyStored.HomeContact == null) this._context.UserContactDetails.Add(formInput.HomeContact); else currentlyStored.HomeContact.UpdateMe(formInput.HomeContact);
+
+                        if (currentlyStored.WorkContact == null) this._context.UserContactDetails.Add(formInput.WorkContact); else currentlyStored.WorkContact.UpdateMe(formInput.WorkContact);
+
+                        if (currentlyStored.NextOfKin == null) this._context.NextOfKins.Add(formInput.NextOfKin); else currentlyStored.NextOfKin.UpdateMe(formInput.NextOfKin);
+
+                        if (currentlyStored.NOKAddress == null) this._context.UserAddresseses.Add(formInput.NOKAddress); else currentlyStored.NOKAddress.UpdateMe(formInput.NOKAddress);
+
+                        if (currentlyStored.NOKContact == null) this._context.UserContactDetails.Add(formInput.NOKContact); else currentlyStored.NOKContact.UpdateMe(formInput.NOKContact);
+                    }
+
                     if ((formInput.Password == null & tempResult.Succeeded))
                     {
+                        this._context.SaveChanges();
                         return Redirect(successURL);
-
                     }
                     else if (formInput.Password != null & tempResult.Succeeded)
                     {
                         IdentityResult tempResult2 = await userManager.ChangePasswordAsync(ux, formInput.OldPassword, formInput.Password);
                         if (tempResult2.Succeeded)
                         {
+                            this._context.SaveChanges();
                             return Redirect(successURL);
                         }
                         else

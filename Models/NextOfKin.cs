@@ -11,12 +11,12 @@ namespace LunarSports.Models
 
         public int ID { get; set; }
 
-        [Display(Name = "First name of NOK")]
+        [Display(Name = "First name of your Next of Kin")]
         [Required]
         public string FirstName { get; set; }
        
         [Required]
-        [Display(Name = "Last name of NOK")]
+        [Display(Name = "Last name of your Next of Kin")]
          public string LastName { get; set; }
 
         [Required]
@@ -25,7 +25,12 @@ namespace LunarSports.Models
         public string RelationShip { get; set; }
         public string UserID { get; set; }
        
-     
+        public void UpdateMe(NextOfKin newData)
+        {
+            this.FirstName = newData.FirstName;
+            this.LastName = newData.LastName;
+            this.RelationShip = newData.RelationShip;
+        }
 
     }
 }

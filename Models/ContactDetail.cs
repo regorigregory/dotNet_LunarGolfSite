@@ -11,13 +11,10 @@ namespace LunarSports.Models
 
         public int ID { get; set; }
 
-        [Display(Name = "Will be a dropdown")]
-
-        public int IsPrimary { get; set; }
+        public bool IsPrimary { get; set; }
 
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "Mobile number")]
-        [Required]
         public string Mobile { get; set; }
 
         [DataType(DataType.PhoneNumber)]
@@ -28,6 +25,12 @@ namespace LunarSports.Models
         [Display(Name = "Additional email address")]
         public string Email { get; set; }
 
+        public void UpdateMe(ContactDetail newData)
+        {
+            this.Mobile = newData.Mobile;
+            this.Landline = newData.Landline;
+            this.Email = newData.Email;
+        }
        
 
 
