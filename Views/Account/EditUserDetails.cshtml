@@ -45,7 +45,7 @@
 
             <div class="form-group">
                 <label asp-for="DOB" class="control-label"></label>
-                <input id="DOB" asp-for="DOB" class="form-control" value="@Model.DOB.ToString("yyyy-MM-dd")" />
+                <input id="DOB" asp-for="DOB" class="form-control" value="@Model.DOB.ToString("yyyy-MM-dd")" type="date"/>
                 <span asp-validation-for="DOB" class="text-danger"></span>
             </div>
 
@@ -56,7 +56,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="BIO" class="control-label"></label>
-                <textarea asp-for="BIO" class="form-control">
+                <textarea asp-for="BIO" id="Description" class="form-control">
                 @Model.BIO
                 </textarea>
                 <span asp-validation-for="BIO" class="text-danger"></span>
@@ -355,7 +355,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#@sectionName">Contact details</a>
+                        <a data-toggle="collapse" href="#@sectionName">Next of Kin contact details</a>
                     </h4>
                 </div>
                 <div id="@sectionName" class="panel-collapse collapse">

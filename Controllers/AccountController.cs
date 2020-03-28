@@ -28,7 +28,6 @@ namespace LunarSports.Controllers
            
         }
 
-
         public async Task<int> initDBRoles()
         {
             //error checking is left to do

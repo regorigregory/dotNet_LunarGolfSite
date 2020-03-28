@@ -121,6 +121,10 @@
                                     @if (signInManager.IsSignedIn(User))
                                     {
                                         <li class="nav-link">
+                                            <a asp-area="" asp-controller="Account" asp-action="EditUserDetails" method="post" class="nav-item dropdown-item">Account @User.Identity.Name</a>
+
+                                        </li>
+                                        <li class="nav-link">
                                             <a asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="nav-item dropdown-item">Logout @User.Identity.Name</a>
 
                                         </li>
