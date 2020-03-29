@@ -19,9 +19,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Title)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsVisible)
-            </th>
+   
             <th>
                 @Html.DisplayNameFor(model => model.StartDateTime)
             </th>
@@ -49,9 +47,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsVisible)
-            </td>
+        
             <td>
                 @Html.DisplayFor(modelItem => item.StartDateTime)
             </td>
@@ -65,7 +61,9 @@
                 @Html.DisplayFor(modelItem => item.EventUserMaxCapacity)
             </td>
             <td>
-                <a asp-action="Details" asp-route-id="@item.ID">More details</a> |
+                <a asp-controller="Events" asp-action="Details" asp-route-id="@item.ID">More details</a> |
+                <a asp-controller="Account" asp-action="SignOff" asp-route-id="@item.ID">Sign off</a> 
+
             </td>
         </tr>
 }

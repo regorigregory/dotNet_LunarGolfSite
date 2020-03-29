@@ -123,9 +123,6 @@ namespace LunarSports.Controllers
 
         }
 
-
-
-        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
@@ -256,7 +253,6 @@ namespace LunarSports.Controllers
 
                     }
 
-
                 }
 
             }
@@ -264,7 +260,7 @@ namespace LunarSports.Controllers
 
         }
 
-
+        [Authorize]
         public async Task<IActionResult> SignUp(int? id)
         {
             if (id == null)
@@ -277,14 +273,14 @@ namespace LunarSports.Controllers
                 ApplicationUser ux = await userManager.GetUserAsync(User);
                 var signUpEntry = this._context.UserSignupsForEvents.Where(usfe => usfe.EventID == id & usfe.UserID == ux.Id).FirstOrDefault();
                 ViewBag.debug = String.Format("EventId: {0}, UserID: {1}", id, ux.Id);
-                string feedbackUrl = string.Format("/Default/Feedback?message={0}", "This user account has already signed up for this event..."+ ViewBag.debug);
+                string feedbackUrl = string.Format("/Default/Feedback?message={0}", "This user account has already signed up for this event..." + ViewBag.debug);
 
-                if (signUpEntry == null )
+                if (signUpEntry == null)
                 {
-                    var newSignupEntry = new UserSignupsForEvents() { EventID = (int) id, UserID = ux.Id };
+                    var newSignupEntry = new UserSignupsForEvents() { EventID = (int)id, UserID = ux.Id };
                     this._context.UserSignupsForEvents.Add(newSignupEntry);
                     this._context.SaveChanges();
-                   
+
                 }
                 else
                 {
@@ -301,21 +297,27 @@ namespace LunarSports.Controllers
             }
             ViewBag.Title = "Event Signup feedback";
             ViewBag.Message = "You have successfully signed up for the following event:";
-            return View("SignUpAndOff", currentEvent);
+            return View("SignUp", currentEvent);
         }
-
-        public async Task<IActionResult> SignOff(int eventId)
+        [Authorize]
+        public async Task<IActionResult> SignOff(int? id)
         {
-            var currentEvent = this._context.Events.Where(ev => ev.ID == eventId).FirstOrDefault();
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var currentEvent = this._context.Events.Where(ev => ev.ID == id).FirstOrDefault();
 
             if (User != null)
             {
                 ApplicationUser ux = await userManager.GetUserAsync(User);
                 var userID = ux.Id;
-                var signUpEntry = this._context.UserSignupsForEvents.Where(usfe => usfe.EventID == eventId & usfe.UserID == userID).FirstOrDefault();
+
+                var signUpEntry = this._context.UserSignupsForEvents.Where(usfe => usfe.EventID == id & usfe.UserID == userID).FirstOrDefault();
                 string feedbackUrl = string.Format("/Default/Feedback?message={0}", "This user account has not signed up for this event.");
 
-                if (signUpEntry != null |  signUpEntry.EventID != 0)
+                if (signUpEntry != null)
                 {
                     this._context.UserSignupsForEvents.Remove(signUpEntry);
                     this._context.SaveChanges();
@@ -337,19 +339,22 @@ namespace LunarSports.Controllers
 
             ViewBag.Title = "Event Signoff feedback";
             ViewBag.Message = "You have successfully signed off from the following event:";
-            return View("SignUpAndOff", currentEvent);
+            return View("SignOff", currentEvent);
         }
-
+        [Authorize]
         public async Task<IActionResult> ListSignedUpEvents()
         {
             List<Event> myEvents = new List<Event>();
-            if (User != null) {
+            if (User != null)
+            {
                 var myself = await this.userManager.GetUserAsync(User);
-                List<int> UserSignups = this._context.UserSignupsForEvents.Where(eusu => eusu.UserID == myself.Id).Select(eusu=>eusu.EventID).ToList<int>();
+                List<int> UserSignups = this._context.UserSignupsForEvents.Where(eusu => eusu.UserID == myself.Id).Select(eusu => eusu.EventID).ToList<int>();
                 List<Event> events = new List<Event>();
-                 myEvents = this._context.Events.Where(ev => UserSignups.Contains(ev.ID)).ToList<Event>();
+                myEvents = this._context.Events.Where(ev => UserSignups.Contains(ev.ID)).ToList<Event>();
 
-            } else {
+            }
+            else
+            {
                 string feedbackUrl = string.Format("/Default/Feedback?message={0}", "You need to sign in to view your events that you have signed up for.");
 
                 return Redirect(feedbackUrl);

@@ -83,7 +83,7 @@ else
                     @Html.DisplayFor(modelItem => item.Dbmodel.EventUserMaxCapacity)
                 </td>
                 <td>
-                    <a asp-controller="Event" asp-action="Details" asp-route-id="@item.Dbmodel.ID">Details</a> |
+                    <a asp-controller="Events" asp-action="Details" asp-route-id="@item.Dbmodel.ID">Details</a> |
                     <a asp-controller="Account" asp-action="SignUp" asp-route-id="@item.Dbmodel.ID">Sign up</a>
                 </td>
             </tr>

@@ -129,7 +129,9 @@
 
                                         </li>
                                         <li class="nav-link">
-                                            <a asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="nav-item dropdown-item">Logout @User.Identity.Name</a>
+                                            <form  class="nav-item dropdown-item"  asp-area="" asp-controller="Account" asp-action="Logout" method="post">
+                                                <input type="submit" value="Logout @User.Identity.Name">
+                                            </form>
 
                                         </li>
 
