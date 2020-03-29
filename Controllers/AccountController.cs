@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace LunarSports.Controllers
 {
-   // [Area("Public")]
+    // [Area("Public")]
     public class AccountController : Controller
     {
         public UserManager<ApplicationUser> userManager { get; }
@@ -28,7 +28,7 @@ namespace LunarSports.Controllers
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.roleManager = roleManager;
-           
+
         }
 
         public async Task<int> initDBRoles()
@@ -79,7 +79,7 @@ namespace LunarSports.Controllers
             var user = new ApplicationUser { UserName = formInput.UserName, Email = formInput.Email, DOB = formInput.DOB };
 
             var result = await userManager.CreateAsync(user, formInput.Password);
-         
+
             var result2 = await userManager.AddToRoleAsync(user, formInput.SpecRole);
             if (result.Succeeded && result2.Succeeded)
             {
@@ -180,7 +180,7 @@ namespace LunarSports.Controllers
                     ux.BIO = formInput.BIO;
                     ux.ProfilePictureURL = formInput.ProfilePictureURL;
                     ux.Gender = formInput.Gender;
-                    ux.DOB =formInput.DOB;
+                    ux.DOB = formInput.DOB;
 
                     string successURL = string.Format("/Default/Feedback?message={0}", "The account details have been updated successfully.");
 
@@ -220,7 +220,7 @@ namespace LunarSports.Controllers
                         currentlyStored.GetAdditionalUserDetails();
 
 
-                        if(currentlyStored.HomeAddress == null) this._context.UserAddresseses.Add(formInput.HomeAddress); else currentlyStored.HomeAddress.UpdateMe(formInput.HomeAddress);
+                        if (currentlyStored.HomeAddress == null) this._context.UserAddresseses.Add(formInput.HomeAddress); else currentlyStored.HomeAddress.UpdateMe(formInput.HomeAddress);
 
                         if (currentlyStored.WorkAddress == null) this._context.UserAddresseses.Add(formInput.WorkAddress); else currentlyStored.WorkAddress.UpdateMe(formInput.WorkAddress);
 
@@ -250,6 +250,7 @@ namespace LunarSports.Controllers
                         }
                         else
                         {
+
                             ModelState.AddModelError("", "The provided current password is invalid.");
                         }
 
@@ -263,8 +264,51 @@ namespace LunarSports.Controllers
 
         }
 
-    
 
+        public async Task<IActionResult> SignUp(int eventId)
+        {
+            var currentEvent = this._context.Events.Where(ev => ev.ID == eventId).FirstOrDefault();
+
+            if (User != null)
+            {
+                ApplicationUser ux = await userManager.GetUserAsync(User);
+                var userID = ux.Id;
+                var signUpEntry = this._context.UserSignupsForEvents.Where(usfe => usfe.EventID == eventId & usfe.UserID == userID).FirstOrDefault();
+                string feedbackUrl = string.Format("/Default/Feedback?message={0}", "This user account has already signed up for this event..");
+
+                if (signUpEntry == null)
+                {
+                    var newSignupEntry = new UserSignupsForEvents() { EventID = eventId, UserID = userID };
+                    this._context.UserSignupsForEvents.Add(newSignupEntry);
+                    this._context.SaveChanges();
+                   
+                }
+                else
+                {
+
+                    return Redirect(feedbackUrl);
+
+                }
+            }
+            else
+            {
+                string feedbackUrl = string.Format("/Default/Feedback?message={0}", "Please sign in in order to be able to perform this operation.");
+
+                return Redirect(feedbackUrl);
+            }
+
+            return View(currentEvent);
+        }
+
+        public async Task<IActionResult> SignOff(int eventId)
+        {
+
+        }
+
+        public async Task<IActionResult> ListSignedUpEvents(int eventId)
+        {
+
+        }
 
     }
 }
