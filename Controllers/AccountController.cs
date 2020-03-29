@@ -59,6 +59,10 @@ namespace LunarSports.Controllers
         [HttpGet]
         public IActionResult Register()
         {
+            if(User.Identity.IsAuthenticated == true)
+            {
+                return RedirectToAction("Index", "Default");
+            }
             ViewBag.Roles = this.roleManager.Roles.Select(r => r.Name).ToList<string>();
 
             return View();
@@ -69,23 +73,34 @@ namespace LunarSports.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterUserModel formInput)
         {
+            ViewBag.Roles = this.roleManager.Roles.Select(r => r.Name).ToList<string>();
+
+            if (User.Identity.IsAuthenticated == true)
+            {
+                return RedirectToAction("Index", "Default");
+            }
+          
+
+
+            var user =await  userManager.FindByNameAsync(formInput.UserName);
+            if (user != null)
+            {
+                ModelState.AddModelError(String.Empty, "The user name selected is taken.");
+                return View(formInput);
+            }
             Boolean isValid = ModelState.IsValid;
             await initDBRoles();
-
-
-
             if (!isValid)
             {
                 return View(formInput);
             }
-            var user = new ApplicationUser { UserName = formInput.UserName, Email = formInput.Email, DOB = formInput.DOB, FirstName = formInput.FirstName, LastName = formInput.LastName };
+            var newUser = new ApplicationUser { UserName = formInput.UserName, Email = formInput.Email, DOB = formInput.DOB, FirstName = formInput.FirstName, LastName = formInput.LastName };
+            var result = await userManager.CreateAsync(newUser, formInput.Password);
 
-            var result = await userManager.CreateAsync(user, formInput.Password);
-
-            var result2 = await userManager.AddToRoleAsync(user, formInput.SpecRole);
+            var result2 = await userManager.AddToRoleAsync(newUser, formInput.SpecRole);
             if (result.Succeeded && result2.Succeeded)
             {
-                await signInManager.SignInAsync(user, isPersistent: false);
+                await signInManager.SignInAsync(newUser, isPersistent: false);
                 return RedirectToAction("Index", "Default");
             }
 
@@ -93,7 +108,7 @@ namespace LunarSports.Controllers
             {
                 ModelState.AddModelError(string.Empty, error.Description);
             }
-            return View();
+            return View(formInput);
 
         }
         [HttpGet]
@@ -124,7 +139,7 @@ namespace LunarSports.Controllers
             return View(formInput);
 
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
