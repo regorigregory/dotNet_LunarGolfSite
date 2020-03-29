@@ -6,9 +6,13 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\Public\**" />
+    <Compile Remove="Utils\**" />
     <Content Remove="Controllers\Public\**" />
+    <Content Remove="Utils\**" />
     <EmbeddedResource Remove="Controllers\Public\**" />
+    <EmbeddedResource Remove="Utils\**" />
     <None Remove="Controllers\Public\**" />
+    <None Remove="Utils\**" />
   </ItemGroup>
 
   <ItemGroup>

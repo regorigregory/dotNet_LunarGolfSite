@@ -413,3 +413,5 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csp
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.dll
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.pdb
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csprojAssemblyReference.cache
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csproj.CoreCompileInputs.cache
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.genruntimeconfig.cache

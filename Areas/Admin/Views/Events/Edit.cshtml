@@ -56,6 +56,7 @@
                 <input asp-for="EventUserMaxCapacity" class="form-control" />
                 <span asp-validation-for="EventUserMaxCapacity" class="text-danger"></span>
             </div>
+            <label asp-for="EventType">The type of the event</label>
             <select asp-for="EventType" class="form-control">
                 @foreach (var eventType in ViewBag.EventTypes)
                 {
@@ -80,4 +81,4 @@
     }
     @{await Html.RenderPartialAsync("WYSIWYG");}
 }
-}
+

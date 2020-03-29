@@ -134,8 +134,7 @@ namespace LunarSports.Controllers
         }
 
 
-        //[Authorize]
-        //[HttpPost]
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> EditUserDetails()
         {
@@ -152,7 +151,7 @@ namespace LunarSports.Controllers
             return Redirect(successURL);
 
         }
-        //[Authorize]
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> EditUserDetails(EditUserModel formInput)
         {
