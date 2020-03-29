@@ -20,7 +20,7 @@ namespace LunarSports.Controllers
         }
 
         // GET: Events
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             var EventsPage = this._context.Pages.Where(p => p.Title == "Events").FirstOrDefault();
             ViewBag.Page = EventsPage;

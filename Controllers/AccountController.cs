@@ -265,20 +265,23 @@ namespace LunarSports.Controllers
         }
 
 
-        public async Task<IActionResult> SignUp(int eventId)
+        public async Task<IActionResult> SignUp(int? id)
         {
-            var currentEvent = this._context.Events.Where(ev => ev.ID == eventId).FirstOrDefault();
-
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var currentEvent = this._context.Events.Where(ev => ev.ID == id).FirstOrDefault();
             if (User != null)
             {
                 ApplicationUser ux = await userManager.GetUserAsync(User);
-                var userID = ux.Id;
-                var signUpEntry = this._context.UserSignupsForEvents.Where(usfe => usfe.EventID == eventId & usfe.UserID == userID).FirstOrDefault();
-                string feedbackUrl = string.Format("/Default/Feedback?message={0}", "This user account has already signed up for this event..."+ userID);
+                var signUpEntry = this._context.UserSignupsForEvents.Where(usfe => usfe.EventID == id & usfe.UserID == ux.Id).FirstOrDefault();
+                ViewBag.debug = String.Format("EventId: {0}, UserID: {1}", id, ux.Id);
+                string feedbackUrl = string.Format("/Default/Feedback?message={0}", "This user account has already signed up for this event..."+ ViewBag.debug);
 
                 if (signUpEntry == null )
                 {
-                    var newSignupEntry = new UserSignupsForEvents() { EventID = eventId, UserID = userID };
+                    var newSignupEntry = new UserSignupsForEvents() { EventID = (int) id, UserID = ux.Id };
                     this._context.UserSignupsForEvents.Add(newSignupEntry);
                     this._context.SaveChanges();
                    

@@ -45,7 +45,7 @@ namespace LunarSports.Areas.Admin.Controllers
         }
 
         // GET: Admin/Events/Create
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
             this.populateViewBag();
 

@@ -73,25 +73,6 @@ namespace LunarSports.ViewComponents
             return View(loadedPages);
         }
     }
-    [ViewComponent(Name = "GetBreadcrumbs")]
-
-    public class BreadcrumbsComponent : ViewComponent
-
-    {
-        private readonly LunarSportsDBContext _context;
-        private readonly LinkedList<MenuEntry> menuEntries;
-
-        public BreadcrumbsComponent(LunarSportsDBContext context)
-        {            
-
-
-        }
-
-
-        public async Task<IViewComponentResult> InvokeAsync()
-        {
-
-            return View();
-        }
-    }
+   
+    
 }
