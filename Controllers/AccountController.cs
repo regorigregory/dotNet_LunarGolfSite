@@ -59,6 +59,8 @@ namespace LunarSports.Controllers
         [HttpGet]
         public IActionResult Register()
         {
+            ViewBag.Roles = this.roleManager.Roles.Select(r => r.Name).ToList<string>();
+
             return View();
 
         }

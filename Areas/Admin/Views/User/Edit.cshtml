@@ -1,0 +1,484 @@
+﻿@model LunarSports.ViewModels.AdminEditUserModel
+
+@{
+    ViewData["Title"] = "EditUserDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>EditUserDetails</h1>
+
+<hr />
+
+<!-- General details --------------------------------------------------------------------------------------------------->
+<div class="row">
+    <form asp-area="Admin" asp-controller="User" asp-action="Edit" method="post">
+
+        <div class="col-md-12">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">New password</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger">Conforming the new password</span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" value="@Model.FirstName" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" value="@Model.LastName" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" value="@Model.Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DOB" class="control-label"></label>
+                <input id="DOB" asp-for="DOB" class="form-control" value="@Model.DOB.ToString("yyyy-MM-dd")" type="date" />
+                <span asp-validation-for="DOB" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <input asp-for="Gender" class="form-control" value="@Model.Gender" />
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BIO" class="control-label"></label>
+                <textarea asp-for="BIO" id="Description" class="form-control">
+                @Model.BIO
+                </textarea>
+                <span asp-validation-for="BIO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProfilePictureURL" class="control-label"></label>
+                <input asp-for="ProfilePictureURL" class="form-control" value="@Model.ProfilePictureURL" />
+                <span asp-validation-for="ProfilePictureURL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OldPassword" class="control-label"></label>
+                <input asp-for="OldPassword" class="form-control" />
+                <span asp-validation-for="OldPassword" class="text-danger"></span>
+            </div>
+        </div>
+
+        <select asp-for="SpecRole">
+            @foreach (string role in ViewBag.Roles)
+            {
+                <option value="@role">@role</option>
+
+            }
+        </select>
+
+        @{ var sectionName = "HomeContact";}
+        @{ var subSection = "";}
+        @{ var fieldName = sectionName + subSection;}
+
+
+        <!-- Contact details --------------------------------------------------------------------------------------------------->
+
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Contact details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = ".Mobile";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="HomeContact.Mobile" class="control-label"> Mobile: </label>
+                        <input asp-for="HomeContact.Mobile" class="form-control" />
+                        <span asp-validation-for="HomeContact.Mobile" class="text-danger"></span>
+                    </div>
+                    @{subSection = ".Landline";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="HomeContact.Landline" class="control-label"> Landline: </label>
+                        <input asp-for="HomeContact.Landline" class="form-control" />
+                        <span asp-validation-for="HomeContact.Landline" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- HomeAddress --------------------------------------------------------------------------------------------------->
+        @{ sectionName = "HomeAddress";}
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Home address  details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = ".LocationName";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="HomeAddress.LocationName" class="control-label"> Location name</label>
+                        <input asp-for="HomeAddress.LocationName" class="form-control" />
+                        <span asp-validation-for="HomeAddress.LocationName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = ".BuildingNO";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="HomeAddress.BuildingNO" class="control-label"> Building number: </label>
+                        <input asp-for="HomeAddress.BuildingNO" class="form-control" />
+                        <span asp-validation-for="HomeAddress.BuildingNO" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".StreetAddress";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="HomeAddress.StreetAddress" class="control-label"> Street Address: </label>
+                        <input asp-for="HomeAddress.StreetAddress" class="form-control" />
+                        <span asp-validation-for="HomeAddress.StreetAddress" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Locality";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="HomeAddress.Locality" class="control-label"> Localty (town): </label>
+                        <input asp-for="HomeAddress.Locality" class="form-control" />
+                        <span asp-validation-for="HomeAddress.Locality" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Region";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="HomeAddress.Region" class="control-label"> Region (county): </label>
+                        <input asp-for="HomeAddress.Region" class="form-control" />
+                        <span asp-validation-for="HomeAddress.Region" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = ".Postcode";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="HomeAddress.PostCode" class="control-label"> Postcode: </label>
+                        <input asp-for="HomeAddress.PostCode" class="form-control" />
+                        <span asp-validation-for="HomeAddress.PostCode" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Country";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="HomeAddress.CountryCode" class="control-label"> Country: </label>
+                        <select asp-for="HomeAddress.CountryCode" class="form-control" />
+                        <option>--Please specify the country</option>
+                        </select>
+                        <span asp-validation-for="HomeAddress.CountryCode" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work contact --------------------------------------------------------------------------------------------------->
+
+        @{ sectionName = "WorkContact";}
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Work contact details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = ".Mobile";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="WorkContact.Mobile" class="control-label"> Mobile: </label>
+                        <input asp-for="WorkContact.Mobile" class="form-control" />
+                        <span asp-validation-for="WorkContact.Mobile" class="text-danger"></span>
+                    </div>
+                    @{subSection = ".Landline";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="WorkContact.Landline" class="control-label"> Landline: </label>
+                        <input asp-for="WorkContact.Landline" class="form-control" />
+                        <span asp-validation-for="WorkContact.Landline" class="text-danger"></span>
+                    </div>
+
+                    @{subSection = ".Email";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="WorkContact.Email" class="control-label"> Email: </label>
+                        <input asp-for="WorkContact.Email" class="form-control" type="email" />
+                        <span asp-validation-for="WorkContact.Email" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Work address --------------------------------------------------------------------------------------------------->
+
+        @{ sectionName = "WorkAddress";}
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Work address  details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = ".LocationName";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="WorkAddress.LocationName" class="control-label"> Location name</label>
+                        <input asp-for="WorkAddress.LocationName" class="form-control" />
+                        <span asp-validation-for="WorkAddress" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = ".BuildingNO";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="WorkAddress.BuildingNO" class="control-label"> Building number: </label>
+                        <input asp-for="WorkAddress.BuildingNO" class="form-control" />
+                        <span asp-validation-for="WorkAddress.BuildingNO" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".StreetAddress";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="WorkAddress.StreetAddress" class="control-label"> Street Address: </label>
+                        <input asp-for="WorkAddress.StreetAddress" class="form-control" />
+                        <span asp-validation-for="WorkAddress.StreetAddress" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Locality";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="WorkAddress.Locality" class="control-label"> Localty (town): </label>
+                        <input asp-for="WorkAddress.Locality" class="form-control" />
+                        <span asp-validation-for="WorkAddress.Locality" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Region";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="WorkAddress.Region" class="control-label"> Region (county): </label>
+                        <input asp-for="WorkAddress.Region" class="form-control" />
+                        <span asp-validation-for="WorkAddress.Region" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = ".Postcode";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="WorkAddress.PostCode" class="control-label"> Postcode: </label>
+                        <input asp-for="WorkAddress.PostCode" class="form-control" />
+                        <span asp-validation-for="WorkAddress.PostCode" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Country";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="WorkAddress.CountryCode" class="control-label"> Country: </label>
+                        <select asp-for="WorkAddress.CountryCode" class="form-control" />
+                        <option>--Please specify the country</option>
+                        </select>
+                        <span asp-validation-for="WorkAddress.CountryCode" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nextOfKind details --------------------------------------------------------------------------------------------------->
+        @{ sectionName = "NextOfKin";}
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Next of kin details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = ".FirstName";}
+                    @{ fieldName = sectionName + subSection;}
+
+
+                    <div class="form-group">
+                        <label asp-for="NextOfKin.FirstName" class="control-label"> First name: </label>
+                        <input asp-for="NextOfKin.FirstName" class="form-control" />
+                        <span asp-validation-for="NextOfKin.FirstName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = ".LastName";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NextOfKin.LastName" class="control-label"> Last name: </label>
+                        <input asp-for="NextOfKin.LastName" class="form-control" />
+                        <span asp-validation-for="NextOfKin.LastName" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Relationship";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="NextOfKin.RelationShip" class="control-label"> Relationship: </label>
+                        <input asp-for="NextOfKin.RelationShip" class="form-control" />
+                        <span asp-validation-for="NextOfKin.RelationShip" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- nextOfKind contact --------------------------------------------------------------------------------------------------->
+
+        @{ sectionName = "NOKContact";}
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Next of Kin contact details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = ".Mobile";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NOKContact.Mobile" class="control-label"> Mobile: </label>
+                        <input asp-for="NOKContact.Mobile" class="form-control" />
+                        <span asp-validation-for="NOKContact.Mobile" class="text-danger"></span>
+                    </div>
+                    @{subSection = ".Landline";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="NOKContact.Landline" class="control-label"> Landline: </label>
+                        <input asp-for="NOKContact.Landline" class="form-control" />
+                        <span asp-validation-for="NOKContact.Landline" class="text-danger"></span>
+                    </div>
+
+                    @{subSection = ".Email";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NOKContact.Email" class="control-label"> Email: </label>
+                        <input asp-for="NOKContact.Email" class="form-control" type="email" />
+                        <span asp-validation-for="NOKContact.Email" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- nextOfKind address --------------------------------------------------------------------------------------------------->
+
+        @{ sectionName = "NOKAddress";}
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#@sectionName">Next of Kin address  details</a>
+                    </h4>
+                </div>
+                <div id="@sectionName" class="panel-collapse collapse">
+                    @{ subSection = ".LocationName";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NOKAddress.LocationName" class="control-label"> Location name</label>
+                        <input asp-for="NOKAddress.LocationName" class="form-control" />
+                        <span asp-validation-for="NOKAddress.LocationName" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = ".BuildingNO";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NOKAddress.BuildingNO" class="control-label"> Building number: </label>
+                        <input asp-for="NOKAddress.BuildingNO" class="form-control" />
+                        <span asp-validation-for="NOKAddress.BuildingNO" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".StreetAddress";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NOKAddress.StreetAddress" class="control-label"> Street Address: </label>
+                        <input asp-for="NOKAddress.StreetAddress" class="form-control" />
+                        <span asp-validation-for="NOKAddress.StreetAddress" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Locality";}
+                    @{ fieldName = sectionName + subSection;}
+                    <div class="form-group">
+                        <label asp-for="NOKAddress.Locality" class="control-label"> Localty (town): </label>
+                        <input asp-for="NOKAddress.Locality" class="form-control" />
+                        <span asp-validation-for="NOKAddress.Locality" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Region";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NOKAddress.Region" class="control-label"> Region (county): </label>
+                        <input asp-for="NOKAddress.Region" class="form-control" />
+                        <span asp-validation-for="NOKAddress.Region" class="text-danger"></span>
+                    </div>
+
+                    @{ subSection = ".Postcode";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NOKAddress.PostCode" class="control-label"> Postcode: </label>
+                        <input asp-for="NOKAddress.PostCode" class="form-control" />
+                        <span asp-validation-for="NOKAddress.PostCode" class="text-danger"></span>
+                    </div>
+                    @{ subSection = ".Country";}
+                    @{ fieldName = sectionName + subSection;}
+
+                    <div class="form-group">
+                        <label asp-for="NOKAddress.CountryCode" class="control-label"> Country: </label>
+                        <select asp-for="NOKAddress.CountryCode" class="form-control" />
+                        <option>--Please specify the country</option>
+                        </select>
+                        <span asp-validation-for="NOKAddress.CountryCode" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Update details" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("WYSIWYG");}
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

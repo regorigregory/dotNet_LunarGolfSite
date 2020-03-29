@@ -25,9 +25,9 @@ namespace LunarSports.ViewComponents
             this.menuEntries.AddLast(new MenuEntry { Controller = "ApplicationRoles", Action = "Index", DisplayName = "Manage roles" });
             this.menuEntries.AddLast(new MenuEntry
             {
-                Controller = "Customer",
+                Controller = "User",
                 Action = "Index",
-                DisplayName = "Manage customers"
+                DisplayName = "Manage users"
             });
             this.menuEntries.AddLast(new MenuEntry
             {
