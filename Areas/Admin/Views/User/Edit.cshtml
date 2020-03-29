@@ -72,15 +72,19 @@
             </div>
 
         </div>
+        <div class="col-md-12">
+            <label asp-for="SpecRole"> The role of the user:</label>
+            <select asp-for="SpecRole">
+                @foreach (string role in ViewBag.Roles)
+                {
+                    <option value="@role">@role</option>
 
-        <select asp-for="SpecRole">
-            @foreach (string role in ViewBag.Roles)
-            {
-                <option value="@role">@role</option>
+                }
+            </select>
 
-            }
-        </select>
-
+        </div>
+</hr>
+        <br/>
         @{ var sectionName = "HomeContact";}
         @{ var subSection = "";}
         @{ var fieldName = sectionName + subSection;}

@@ -334,8 +334,8 @@ C:\Users\Madero\source\repos\LunarSports\bin\Debug\netcoreapp3.1\runtimes\win-x8
 C:\Users\Madero\source\repos\LunarSports\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Madero\source\repos\LunarSports\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Madero\source\repos\LunarSports\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\staticwebassets\LunarSports.StaticWebAssets.Manifest.cache
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\staticwebassets\LunarSports.StaticWebAssets.xml
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csprojAssemblyReference.cache
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csproj.CoreCompileInputs.cache
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.RazorAssemblyInfo.cache
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.RazorAssemblyInfo.cs
@@ -410,7 +410,8 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.Raz
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.RazorTargetAssemblyInfo.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.Views.pdb
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csproj.CopyComplete
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\staticwebassets\LunarSports.StaticWebAssets.Manifest.cache
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\staticwebassets\LunarSports.StaticWebAssets.xml
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.dll
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.pdb
-C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csproj.CoreCompileInputs.cache
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.genruntimeconfig.cache

@@ -9,6 +9,7 @@ using LunarSports.Models;
 using Microsoft.AspNetCore.Identity;
 using LunarSports.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 
 namespace LunarSports.Areas.Admin.Controllers
 {
@@ -42,7 +43,7 @@ namespace LunarSports.Areas.Admin.Controllers
                 IdentityResult result = await RoleManager.CreateAsync(newRole);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Default");
+                    return RedirectToAction("Index", "ApplicationRoles");
                 }
                 foreach (IdentityError e in result.Errors)
                 {
@@ -54,16 +55,16 @@ namespace LunarSports.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> ConfirmDelete(String roleName)
+        public async Task<ActionResult> Delete(string id)
         {
-            IdentityRole ir = await RoleManager.FindByNameAsync(roleName);
+            IdentityRole ir = await RoleManager.FindByNameAsync(id);
 
             return View(ir);
         }
         [HttpPost]
-        public async Task<ActionResult> Delete(string roleName)
+        public async Task<ActionResult> Delete(string id, IFormCollection formdata)
         {
-            IdentityRole ir = await RoleManager.FindByNameAsync(roleName);
+            IdentityRole ir = await RoleManager.FindByNameAsync(id);
             var result = await RoleManager.DeleteAsync(ir);
             if (!result.Succeeded)
             {
