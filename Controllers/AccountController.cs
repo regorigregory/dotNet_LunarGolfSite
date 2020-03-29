@@ -78,7 +78,7 @@ namespace LunarSports.Controllers
             {
                 return View(formInput);
             }
-            var user = new ApplicationUser { UserName = formInput.UserName, Email = formInput.Email, DOB = formInput.DOB };
+            var user = new ApplicationUser { UserName = formInput.UserName, Email = formInput.Email, DOB = formInput.DOB, FirstName = formInput.FirstName, LastName = formInput.LastName };
 
             var result = await userManager.CreateAsync(user, formInput.Password);
 
