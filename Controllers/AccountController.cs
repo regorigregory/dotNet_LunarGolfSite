@@ -140,9 +140,8 @@ namespace LunarSports.Controllers
             if (User != null)
             {
                 ApplicationUser ux = await userManager.GetUserAsync(User);
-                EditUserModel em = new EditUserModel(this._context);
-                em.SetApplicationUserDetails(ux);
-                em.GetAdditionalUserDetails();
+                EditUserModel em = new EditUserModel(ux);
+             
                 return View(em);
             }
 
@@ -212,11 +211,8 @@ namespace LunarSports.Controllers
                         formInput.NOKContact.User = ux.Id;
                         formInput.NOKContact.IsNextOfKin = true;
 
-                        EditUserModel currentlyStored = new EditUserModel(this._context);
-                        currentlyStored.SetApplicationUserDetails(ux);
-                        currentlyStored.GetAdditionalUserDetails();
-
-
+                        EditUserModel currentlyStored = new EditUserModel(ux);
+                       
                         if (currentlyStored.HomeAddress == null) this._context.UserAddresseses.Add(formInput.HomeAddress); else currentlyStored.HomeAddress.UpdateMe(formInput.HomeAddress);
 
                         if (currentlyStored.WorkAddress == null) this._context.UserAddresseses.Add(formInput.WorkAddress); else currentlyStored.WorkAddress.UpdateMe(formInput.WorkAddress);

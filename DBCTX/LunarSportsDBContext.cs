@@ -6,6 +6,7 @@ using LunarSports.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using LunarSports.ViewModels;
 
 
     public class LunarSportsDBContext : IdentityDbContext<ApplicationUser>
@@ -50,6 +51,7 @@ using Microsoft.EntityFrameworkCore;
     public DbSet<EventScheduleEntry> EventScheduleEntries { get; set; }
     public DbSet<LaunchSite> LaunchSites { get; set; }
     public DbSet<EventLocationContactDetail> EventLocationContactDetails { get; set; }
+    public DbSet<LunarSports.ViewModels.ListUserViewModel> ListUserViewModel { get; set; }
 
     //public DbSet<LunarSports.Models.ApplicationRole> ApplicationRole { get; set; }
 

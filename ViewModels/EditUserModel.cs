@@ -16,8 +16,10 @@ namespace LunarSports.ViewModels
         {
 
         }
-        public EditUserModel(LunarSportsDBContext context) {
-            this._context = context;
+        public EditUserModel(ApplicationUser au) {
+            this._context = LunarSportsDBContext.getInstance();
+            this.SetApplicationUserDetails(au);
+            this.GetAdditionalUserDetails();
         }
 
         public void SetApplicationUserDetails(ApplicationUser au)

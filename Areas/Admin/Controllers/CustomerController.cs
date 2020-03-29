@@ -25,13 +25,14 @@ namespace LunarSports.Areas.Admin.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-            IQueryable<ApplicationUser> currentUsers = userManager.Users;
+           var currentUsers = userManager.Users.Select(au=> new ListUserViewModel(au)).ToList();
             return View(currentUsers);
         }
 
 
         // GET: Customer/Details/5
-        public ActionResult Details(string id)
+       
+        public ActionResult Details(string? id)
         {
             // var user = userManager.GetUserAsync(id);
             var user = userManager.FindByIdAsync(id);
