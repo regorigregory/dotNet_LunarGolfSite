@@ -406,3 +406,5 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Adm
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Details.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Edit.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\EventLocationContactDetails\Index.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\ListSignedUpEvents.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Account\SignUpAndOff.cshtml.g.cs

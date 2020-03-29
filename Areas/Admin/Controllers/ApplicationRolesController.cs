@@ -28,19 +28,11 @@ namespace LunarSports.Areas.Admin.Controllers
             IEnumerable<IdentityRole> currentRoles = RoleManager.Roles;
             return View(currentRoles);
         }
-
-
-
-
         [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
-
-
-
-
         [HttpPost]
         public async Task<IActionResult> Create(CreateRoleModel formInput)
         {
