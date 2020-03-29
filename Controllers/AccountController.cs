@@ -82,10 +82,12 @@ namespace LunarSports.Controllers
           
 
 
-            var user =await  userManager.FindByNameAsync(formInput.UserName);
-            if (user != null)
+            var userByName =await  userManager.FindByNameAsync(formInput.UserName);
+            var userByEmail = await userManager.FindByEmailAsync(formInput.Email);
+
+            if (userByName != null | userByEmail!=null)
             {
-                ModelState.AddModelError(String.Empty, "The user name selected is taken.");
+                ModelState.AddModelError(String.Empty, "The user name/email selected is taken.");
                 return View(formInput);
             }
             Boolean isValid = ModelState.IsValid;
