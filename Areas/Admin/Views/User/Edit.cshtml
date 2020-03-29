@@ -12,8 +12,12 @@
 
 <!-- General details --------------------------------------------------------------------------------------------------->
 <div class="row">
-    <form>
-
+    <form asp-controller="User" asp-action="Edit">
+        <div class="form-group" style="display:none">
+            <label asp-for="OldPassword" class="control-label"></label>
+            <input asp-for="OldPassword" class="form-control" value="notRelevantFieldJustForModelValidity"/>
+            <span asp-validation-for="OldPassword" class="text-danger"></span>
+        </div>
         <div class="col-md-12">
             <div asp-validation-summary="All" class="text-danger"></div>
 

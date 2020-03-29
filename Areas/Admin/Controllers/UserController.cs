@@ -74,6 +74,7 @@ namespace LunarSports.Areas.Admin.Controllers
             }
             return View();
         }
+        [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -94,16 +95,15 @@ namespace LunarSports.Areas.Admin.Controllers
 
         //public async Task<IActionResult> EditUserDetails(string id, [Bind("SpecRole,Id,FirstName,LastName,Email,Password,ConfirmPassword,DOB," +
           //  "Active,Gender,BIO,ProfilePictureURL,HomeContact.Mobile,HomeContact.Landline")] AdminEditUserModel formInput)
-          
-       public async Task<IActionResult> EditUserDetails(AdminEditUserModel formInput)
+       [HttpPost]
+        public async Task<IActionResult> Edit(AdminEditUserModel formInput)
         {
             string successURL = string.Format("/Default/Feedback?message={0}", "It was not possible to update the account details");
-
             if (ModelState.IsValid)
             {
 
                 ApplicationUser ux = await userManager.FindByIdAsync(formInput.Id);
-
+                successURL = string.Format("/Default/Feedback?message={0}", "It was not possible to update the account details. However, the model state is valid.");
                 if (ux != null)
                 {
                     ux.FirstName = formInput.FirstName;
@@ -119,10 +119,10 @@ namespace LunarSports.Areas.Admin.Controllers
 
                     //this should be populated from the database ->done :) Now you only have to update it in the views: 
                     //Register user, and admin create and update user views
-                    var userRoles = this.roleManager.Roles.Select(r=>r.Name).ToList<string>();
-                    foreach( string role in userRoles)
+                    var userRoles = this.roleManager.Roles.Select(r => r.Name).ToList<string>();
+                    foreach (string role in userRoles)
                     {
-                        if(await userManager.IsInRoleAsync(ux, role))
+                        if (await userManager.IsInRoleAsync(ux, role))
                         {
                             await userManager.RemoveFromRoleAsync(ux, role);
                         }
@@ -190,7 +190,9 @@ namespace LunarSports.Areas.Admin.Controllers
                 }
             }
 
-            return Redirect(successURL);
+            var roles = this.roleManager.Roles.Select(r => r.Name).ToList<string>();
+            ViewBag.Roles = roles;
+            return View(formInput);
         }
 
         // GET: Customer/Delete/5
