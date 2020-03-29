@@ -1,4 +1,4 @@
-﻿@model IEnumerable<LunarSports.Models.Event>
+﻿@model IEnumerable<LunarSports.ViewModels.EventListViewModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,66 +7,86 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (ViewBag.Page != null)
+{
+    <h2> @ViewBag.Page.Title</h2>
+    <div class="metaData">
+
+    </div>
+    <div>
+        @ViewBag.Page
+    </div>
+}
+else
+{
+    <h2> Site is under construction</h2>
+    <div class="metaData">
+        Please come back later.
+        This page is either under maintenance or construction. We are working really hard to be able to deliver the page you requested.
+
+    </div>
+
+}
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.LaunchSiteID)
+                @Html.DisplayNameFor(model => model.Dbmodel.LaunchSiteID)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Dbmodel.Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                @Html.DisplayNameFor(model => model.Dbmodel.IsVisible)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IsVisible)
+                @Html.DisplayNameFor(model => model.Dbmodel.StartDateTime)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.StartDateTime)
+                @Html.DisplayNameFor(model => model.Dbmodel.EndDateTime)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EndDateTime)
+                @Html.DisplayNameFor(model => model.Dbmodel.Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EventUserMaxCapacity)
+                @Html.DisplayNameFor(model => model.Dbmodel.EventUserMaxCapacity)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.LaunchSiteID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsVisible)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDateTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndDateTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EventUserMaxCapacity)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LaunchSite.Location.LocationName)
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dbmodel.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dbmodel.IsVisible)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dbmodel.StartDateTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dbmodel.EndDateTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dbmodel.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dbmodel.EventUserMaxCapacity)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Dbmodel.ID">Details</a> |
+                    <a asp-controller="EventsController" asp-action="SignUp" asp-route-id="@item.Dbmodel.ID">Sign up</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

@@ -14,7 +14,6 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Views\EventLocations\" />
     <Folder Include="Content\" />
-    <Folder Include="Views\ContactDetails\" />
   </ItemGroup>
 
   <ItemGroup>

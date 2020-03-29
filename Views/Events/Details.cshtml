@@ -1,4 +1,4 @@
-﻿@model LunarSports.Models.Event
+﻿@model LunarSports.ViewModels.EventDetailsViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -7,55 +7,251 @@
 
 <h1>Details</h1>
 
-<div>
+<div class="row">
     <h4>Event</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LaunchSiteID)
+    <dl>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dbmodel.LaunchSiteID)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LaunchSiteID)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LaunchSite.Location.LocationName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dbmodel.Title)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dbmodel.Title)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IsVisible)
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dbmodel.StartDateTime)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IsVisible)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dbmodel.StartDateTime)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StartDateTime)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dbmodel.EndDateTime)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StartDateTime)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dbmodel.EndDateTime)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EndDateTime)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dbmodel.Description)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EndDateTime)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dbmodel.Description)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dbmodel.EventUserMaxCapacity)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EventUserMaxCapacity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EventUserMaxCapacity)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dbmodel.EventUserMaxCapacity)
         </dd>
     </dl>
 </div>
+<!--- here you should display the contact details-->
+<div class="row" id="LaunchContact">
+    @{var Contact = Model.LaunchSite.Contact;}
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Contact name
+                </th>
+
+                <th>
+                    Mobile
+                </th>
+                <th>
+                    Landline
+                </th>
+                <th>
+                    Email
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Contact.ContactName
+
+                </td>
+                <td>
+                    @Contact.Mobile
+                </td>
+                <td>
+                    @Contact.Landline
+                </td>
+                <td>
+                    @Contact.Email
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<!--- here you should display the event schedule-->
+
+@{var sectionName = "eventScheduleEntry";}
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" href="#@sectionName">Event Schedule entries</a>
+            </h4>
+        </div>
+        <div id="@sectionName" class="panel-collapse collapse">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Event entry title
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Start time
+                        </th>
+                        <th>
+                            End time
+                        </th>
+                        <th>
+                            Location Name/Host
+                        </th>
+                        <th>
+                            Location Latitude
+                        </th>
+                        <th>
+                            Location Longitude
+                        </th>
+                        <th>
+                            Is Location on the moon?
+                        </th>
+
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (EventScheduleEntryViewModel sEntry in Model.ScheduleEntries)
+                    {
+                        <tr>
+                            <td>
+                                @sEntry.Dbmodel.Title
+                            </td>
+                            <td>
+                                @sEntry.Dbmodel.Description
+                            </td>
+                            <td>
+                                @sEntry.Dbmodel.StartDateTime
+                            </td>
+                            <td>
+                                @sEntry.Dbmodel.EndDateTime
+                            </td>
+                            <td>
+                                @sEntry.Location.Dbmodel.LocationName
+                            </td>
+                            <td>
+                                @sEntry.Location.Dbmodel.Long
+                            </td>
+                            <td>
+                                @sEntry.Location.Dbmodel.Lat
+                            </td>
+                            <td>
+                                @sEntry.Location.Dbmodel.IsLunarLocation
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+        <dl class="row" id="LaunchSiteDetails">
+            @{sectionName = "LaunchSiteInfo";}
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#@sectionName">Launch site information</a>
+                        </h4>
+                    </div>
+                    @{ var launchSite = Model.LaunchSite}
+                    <div id="@sectionName" class="panel-collapse collapse">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Launch Site host
+                                    </th>
+                                    <th>
+                                        Building
+                                    </th>
+                                    <th>
+                                        Street address
+                                    </th>
+                                    <th>
+                                        Localty
+                                    </th>
+                                    <th>
+                                        Postcode
+                                    </th>
+                                    <th>
+                                        Longitude
+                                    </th>
+                                    <th>
+                                        Latitude
+                                    </th>
+                                    <th>
+                                        Launch time
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        @Model.LaunchSite.Location.LocationName
+                                    </td>
+                                    <td>
+                                        @Model.LaunchSite.Location.BuildingNO
+                                    </td>
+                                    <td>
+                                        @Model.LaunchSite.Location.StreetAddress
+                                    </td>
+                                    <td>
+                                        @Model.LaunchSite.Location.Locality
+                                    </td>
+                                    <td>
+                                        @Model.LaunchSite.Location.PostCode
+                                    </td>
+                                    <td>
+                                        @Model.LaunchSite.Location.Long
+                                    </td>
+                                    <td>
+                                        @Model.LaunchSite.Location.Lat
+                                    </td>
+                                    <td>
+                                    <td>
+                                        @Model.Dbmodel.StartDateTime
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to List</a> |
+    <a asp-controller="EventsController" asp-action="SignUp" asp-route-id="@Model.Dbmodel.ID">Sign up</a>
+
 </div>

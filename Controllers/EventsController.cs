@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LunarSports.Models;
+using LunarSports.ViewModels;
 
 namespace LunarSports.Controllers
 {
@@ -21,7 +22,14 @@ namespace LunarSports.Controllers
         // GET: Events
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Events.ToListAsync());
+            var EventsPage = this._context.Pages.Where(p => p.Title == "Events").FirstOrDefault();
+            ViewBag.Page = EventsPage;
+
+
+            var events = _context.Events.Select(golfEvent => new EventListViewModel(golfEvent)).ToList();
+       
+
+            return View(events);
         }
 
         // GET: Events/Details/5
@@ -39,7 +47,7 @@ namespace LunarSports.Controllers
                 return NotFound();
             }
 
-            return View(@event);
+            return View(new EventDetailsViewModel(@event));
         }
 
     }     

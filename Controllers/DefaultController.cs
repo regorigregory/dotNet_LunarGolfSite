@@ -17,8 +17,8 @@ namespace LunarSports.Controllers
         public IActionResult Index()
         {
             var HomePage = this._context.Pages.Where(p => p.Title == "Home").FirstOrDefault();
-            
-            return View(HomePage);
+            ViewBag.Page = HomePage;
+            return View();
         }
 
       

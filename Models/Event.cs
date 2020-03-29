@@ -40,11 +40,7 @@ namespace LunarSports.Models
 
         public int EventUserMaxCapacity { get; set; }
 
-         // public List<ApplicationUser> UsersSignedUp { get; set; }
-
-
-
-
+        // public List<ApplicationUser> UsersSignedUp { get; set; }
 
     }
 }

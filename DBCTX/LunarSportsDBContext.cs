@@ -10,11 +10,19 @@ using Microsoft.EntityFrameworkCore;
 
     public class LunarSportsDBContext : IdentityDbContext<ApplicationUser>
     {
+
+    private static LunarSportsDBContext instance;
+
+
     public LunarSportsDBContext(DbContextOptions<LunarSportsDBContext> opts) : base(opts)
         {
+        LunarSportsDBContext.instance = this;
         }
 
-      
+    public static LunarSportsDBContext getInstance()
+    {
+        return LunarSportsDBContext.instance;
+    }
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
