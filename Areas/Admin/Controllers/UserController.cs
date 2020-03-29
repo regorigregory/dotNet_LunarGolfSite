@@ -65,7 +65,7 @@ namespace LunarSports.Areas.Admin.Controllers
             var result2 = await userManager.AddToRoleAsync(user, formInput.SpecRole);
             if (result.Succeeded && result2.Succeeded)
             {
-                return RedirectToAction("Index", "Default");
+                return RedirectToAction("Index", "User");
             }
 
             foreach (var error in result.Errors)
@@ -74,7 +74,6 @@ namespace LunarSports.Areas.Admin.Controllers
             }
             return View();
         }
-        [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -87,15 +86,18 @@ namespace LunarSports.Areas.Admin.Controllers
             {
                 var roles = this.roleManager.Roles.Select(r => r.Name).ToList<string>();
                 ViewBag.Roles = roles;
-                EditUserModel eum = new AdminEditUserModel(ux);
+                AdminEditUserModel eum = new AdminEditUserModel(ux);
                 return View(eum);
             }
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> EditUserDetails(AdminEditUserModel? formInput)
+        //public async Task<IActionResult> EditUserDetails(string id, [Bind("SpecRole,Id,FirstName,LastName,Email,Password,ConfirmPassword,DOB," +
+          //  "Active,Gender,BIO,ProfilePictureURL,HomeContact.Mobile,HomeContact.Landline")] AdminEditUserModel formInput)
+          
+       public async Task<IActionResult> EditUserDetails(AdminEditUserModel formInput)
         {
+            string successURL = string.Format("/Default/Feedback?message={0}", "It was not possible to update the account details");
 
             if (ModelState.IsValid)
             {
@@ -111,8 +113,7 @@ namespace LunarSports.Areas.Admin.Controllers
                     ux.ProfilePictureURL = formInput.ProfilePictureURL;
                     ux.Gender = formInput.Gender;
                     ux.DOB = formInput.DOB;
-
-                    string successURL = string.Format("/Default/Feedback?message={0}", "The account details have been updated successfully.");
+                    successURL = string.Format("/Default/Feedback?message={0}", "The account details have been updated successfully.");
 
                     IdentityResult tempResult = await userManager.UpdateAsync(ux);
 
@@ -188,29 +189,31 @@ namespace LunarSports.Areas.Admin.Controllers
                     }
                 }
             }
-            return View(formInput);
+
+            return Redirect(successURL);
         }
 
         // GET: Customer/Delete/5
-        public ActionResult Delete(string id)
+        public async Task<ActionResult> Delete(string id)
         {
-            var user = userManager.FindByIdAsync(id);
+            var user = await userManager.FindByIdAsync(id);
             return View(user);
         }
 
         // POST: Customer/Delete/5
         [HttpPost]
-        public ActionResult Delete(string id, IFormCollection collection)
+        public async Task<ActionResult> Delete(string id, IFormCollection collection)
         {
             try
             {
                 // TODO: Add delete logic here
-                var user = userManager.FindByIdAsync(id);
-                return RedirectToAction(nameof(Index));
+                var user =await userManager.FindByIdAsync(id);
+                await userManager.DeleteAsync(user);
+                return RedirectToAction("Index", "User");
             }
             catch
             {
-                return View();
+                return RedirectToAction("Index", "Pages");
             }
         }
     }

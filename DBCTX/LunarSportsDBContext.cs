@@ -52,6 +52,7 @@ using LunarSports.ViewModels;
     public DbSet<LaunchSite> LaunchSites { get; set; }
     public DbSet<EventLocationContactDetail> EventLocationContactDetails { get; set; }
     public DbSet<LunarSports.ViewModels.ListUserViewModel> ListUserViewModel { get; set; }
+    public DbSet<LunarSports.ViewModels.AdminEditUserModel> AdminEditUserModel { get; set; }
 
     //public DbSet<LunarSports.Models.ApplicationRole> ApplicationRole { get; set; }
 

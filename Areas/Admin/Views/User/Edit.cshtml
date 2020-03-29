@@ -1,6 +1,8 @@
 ﻿@model LunarSports.ViewModels.AdminEditUserModel
 
 @{
+    ViewData["Title"] = "Edit";
+
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -10,7 +12,7 @@
 
 <!-- General details --------------------------------------------------------------------------------------------------->
 <div class="row">
-    <form  asp-action="Edit" method="POST">
+    <form>
 
         <div class="col-md-12">
             <div asp-validation-summary="All" class="text-danger"></div>
@@ -65,7 +67,7 @@
                 <input asp-for="ProfilePictureURL" class="form-control" value="@Model.ProfilePictureURL" />
                 <span asp-validation-for="ProfilePictureURL" class="text-danger"></span>
             </div>
-      
+
         </div>
 
         <select asp-for="SpecRole">
