@@ -10,17 +10,21 @@
 
         @foreach (Page p in Model)
         {
-            <li class="nav-link">
-                <a asp-area="" asp-controller="Pages" asp-action="ViewPage" asp-route-id="@p.ID">@p.Title</a>
-            </li>
-        }
-        <hr/>
-        @if (User.IsInRole("Administrator"))
-        {
-            foreach(var menuEntry in ViewBag.adminMenuEntries)
+            @if (p.Title != "Home" | p.Title != "Events")
             {
                 <li class="nav-link">
-                    <a asp-area="Admin" asp-controller="@menuEntry.Controller" asp-action="@menuEntry.Action" >@menuEntry.DisplayName </a>
+                    <a asp-area="" asp-controller="Pages" asp-action="ViewPage" asp-route-id="@p.ID">@p.Title</a>
+                </li>
+            }
+
+        }
+        <hr />
+        @if (User.IsInRole("Administrator"))
+        {
+            foreach (var menuEntry in ViewBag.adminMenuEntries)
+            {
+                <li class="nav-link">
+                    <a asp-area="Admin" asp-controller="@menuEntry.Controller" asp-action="@menuEntry.Action">@menuEntry.DisplayName </a>
 
                 </li>
             }

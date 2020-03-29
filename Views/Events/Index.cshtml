@@ -14,7 +14,24 @@
 
     </div>
     <div>
-        @ViewBag.Page
+        @Html.Raw(ViewBag.Page.Description)
+    </div>
+    <div class="metaData">
+        <dl>
+            <dt>
+                Published
+            </dt>
+            <dd>
+                @ViewBag.Page.DatePublished
+            </dd>
+            <dt>
+                Updated
+            </dt>
+            <dd>
+                @ViewBag.Page.DateModified
+
+            </dd>
+        </dl>
     </div>
 }
 else
@@ -34,7 +51,7 @@ else
             <th>
                 @Html.DisplayNameFor(model => model.Dbmodel.LaunchSiteID)
             </th>
-           
+
             <th>
                 @Html.DisplayNameFor(model => model.Dbmodel.Title)
             </th>

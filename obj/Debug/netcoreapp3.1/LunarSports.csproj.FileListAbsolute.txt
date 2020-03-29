@@ -412,3 +412,4 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.Vie
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csproj.CopyComplete
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.dll
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.pdb
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\LunarSports.csprojAssemblyReference.cache

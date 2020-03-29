@@ -5,7 +5,24 @@
 
     </div>
     <div>
-        @ViewBag.Page
+        @Html.Raw(ViewBag.Page.Description)
+    </div>
+    <div class="metaData">
+      <dl>
+          <dt>
+              Published
+          </dt>
+          <dd>
+              @ViewBag.Page.DatePublished
+          </dd>
+          <dt>
+             Updated
+          </dt>
+          <dd>
+              @ViewBag.Page.DateModified
+
+          </dd>
+      </dl>
     </div>
 }
 else
@@ -18,5 +35,8 @@ else
     </div>
    
 }
+
+<hr/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_jYOubJmfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
