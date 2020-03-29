@@ -21,6 +21,7 @@ namespace LunarSports.ViewComponents
             _context = context;
 
             this.menuEntries = new LinkedList<MenuEntry>();
+            this.menuEntries.AddLast(new MenuEntry { Controller = "Home", Action = "Index", DisplayName = "Admin home" });
 
             this.menuEntries.AddLast(new MenuEntry { Controller = "ApplicationRoles", Action = "Index", DisplayName = "Manage roles" });
             this.menuEntries.AddLast(new MenuEntry

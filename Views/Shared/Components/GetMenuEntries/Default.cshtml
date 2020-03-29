@@ -10,7 +10,7 @@
 
         @foreach (Page p in Model)
         {
-            @if (p.Title != "Home" | p.Title != "Events")
+            @if (!p.Title.Equals("Home") & !p.Title.Equals("Events"))
             {
                 <li class="nav-link">
                     <a asp-area="" asp-controller="Pages" asp-action="ViewPage" asp-route-id="@p.ID">@p.Title</a>
