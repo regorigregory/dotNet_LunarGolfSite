@@ -412,3 +412,4 @@ C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Views\Acc
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\User\Create.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\User\Edit.cshtml.g.cs
 C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
+C:\Users\Madero\source\repos\LunarSports\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\User\Delete.cshtml.g.cs

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LunarSports.Models;
@@ -19,9 +18,10 @@ namespace LunarSports.Areas.Admin.Controllers
     {
 
         private LunarSportsDBContext _context;
-        public UserController(UserManager<ApplicationUser> userManagerr, LunarSportsDBContext ctx)
+        public UserController(UserManager<ApplicationUser> userManagerr, LunarSportsDBContext ctx, RoleManager<IdentityRole> rm)
         {
             this.userManager = userManagerr;
+            this.roleManager = rm;
             this._context = ctx;
         }
 
@@ -85,15 +85,16 @@ namespace LunarSports.Areas.Admin.Controllers
             ApplicationUser ux = await userManager.FindByIdAsync(id);
             if (ux != null)
             {
-                ViewBag.Roles = this.roleManager.Roles.Select(r => r.Name).ToList<string>();
-                EditUserModel eum = new EditUserModel(ux);
+                var roles = this.roleManager.Roles.Select(r => r.Name).ToList<string>();
+                ViewBag.Roles = roles;
+                EditUserModel eum = new AdminEditUserModel(ux);
                 return View(eum);
             }
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditUserDetails(AdminEditUserModel formInput)
+        public async Task<IActionResult> EditUserDetails(AdminEditUserModel? formInput)
         {
 
             if (ModelState.IsValid)
